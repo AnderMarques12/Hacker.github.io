@@ -50,7 +50,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             background-color: rgba(0, 0, 0, 0%);
-            width: 415px;
+            width: 350px;
             height: 419px;
             border-radius: 0px;
             border: 4px solid #ff0000;
@@ -86,8 +86,8 @@
         }
 
         .square {
-            width: 60px;
-            height: 60px;
+            width: 30px;
+            height: 30px;
             background: linear-gradient(145deg, #00000000, #00000000);
             margin: 10px;
             display: flex;
