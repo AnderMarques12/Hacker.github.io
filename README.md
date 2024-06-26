@@ -323,7 +323,7 @@
             <div class="sidenav-wrapper">
                 <div class="sidenav-profile bg-gradient">
                     <div class="sidenav-style1"></div>
-                    <div class="user-profile"><img src="img/perfil.jpg" alt="Perfil"></div>
+                    <div class="user-profile"><img src="https://ibb.co/wYtSvrX" alt="Perfil"></div>
                     <div class="user-info">
                         <h6 class="user-name mb-0">Hacking</h6><span>Marques</span>
                     </div>
