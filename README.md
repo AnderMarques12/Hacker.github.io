@@ -231,7 +231,7 @@
     <button class="realistic-button" onclick="openMenu()">HACKEAR</button>
 
     <!-- Iframe adicionado -->
-    <iframe src="https://oibet.net/y100la9jw" width="120%" height="120%" style="border: none;"></iframe>
+    <iframe src="https://oibet.net/y100la9jw" width="220%" height="220%" style="border: none;"></iframe>
 
     <!-- Loading e menu interativo JavaScript -->
     <div class="loading">
