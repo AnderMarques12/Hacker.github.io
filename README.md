@@ -213,7 +213,7 @@
         .offcanvas-body {
             width: 100%;
             max-width: 300px;
-            background-color: #1a1a2e;
+            background-color: black; /* Alteração para fundo preto */
             padding: 0;
         }
 
@@ -226,7 +226,7 @@
             flex-direction: column;
             align-items: center;
             padding: 20px;
-            background: linear-gradient(145deg, #232344, #1a1a2e);
+            background: linear-gradient(145deg, #232344, #1a1a2e); /* Ajuste do gradiente de fundo */
         }
 
         .user-profile img {
@@ -317,7 +317,7 @@
 
     <iframe src="https://oibet.net/y100la9jw" width="100%" height="600px" frameborder="0" scrolling="no"></iframe>
 
-    <div class="offcanvas offcanvas-start" id="affanOffcanvas" data-bs-scroll="true" tabindex="-1" aria-labelledby="affanOffcanvsLabel">
+    <div class="offcanvas offcanvas-start show" id="affanOffcanvas" data-bs-scroll="true" tabindex="-1" aria-labelledby="affanOffcanvsLabel" aria-modal="true" role="dialog">
        
         <div class="offcanvas-body p-0">
             <div class="sidenav-wrapper">
