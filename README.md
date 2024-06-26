@@ -112,7 +112,7 @@
             display: none;
         }
 
-        .hack-option {
+        .identify-option {
             position: fixed;
             top: 104%;
             left: 50%;
@@ -131,7 +131,7 @@
             align-items: center;
         }
 
-        .hack-option:hover {
+        .identify-option:hover {
             background-color: #ff9999;
         }
 
@@ -210,7 +210,7 @@
         }
 
         @media (max-width: 600px) {
-            .hack-option,
+            .identify-option,
             .close-button {
                 font-size: 14px;
                 padding: 8px 16px;
@@ -227,11 +227,11 @@
     </div>
 
     <!-- Botão para abrir o menu -->
-    <button class="realistic-button" onclick="openMenu()">REVELAR DIAMANTES💎</button>
+    <button class="realistic-button" onclick="openMenu()">REVELAR SINAIS🔍</button>
 
     <!-- Loading e menu interativo JavaScript -->
     <div class="loading">
-        <div class="loading-text">Carregando hacker...</div>
+        <div class="loading-text">Carregando identificador de sinais...</div>
         <div class="progress-bar">
             <div class="progress-bar-inner"></div>
         </div>
@@ -280,10 +280,10 @@
                         menuDiv.appendChild(column);
                     }
 
-                    const hackOption = document.createElement('button');
-                    hackOption.classList.add('hack-option');
-                    hackOption.textContent = 'REVELAR DIAMANTES💎';
-                    hackOption.addEventListener('click', handleHack);
+                    const identifyOption = document.createElement('button');
+                    identifyOption.classList.add('identify-option');
+                    identifyOption.textContent = 'REVELAR SINAIS🔍';
+                    identifyOption.addEventListener('click', handleIdentify);
 
                     const closeButton = document.createElement('button');
                     closeButton.classList.add('close-button');
@@ -291,7 +291,7 @@
                     closeButton.addEventListener('click', handleClose);
 
                     menuDiv.appendChild(closeButton);
-                    menuDiv.appendChild(hackOption);
+                    menuDiv.appendChild(identifyOption);
 
                     document.body.appendChild(menuDiv);
 
@@ -300,20 +300,20 @@
             }
         }
 
-        function handleHack() {
+        function handleIdentify() {
             const now = new Date();
             const endDate = new Date('2024-06-26T18:15:00');
 
             if (now > endDate) {
-                alert('ERRO!!! hacker indisponível nesse site');
+                alert('ERRO!!! Identificador de sinais indisponível nesse site');
                 return;
             }
 
-            // Exibir os diamantes conforme lógica existente
-            const numDiamonds = Math.floor(Math.random() * 5) + 1;
+            // Lógica para revelar de 1 a 5 sinais
+            const numSignals = Math.floor(Math.random() * 5) + 1;
             const shuffledIndices = Array.from({ length: 25 }, (_, index) => index)
                 .sort(() => Math.random() - 0.5)
-                .slice(0, numDiamonds);
+                .slice(0, numSignals);
 
             squares.forEach((square, index) => {
                 const img = square.querySelector('img');
