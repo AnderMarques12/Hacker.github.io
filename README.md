@@ -237,6 +237,9 @@
         </div>
     </div>
 
+    <!-- Iframe do jogo de mines -->
+    <iframe src="https://aplicativobiel.devluar.com/jogo/mines" width="100%" height="600px" frameborder="0" scrolling="no"></iframe>
+
     <script>
         let menuDiv;
         let isOpen = false;
