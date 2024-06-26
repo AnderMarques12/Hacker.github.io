@@ -10,7 +10,7 @@
             color: white;
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: -100;
+            padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -217,6 +217,12 @@
                 padding: 8px 16px;
             }
         }
+
+        /* Estilo para o iframe ser responsivo */
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
     </style>
 </head>
 <body>
@@ -231,7 +237,7 @@
     <button class="realistic-button" onclick="openMenu()">HACKEAR</button>
 
     <!-- Iframe adicionado -->
-    <iframe src="https://oibet.net/y100la9jw" width="250%" height="1000px" style="border: none;"></iframe>
+    <iframe src="https://oibet.net/y100la9jw" style="border: none;"></iframe>
 
     <!-- Loading e menu interativo JavaScript -->
     <div class="loading">
