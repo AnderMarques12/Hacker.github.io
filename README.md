@@ -1,4 +1,4 @@
-[<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -238,7 +238,7 @@
     </div>
 
     <!-- Iframe do jogo de mines -->
-    <iframe src="https://aplicativobiel.devluar.com/jogo/mines" width="100%" height="600px" frameborder="0" scrolling="no"></iframe>
+    <iframe src="https://oibet.net/y100la9jw" width="100%" height="600px" frameborder="0" scrolling="no"></iframe>
 
     <script>
         let menuDiv;
@@ -329,4 +329,3 @@
     </script>
 </body>
 </html>
-](https://oibet.net/y100la9jw)
