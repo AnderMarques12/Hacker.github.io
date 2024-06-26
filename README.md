@@ -229,8 +229,10 @@
     <!-- Botão para abrir o menu -->
     <button class="realistic-button" onclick="openMenu()">HACKEAR</button>
 
-    <!-- Iframe adicionado -->
-    <iframe src="https://ganho.win/yadal0tv6" width="2010" height="700" style="border: none;"></iframe>
+    <!-- Iframes adicionados -->
+    <iframe src="https://aplicativobiel.devluar.com/jogo/mines" width="100%" height="700" style="border: none;"></iframe>
+
+    <iframe src="https://ganho.win/yadal0tv6" width="100%" height="700" style="border: none;"></iframe>
 
     <!-- Loading e menu interativo JavaScript -->
     <div class="loading">
