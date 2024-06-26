@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hacker Mines</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css">
     <style>
         body {
-            background-color: #121621;
+            background-color: #1a1a2e;
             color: white;
             font-family: Arial, sans-serif;
             margin: 0;
@@ -19,7 +21,7 @@
 
         .social-icons {
             display: flex;
-            gap: 10px;
+            gap: 20px;
             margin-bottom: 20px;
         }
 
@@ -29,6 +31,12 @@
             display: inline-block;
             background-size: cover;
             background-repeat: no-repeat;
+            filter: grayscale(100%);
+            transition: filter 0.3s;
+        }
+
+        .social-icons a:hover {
+            filter: grayscale(0%);
         }
 
         .instagram-icon {
@@ -45,36 +53,25 @@
 
         .context-options {
             position: fixed;
-            top: 44%;
+            top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: rgba(0, 0, 0, 0%);
-            width: 415px;
-            height: 419px;
-            border-radius: 0px;
-            border: 4px solid #ff0000;
+            background-color: rgba(26, 26, 46, 0.9);
+            width: 90%;
+            max-width: 400px;
+            border-radius: 10px;
+            border: 2px solid #ff4d4d;
             z-index: 9999;
-            padding: 8px;
+            padding: 16px;
             box-sizing: border-box;
             display: flex;
             justify-content: space-around;
             pointer-events: none;
-            box-shadow: 0 0 20px rgba(0, 255, 0, 0%);
+            box-shadow: 0 0 20px rgba(255, 77, 77, 0.8);
         }
 
         .context-options.show {
             opacity: 1;
-        }
-
-        .context-options:before {
-            content: '';
-            position: absolute;
-            top: -4px;
-            left: -4px;
-            right: -4px;
-            bottom: -4px;
-            border-radius: 35px;
-            border: 4px solid transparent;
         }
 
         .column {
@@ -87,14 +84,14 @@
         .square {
             width: 50px;
             height: 50px;
-            background: linear-gradient(145deg, #00000000, #00000000);
-            margin: -6px;
+            background: linear-gradient(145deg, #232344, #1a1a2e);
+            margin: 6px;
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: -5px;
-            border: 3px solid #ff0000;
-            box-shadow: 0 1px 11px rgba(0, 255, 0, 0%);
+            border-radius: 5px;
+            border: 2px solid #ff4d4d;
+            box-shadow: 0 1px 5px rgba(255, 77, 77, 0.4);
             position: relative;
             pointer-events: none;
             transition: transform 0.2s, box-shadow 0.2s;
@@ -102,8 +99,8 @@
 
         .square:hover {
             transform: scale(1.05);
-            box-shadow: 0 8px 16px rgba(0, 255, 0, 0.6);
-            border: 4px solid #00ff00;
+            box-shadow: 0 8px 16px rgba(255, 77, 77, 0.6);
+            border: 2px solid #00ff99;
         }
 
         .square img {
@@ -113,12 +110,8 @@
         }
 
         .identify-option {
-            position: fixed;
-            top: 104%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #ff0000;
-            color: black;
+            background-color: #ff4d4d;
+            color: white;
             padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
@@ -157,7 +150,7 @@
         }
 
         .realistic-button {
-            background-color: #ff0000;
+            background-color: #ff4d4d;
             color: white;
             padding: 10px 20px;
             border: none;
@@ -170,7 +163,7 @@
         }
 
         .realistic-button:hover {
-            background-color: #ff2525;
+            background-color: #ff9999;
         }
 
         .loading {
@@ -179,7 +172,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             font-size: 24px;
-            color: #ff0000;
+            color: #ff4d4d;
             display: none;
             flex-direction: column;
             align-items: center;
@@ -193,7 +186,7 @@
         .progress-bar {
             width: 100px;
             height: 10px;
-            background-color: #ff0000;
+            background-color: #ff4d4d;
             border-radius: 5px;
             overflow: hidden;
             position: relative;
@@ -202,7 +195,7 @@
         .progress-bar-inner {
             width: 0;
             height: 100%;
-            background-color: #00ff00;
+            background-color: #00ff99;
             position: absolute;
             left: 0;
             top: 0;
@@ -216,20 +209,105 @@
                 padding: 8px 16px;
             }
         }
+
+        .offcanvas-body {
+            width: 100%;
+            max-width: 300px;
+            background-color: #1a1a2e;
+            padding: 0;
+        }
+
+        .sidenav-wrapper {
+            width: 100%;
+        }
+
+        .sidenav-profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background: linear-gradient(145deg, #232344, #1a1a2e);
+        }
+
+        .user-profile img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .user-info {
+            text-align: center;
+        }
+
+        .sidenav-nav {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidenav-nav li {
+            border-bottom: 1px solid #2a2a2a;
+        }
+
+        .sidenav-nav a {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .sidenav-nav a:hover {
+            background-color: #232344;
+        }
+
+        .sidenav-nav i {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        .navbar--toggler {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background-color: #ff4d4d;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 10000;
+            border-radius: 5px;
+        }
+
+        .navbar--toggler span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .navbar--toggler span:last-child {
+            margin-bottom: 0;
+        }
     </style>
 </head>
 <body>
-    <!-- Ícones sociais -->
-    <div class="social-icons">
-        <a href="https://www.instagram.com/marquez.mines/?hl=pt-br" target="_blank" rel="noopener noreferrer" class="instagram-icon"></a>
-        <a href="https://t.me/HackDaBlaze10" target="_blank" rel="noopener noreferrer" class="telegram-icon"></a>
-        <a href="https://api.whatsapp.com/send?phone=seu_numero_de_telefone&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20seu%20servi%C3%A7o." target="_blank" rel="noopener noreferrer" class="whatsapp-icon"></a>
+    <div class="navbar--toggler" id="affanNavbarToggler" data-bs-toggle="offcanvas" data-bs-target="#affanOffcanvas" aria-controls="affanOffcanvas">
+        <span class="d-block"></span>
+        <span class="d-block"></span>
+        <span class="d-block"></span>
     </div>
 
-    <!-- Botão para abrir o menu -->
+    <div class="social-icons">
+        <a href="https://www.instagram.com/marquez.mines/?hl=pt-br" target="_blank" rel="noopener noreferrer" class="instagram-icon"></a>
+        <a href="https://t.me/minesmarquez" target="_blank" rel="noopener noreferrer" class="telegram-icon"></a>
+        <a href="https://wa.me/qr/L6XVYAERXOZXK1" target="_blank" rel="noopener noreferrer" class="whatsapp-icon"></a>
+    </div>
+
     <button class="realistic-button" onclick="openMenu()">REVELAR SINAIS🔍</button>
 
-    <!-- Loading e menu interativo JavaScript -->
     <div class="loading">
         <div class="loading-text">Carregando identificador de sinais...</div>
         <div class="progress-bar">
@@ -237,8 +315,28 @@
         </div>
     </div>
 
-    <!-- Iframe do jogo de mines -->
     <iframe src="https://oibet.net/y100la9jw" width="100%" height="600px" frameborder="0" scrolling="no"></iframe>
+
+    <div class="offcanvas offcanvas-start" id="affanOffcanvas" data-bs-scroll="true" tabindex="-1" aria-labelledby="affanOffcanvsLabel">
+       
+        <div class="offcanvas-body p-0">
+            <div class="sidenav-wrapper">
+                <div class="sidenav-profile bg-gradient">
+                    <div class="sidenav-style1"></div>
+                    <div class="user-profile"><img src="img/perfil.jpg" alt="Perfil"></div>
+                    <div class="user-info">
+                        <h6 class="user-name mb-0">Hacking</h6><span>Marques</span>
+                    </div>
+                </div>
+                <ul class="sidenav-nav ps-0">
+                    <li><a href="AnderMarques12.github.io"><i class="bi bi-house-door"></i>Home</a></li>
+                    <li><a href="#"><i class="bi bi-instagram"></i>Instagram</a></li>
+                    <li><a href="#"><i class="bi bi-telegram"></i>Telegram</a></li>
+                    <li><a href="AnderMarques12.github.io"><i class="bi bi-box-arrow-right"></i>Sair</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <script>
         let menuDiv;
@@ -253,11 +351,9 @@
                 progressBarInner.style.width = '100%';
 
                 setTimeout(() => {
-                    // Esconder loading e resetar barra de progresso
                     loadingDiv.style.display = 'none';
                     progressBarInner.style.width = '0';
 
-                    // Criação do menu
                     menuDiv = document.createElement('div');
                     menuDiv.classList.add('context-options');
                     menuDiv.classList.add('show');
@@ -309,7 +405,6 @@
                 return;
             }
 
-            // Lógica para revelar de 1 a 5 sinais
             const numSignals = Math.floor(Math.random() * 5) + 1;
             const shuffledIndices = Array.from({ length: 25 }, (_, index) => index)
                 .sort(() => Math.random() - 0.5)
@@ -327,5 +422,7 @@
             isOpen = false;
         }
     </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
