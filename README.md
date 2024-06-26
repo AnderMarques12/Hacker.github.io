@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,7 +9,7 @@
             color: white;
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            padding: -100;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -50,7 +49,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             background-color: rgba(0, 0, 0, 0%);
-            width: 350px;
+            width: 415px;
             height: 419px;
             border-radius: 0px;
             border: 4px solid #ff0000;
@@ -86,19 +85,19 @@
         }
 
         .square {
-            width: 30px;
-            height: 30px;
-            background: linear-gradient(145deg, #00000000, #00000000);
-            margin: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 10px;
-            border: 3px solid #ff0000;
-            box-shadow: 0 1px 11px rgba(0, 255, 0, 0%);
-            position: relative;
-            pointer-events: none;
-            transition: transform 0.2s, box-shadow 0.2s;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(145deg, #00000000, #00000000);
+    margin: -6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: -5px;
+    border: 3px solid #ff0000;
+    box-shadow: 0 1px 11px rgba(0, 255, 0, 0%);
+    position: relative;
+    pointer-events: none;
+    transition: transform 0.2s, box-shadow 0.2s;
         }
 
         .square:hover {
@@ -217,12 +216,6 @@
                 padding: 8px 16px;
             }
         }
-
-        /* Estilo para o iframe ser responsivo */
-        iframe {
-            width: 100%;
-            height: 100%;
-        }
     </style>
 </head>
 <body>
@@ -237,7 +230,7 @@
     <button class="realistic-button" onclick="openMenu()">HACKEAR</button>
 
     <!-- Iframe adicionado -->
-    <iframe src="https://oibet.net/y100la9jw" style="border: none;"></iframe>
+    <iframe src="https://oibet.net/y100la9jw" width="250%" height="1000px" style="border: none;"></iframe>
 
     <!-- Loading e menu interativo JavaScript -->
     <div class="loading">
