@@ -21,21 +21,21 @@
 
         .context-options {
             position: fixed;
-            top: 50%;
-            left: 50%;
+            top: 60%;
+            left: 46%;
             transform: translate(-50%, -50%);
-            background-color: rgba(38, 38, 78, 0.9);
+            background-color: rgba(38, 38, 78, 0);
             width: 90%;
             max-width: 400px;
             border-radius: 10px;
             border: 2px solid #ff3333;
             z-index: 9999;
-            padding: 16px;
+            padding: 11px;
             box-sizing: border-box;
             display: flex;
             justify-content: space-around;
             pointer-events: none;
-            box-shadow: 0 0 20px rgba(255, 51, 51, 0.8);
+            box-shadow: 0 0 20px rgba(255, 51, 51, 0);
             opacity: 0;
             transition: opacity 0.5s ease;
         }
@@ -53,10 +53,10 @@
         }
 
         .square {
-            width: 50px;
-            height: 50px;
-            background: linear-gradient(145deg, #343466, #2a2a4e);
-            margin: 6px;
+            width: 58.08px;
+            height: 57.4px;
+            background: linear-gradient(145deg, #34346600, #2a2a4e00);
+            margin: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -93,6 +93,7 @@
             transition: background-color 0.3s;
             display: flex;
             align-items: center;
+            margin-bottom: 10px;
         }
 
         .identify-option:hover {
@@ -266,38 +267,107 @@
             </div>
         </div>
     </div>
-    <div id="botao" class="identify-option" onclick="startLoading()">REVELAR SINAIS🔍</div>
+    <div id="botao" class="identify-option" onclick="openMenu()">REVELAR SINAIS🔍</div>
     <div id="contextMenu" class="context-options">
         <div class="column">
             <div class="square" onclick="openLink('https://t.me/arnaldolac')"><img src="img/icone1.png"></div>
-            <div class="square" onclick="openLink('https://wa.me/message/HIQKKQYH65N4P1')"><img src="img/icone2.png"></div>
+            <div class="square" onclick="openLink('https://t.me/arnaldolac')"><img src="img/icone1.png"></div>
+            <div class="square" onclick="openLink('https://t.me/arnaldolac')"><img src="img/icone1.png"></div>
+            <div class="square" onclick="openLink('https://t.me/arnaldolac')"><img src="img/icone1.png"></div>
+            <div class="square" onclick="openLink('https://t.me/arnaldolac')"><img src="img/icone1.png"></div>
         </div>
-        <button class="close-button" onclick="toggleContextMenu()">X</button>
+        <div class="column">
+            <div class="square" onclick="openLink('https://t.me/arnaldolac')"><img src="img/icone1.png"></div>
+            <div class="square" onclick="openLink('https://t.me/arnaldolac')"><img src="img/icone1.png"></div>
+            <div class="square" onclick="openLink('https://t.me/arnaldolac')"><img src="img/icone1.png"></div>
+            <div class="square" onclick="openLink('https://t.me/arnaldolac')"><img src="img/icone1.png"></div>
+            <div class="square" onclick="openLink('https://t.me/arnaldolac')"><img src="img/icone1.png"></div>
+        </div>
+        <div class="column">
+            <div class="square" onclick="openLink('https://t.me/arnaldolac')"><img src="img/icone1.png"></div>
+            <div class="square" onclick="openLink('https://t.me/arnaldolac')"><img src="img/icone1.png"></div>
+            <div class="square" onclick="openLink('https://t.me/arnaldolac')"><img src="img/icone1.png"></div>
+            <div class="square" onclick="openLink('https://t.me/arnaldolac')"><img src="img/icone1.png"></div>
+            <div class="square" onclick="openLink('https://t.me/arnaldolac')"><img src="img/icone1.png"></div>
+        </div>
+        <button class="identify-option" onclick="openLink('https://t.me/arnaldolac')">REVELAR SINAIS🔍</button>
+        <button class="close-button" onclick="closeMenu()">X</button>
     </div>
     <div class="loading" id="loadingIndicator">
-        <div class="loading-text">Carregando...</div>
-        <div class="spinner-border text-danger" role="status">
-            <span class="visually-hidden">Loading...</span>
+        <p class="loading-text">Carregando...</p>
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Carregando...</span>
         </div>
     </div>
     <iframe src="https://oibet.net/#/home" width="100%" height="600" frameborder="0"></iframe>
     <script>
-        function toggleContextMenu() {
-            const contextMenu = document.getElementById('contextMenu');
-            contextMenu.classList.toggle('show');
+        function openMenu() {
+            const styleTag = document.createElement('style');
+            styleTag.innerHTML = `
+                .context-options {
+                    opacity: 1;
+                    pointer-events: auto;
+                }
+            `;
+
+            let menuDiv;
+            let isOpen = false;
+            let squares = [];
+
+            if (!isOpen) {
+                menuDiv = document.createElement('div');
+                menuDiv.classList.add('context-options');
+
+                squares = [];
+
+                for (let i = 0; i < 5; i++) {
+                    const column = document.createElement('div');
+                    column.classList.add('column');
+
+                    for (let j = 0; j < 5; j++) {
+                        const square = document.createElement('div');
+                        square.classList.add('square');
+                        const img = document.createElement('img');
+                        img.src = 'img/icone1.png'; // Adicionei um exemplo de imagem
+                        square.appendChild(img);
+                        square.addEventListener('click', () => openLink('https://t.me/arnaldolac'));
+                        column.appendChild(square);
+                        squares.push(square);
+                    }
+
+                    menuDiv.appendChild(column);
+                }
+
+                const hackOption = document.createElement('button');
+                hackOption.classList.add('identify-option');
+                hackOption.textContent = 'REVELAR DIAMANTES💎';
+                hackOption.addEventListener('click', () => openLink('https://t.me/arnaldolac'));
+
+                const closeButton = document.createElement('button');
+                closeButton.classList.add('close-button');
+                closeButton.textContent = 'X';
+                closeButton.addEventListener('click', closeMenu);
+
+                menuDiv.appendChild(closeButton);
+                menuDiv.appendChild(hackOption);
+
+                document.body.appendChild(styleTag);
+                document.body.appendChild(menuDiv);
+
+                isOpen = true;
+            }
+        }
+
+        function closeMenu() {
+            const menu = document.querySelector('.context-options');
+            if (menu) {
+                menu.remove();
+                isOpen = false;
+            }
         }
 
         function openLink(url) {
             window.open(url, '_blank');
-        }
-
-        function startLoading() {
-            const loadingIndicator = document.getElementById('loadingIndicator');
-            loadingIndicator.style.display = 'flex';
-            setTimeout(() => {
-                loadingIndicator.style.display = 'none';
-                toggleContextMenu();
-            }, 2000);
         }
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
