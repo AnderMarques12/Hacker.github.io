@@ -239,137 +239,110 @@
         .navbar--toggler span:last-child {
             margin-bottom: 0;
         }
+
+        .hidden {
+            display: none;
+        }
+
+        #iframeContainer {
+            margin-top: 20px;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
-    <div class="navbar--toggler" id="affanNavbarToggler" data-bs-toggle="offcanvas" data-bs-target="#affanOffcanvas" aria-controls="affanOffcanvas">
-        <span></span>
-        <span></span>
-        <span></span>
+    <div class="login-container" id="loginContainer">
+        <img src="https://i.ibb.co/d7ZPhJq/fotor-20240626144039.png" alt="Perfil" style="width: 100px; height: 100px; margin-bottom: 10px;">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu email" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Senha:</label>
+                <input type="password" class="form-control" id="password" placeholder="Digite sua senha" required>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="login()">Login</button>
+        </form>
     </div>
-    <div class="offcanvas offcanvas-start" id="affanOffcanvas" data-bs-scroll="true" tabindex="-1" aria-labelledby="affanOffcanvsLabel">
-        <div class="offcanvas-body">
-            <div class="sidenav-wrapper">
-                <div class="sidenav-profile">
-                    <div class="user-profile">
-                        <img src="https://i.ibb.co/d7ZPhJq/fotor-20240626144039.png" alt="Perfil">
+
+    <div class="hidden" id="mainContent">
+        <div class="navbar--toggler" id="affanNavbarToggler" data-bs-toggle="offcanvas" data-bs-target="#affanOffcanvas" aria-controls="affanOffcanvas">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="offcanvas offcanvas-start" id="affanOffcanvas" data-bs-scroll="true" tabindex="-1" aria-labelledby="affanOffcanvsLabel">
+            <div class="offcanvas-body">
+                <div class="sidenav-wrapper">
+                    <div class="sidenav-profile">
+                        <div class="user-profile">
+                            <img src="https://i.ibb.co/d7ZPhJq/fotor-20240626144039.png" alt="Perfil">
+                        </div>
+                        <div class="user-info">
+                            <p class="user-name mb-1">Hacker Mines</p>
+                        </div>
                     </div>
-                    <div class="user-info">
-                        <h6 class="user-name mb-1"></h6>
-                        <p style="color: white;">Hacker Marques</p>
-                    </div>
+                    <ul class="sidenav-nav">
+                        <li><a href="https://www.instagram.com/marquez.mines/?hl=pt-br" target="_blank"><i class="bi bi-instagram"></i> Instagram</a></li>
+                        <li><a href="https://oibet.net/y100la9jw" target="_blank"><i class="bi bi-person-plus"></i> Criar Conta na Plataforma Chinesa</a></li>
+                        <li><a href="#" onclick="showMenu()"><i class="bi bi-hammer"></i> Hackear</a></li>
+                    </ul>
                 </div>
-                <ul class="sidenav-nav ps-0">
-                    <li><a href="https://www.instagram.com/marquez.mines/?hl=pt-br" target="_blank"><i class="bi bi-instagram"></i>Instagram</a></li>
-                    <li><a href="https://t.me/arnaldolac" target="_blank"><i class="bi bi-telegram"></i>Telegram</a></li>
-                    <li><a href="https://wa.me/message/HIQKKQYH65N4P1" target="_blank"><i class="bi bi-whatsapp"></i>WhatsApp</a></li>
-                </ul>
+            </div>
+        </div>
+
+        <div class="context-options" id="contextMenu">
+            <div class="column">
+                <div class="square">
+                    <img src="https://i.ibb.co/d7ZPhJq/fotor-20240626144039.png" alt="Opção">
+                </div>
+                <button class="identify-option">25 quadrada</button>
             </div>
         </div>
     </div>
-    <div id="botao" class="identify-option" onclick="openMenu()">REVELAR SINAIS🔍</div>
-    <div id="contextMenu" class="context-options">
-        <div class="column">
-            <div class="square" onclick="openLink('https://t.me/arnaldolac')"><img src="img/icone1.png"></div>
-            <div class="square" onclick="openLink('https://t.me/arnaldolac')"><img src="img/icone1.png"></div>
-            <div class="square" onclick="openLink('https://t.me/arnaldolac')"><img src="img/icone1.png"></div>
-            <div class="square" onclick="openLink('https://t.me/arnaldolac')"><img src="img/icone1.png"></div>
-            <div class="square" onclick="openLink('https://t.me/arnaldolac')"><img src="img/icone1.png"></div>
-        </div>
-        <div class="column">
-            <div class="square" onclick="openLink('https://t.me/arnaldolac')"><img src="img/icone1.png"></div>
-            <div class="square" onclick="openLink('https://t.me/arnaldolac')"><img src="img/icone1.png"></div>
-            <div class="square" onclick="openLink('https://t.me/arnaldolac')"><img src="img/icone1.png"></div>
-            <div class="square" onclick="openLink('https://t.me/arnaldolac')"><img src="img/icone1.png"></div>
-            <div class="square" onclick="openLink('https://t.me/arnaldolac')"><img src="img/icone1.png"></div>
-        </div>
-        <div class="column">
-            <div class="square" onclick="openLink('https://t.me/arnaldolac')"><img src="img/icone1.png"></div>
-            <div class="square" onclick="openLink('https://t.me/arnaldolac')"><img src="img/icone1.png"></div>
-            <div class="square" onclick="openLink('https://t.me/arnaldolac')"><img src="img/icone1.png"></div>
-            <div class="square" onclick="openLink('https://t.me/arnaldolac')"><img src="img/icone1.png"></div>
-            <div class="square" onclick="openLink('https://t.me/arnaldolac')"><img src="img/icone1.png"></div>
-        </div>
-        <button class="identify-option" onclick="openLink('https://t.me/arnaldolac')">REVELAR SINAIS🔍</button>
-        <button class="close-button" onclick="closeMenu()">X</button>
-    </div>
-    <div class="loading" id="loadingIndicator">
-        <p class="loading-text">Carregando...</p>
-        <div class="spinner-border" role="status">
-            <span class="visually-hidden">Carregando...</span>
+
+    <div class="loading" id="loading">
+        <div class="loading-text">Carregando...</div>
+        <div class="spinner-border text-danger" role="status">
+            <span class="visually-hidden">Loading...</span>
         </div>
     </div>
-    <iframe src="https://oibet.net/#/home" width="100%" height="600" frameborder="0"></iframe>
+
+    <div id="iframeContainer" class="hidden">
+        <iframe src="https://oibet.net/#/home" width="100%" height="600" frameborder="0"></iframe>
+    </div>
+
     <script>
-        function openMenu() {
-            const styleTag = document.createElement('style');
-            styleTag.innerHTML = `
-                .context-options {
-                    opacity: 1;
-                    pointer-events: auto;
-                }
-            `;
-
-            let menuDiv;
-            let isOpen = false;
-            let squares = [];
-
-            if (!isOpen) {
-                menuDiv = document.createElement('div');
-                menuDiv.classList.add('context-options');
-
-                squares = [];
-
-                for (let i = 0; i < 5; i++) {
-                    const column = document.createElement('div');
-                    column.classList.add('column');
-
-                    for (let j = 0; j < 5; j++) {
-                        const square = document.createElement('div');
-                        square.classList.add('square');
-                        const img = document.createElement('img');
-                        img.src = 'img/icone1.png'; // Adicionei um exemplo de imagem
-                        square.appendChild(img);
-                        square.addEventListener('click', () => openLink('https://t.me/arnaldolac'));
-                        column.appendChild(square);
-                        squares.push(square);
-                    }
-
-                    menuDiv.appendChild(column);
-                }
-
-                const hackOption = document.createElement('button');
-                hackOption.classList.add('identify-option');
-                hackOption.textContent = 'REVELAR DIAMANTES💎';
-                hackOption.addEventListener('click', () => openLink('https://t.me/arnaldolac'));
-
-                const closeButton = document.createElement('button');
-                closeButton.classList.add('close-button');
-                closeButton.textContent = 'X';
-                closeButton.addEventListener('click', closeMenu);
-
-                menuDiv.appendChild(closeButton);
-                menuDiv.appendChild(hackOption);
-
-                document.body.appendChild(styleTag);
-                document.body.appendChild(menuDiv);
-
-                isOpen = true;
-            }
+        function showMenu() {
+            document.getElementById('contextMenu').classList.add('show');
         }
 
         function closeMenu() {
-            const menu = document.querySelector('.context-options');
-            if (menu) {
-                menu.remove();
-                isOpen = false;
+            document.getElementById('contextMenu').classList.remove('show');
+        }
+
+        function login() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            if (email.endsWith('@gmail.com')) {
+                document.getElementById('loginContainer').classList.add('hidden');
+                document.getElementById('loading').style.display = 'flex';
+                setTimeout(() => {
+                    document.getElementById('loading').style.display = 'none';
+                    document.getElementById('mainContent').classList.remove('hidden');
+                    document.getElementById('iframeContainer').classList.remove('hidden');
+                }, 2000);
+            } else {
+                alert('Por favor, use um email @gmail.com');
             }
         }
 
-        function openLink(url) {
-            window.open(url, '_blank');
-        }
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.close-button').addEventListener('click', closeMenu);
+        });
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
