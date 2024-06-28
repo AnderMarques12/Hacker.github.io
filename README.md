@@ -55,7 +55,7 @@
 
         .column {
             display: flex;
-            flex-direction: column;
+            flex-direction: row-reverse;
             align-items: center;
             justify-content: space-around;
         }
@@ -64,11 +64,11 @@
             width: 58.08px;
             height: 57.4px;
             background: linear-gradient(145deg, #34346600, #2a2a4e00);
-            margin: 12px;
+            margin: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 5px;
+            border-radius: 0px;
             border: 2px solid #ff3333;
             box-shadow: 0 1px 5px rgba(255, 51, 51, 0.4);
             position: relative;
@@ -263,9 +263,9 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: #000000;
-            width: 100px;
-            height: 100px;
+            background-color: #00000000;
+            width: 400px;
+            height: 400px;
             display: none; /* Inicialmente escondido */
             border-radius: 5px;
             padding: 10px;
@@ -275,8 +275,10 @@
 
         #blackMenu .close-button {
             background-color: #cc0000;
+            top: -10%;
+            left: -6%;
             color: white;
-            padding: 10px;
+            padding: 9px 39px;
             border-radius: 5px;
             cursor: pointer;
             font-size: 14px;
@@ -287,11 +289,33 @@
         #blackMenu .close-button:hover {
             background-color: #ff0000;
         }
+
+        /* Estilos para 25 quadrado branco 5 */
+        .white-square {
+            width: 45px;
+            height: 45px;
+            background-color: white;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+            color: black;
+            margin: 5px;
+            position: relative;
+        }
+
+        .white-square img {
+            max-width: 100%;
+            max-height: 100%;
+            display: none;
+        }
     </style>
 </head>
 <body>
     <div class="login-container" id="loginContainer">
-        <img src="https://i.ibb.co/nfjFm1T/HACKER.png" alt="Perfil" style="max-width: 100%; height: auto; max-height: 500px; width: 500px; margin-bottom: 10px;">
+        <img src="https://i.ibb.co/nfjFm1T/HACKER.png" alt="Perfil">
         <h2>Aplicativo do Marques</h2>
         <form id="loginForm">
             <div class="mb-3">
@@ -351,8 +375,16 @@
     <div id="iframeContainer" class="hidden">
         <button class="btn btn-primary mb-3" onclick="revealDiamondsMenu()">Revelar Diamantes</button>
         <div id="blackMenu">
+            <div class="column"><div class="square"><img></div><div class="square"><img></div><div class="square"><img></div><div class="square"><img></div><div class="square"><img></div></div>
+            <div class="column"><div class="square"><img></div><div class="square"><img></div><div class="square"><img></div><div class="square"><img></div><div class="square"><img></div></div>
+            <div class="column"><div class="square"><img></div><div class="square"><img></div><div class="square"><img></div><div class="square"><img></div><div class="square"><img></div></div>
+            <div class="column"><div class="square"><img></div><div class="square"><img></div><div class="square"><img></div><div class="square"><img></div><div class="square"><img></div></div>
+            <div class="column"><div class="square"><img></div><div class="square"><img></div><div class="square"><img></div><div class="square"><img></div><div class="square"><img></div></div>
+           
+            <!-- Conteúdo do menu preto -->
             <button class="close-button" onclick="closeBlackMenu()">Fechar</button>
-        </div> <!-- Menu preto de 100x100px -->
+            <button class="btn btn-danger mb-3" onclick="shuffleDiamonds()">Shuffle Diamonds</button>
+        </div>
         <iframe src="https://oibet.net/#/home" width="100%" height="600" frameborder="0"></iframe>
     </div>
 
@@ -391,11 +423,50 @@
         function revealDiamondsMenu() {
             // Mostra o menu preto
             document.getElementById('blackMenu').style.display = 'block';
+            generateDiamonds();
         }
 
         function closeBlackMenu() {
             // Fecha o menu preto
             document.getElementById('blackMenu').style.display = 'none';
+        }
+
+        function generateDiamonds() {
+            const diamondContainer = document.querySelector('.diamond-container');
+            diamondContainer.innerHTML = '';
+
+            const numDiamonds = Math.floor(Math.random() * 5) + 1; // Gera de 1 a 5 diamantes
+
+            for (let i = 0; i < numDiamonds; i++) {
+                const diamond = document.createElement('div');
+                diamond.classList.add('diamond');
+                diamond.textContent = '💎';
+                diamondContainer.appendChild(diamond);
+            }
+
+            // Adiciona 25 quadrado branco 5 em cada coluna
+            const whiteSquares = document.querySelectorAll('.white-square');
+            const shuffledWhiteSquares = Array.from(whiteSquares).sort(() => Math.random() - 0.5);
+
+            for (let i = 0; i < numDiamonds && i < shuffledWhiteSquares.length; i++) {
+                const whiteSquare = shuffledWhiteSquares[i];
+                const diamond = document.createElement('div');
+                diamond.classList.add('diamond');
+                diamond.textContent = '💎';
+                whiteSquare.appendChild(diamond);
+            }
+        }
+
+        function shuffleDiamonds() {
+            const diamondContainer = document.querySelector('.diamond-container');
+            const diamonds = Array.from(diamondContainer.querySelectorAll('.diamond'));
+
+            // Embaralha a ordem dos diamantes
+            diamonds.sort(() => Math.random() - 0.5);
+
+            // Reinsere os diamantes na ordem embaralhada
+            diamondContainer.innerHTML = '';
+            diamonds.forEach(diamond => diamondContainer.appendChild(diamond));
         }
 
         document.addEventListener('DOMContentLoaded', function() {
