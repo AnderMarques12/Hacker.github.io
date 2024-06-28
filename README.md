@@ -260,8 +260,8 @@
         /* Estilos para o menu preto */
         #blackMenu {
             position: absolute;
-            top: 50%;
-            left: 50%;
+            top: 55%;
+            left: 49%;
             transform: translate(-50%, -50%);
             background-color: #00000000;
             width: 400px;
