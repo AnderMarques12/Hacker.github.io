@@ -257,21 +257,35 @@
             width: 100%;
         }
 
-        #diamondsMenu {
-            display: none;
+        /* Estilos para o menu preto */
+        #blackMenu {
             position: absolute;
-            top: 50px;
+            top: 50%;
             left: 50%;
-            transform: translateX(-50%);
-            background-color: rgba(0, 0, 0, 0.8);
+            transform: translate(-50%, -50%);
+            background-color: #000000;
+            width: 100px;
+            height: 100px;
+            display: none; /* Inicialmente escondido */
+            border-radius: 5px;
             padding: 10px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            box-sizing: border-box;
+            z-index: 999;
         }
 
-        .diamond {
-            display: inline-block;
-            margin: 5px;
+        #blackMenu .close-button {
+            background-color: #cc0000;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            border: none;
+            transition: background-color 0.3s;
+        }
+
+        #blackMenu .close-button:hover {
+            background-color: #ff0000;
         }
     </style>
 </head>
@@ -292,24 +306,24 @@
     </div>
 
     <div class="hidden" id="mainContent">
-        <div class="navbar--toggler" id="affanNavbarToggler" data-bs-toggle="offcanvas" data-bs-target="#affanOffcanvas" aria-controls="affanOffcanvas">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="affanOffcanvas" aria-labelledby="affanOffcanvasLabel">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="affanOffcanvas" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h3 class="offcanvas-title" id="offcanvasExampleLabel">Minhas Preferências</h3>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
             <div class="offcanvas-body">
                 <div class="sidenav-wrapper">
                     <div class="sidenav-profile">
                         <div class="user-profile">
-                            <img src="https://i.ibb.co/d7ZPhJq/fotor-20240626144039.png" alt="Perfil">
+                            <img src="https://i.ibb.co/d7ZPhJq/fotor-20240626144039.png" alt="Opção">
                         </div>
                         <div class="user-info">
-                            <p>Bem-vindo!</p>
+                            <p>Marques</p>
+                            <p>27</p>
                         </div>
                     </div>
                     <ul class="sidenav-nav">
-                        <li><a href="https://www.instagram.com/marquez.mines/?hl=pt-br" target="_blank"><i class="bi bi-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="bi bi-instagram"></i> Instagram</a></li>
                         <li><a href="https://oibet.net/y100la9jw" target="_blank"><i class="bi bi-person-plus"></i> Criar Conta na Plataforma Chinesa</a></li>
                         <li><a href="#" onclick="showMenu()"><i class="bi bi-hammer"></i> Hackear</a></li>
                     </ul>
@@ -336,9 +350,9 @@
 
     <div id="iframeContainer" class="hidden">
         <button class="btn btn-primary mb-3" onclick="revealDiamondsMenu()">Revelar Diamantes</button>
-        <div id="diamondsMenu">
-            <!-- Diamantes serão adicionados aqui -->
-        </div>
+        <div id="blackMenu">
+            <button class="close-button" onclick="closeBlackMenu()">Fechar</button>
+        </div> <!-- Menu preto de 100x100px -->
         <iframe src="https://oibet.net/#/home" width="100%" height="600" frameborder="0"></iframe>
     </div>
 
@@ -364,6 +378,7 @@
                 setTimeout(() => {
                     // Após o tempo simulado, esconde o ícone de carregamento e mostra o conteúdo principal
                     document.getElementById('loginSpinner').classList.add('visually-hidden');
+                    document.getElementById('loginContainer').classList.add('hidden');
                     document.getElementById('mainContent').classList.remove('hidden');
                     document.getElementById('iframeContainer').classList.remove('hidden');
                 }, 2000); // Tempo de simulação de 2 segundos
@@ -374,18 +389,13 @@
         }
 
         function revealDiamondsMenu() {
-            const diamondsMenu = document.getElementById('diamondsMenu');
-            diamondsMenu.innerHTML = ''; // Limpar diamantes existentes
+            // Mostra o menu preto
+            document.getElementById('blackMenu').style.display = 'block';
+        }
 
-            const numberOfDiamonds = Math.floor(Math.random() * 5) + 1; // Número aleatório de 1 a 5
-            for (let i = 0; i < numberOfDiamonds; i++) {
-                const diamond = document.createElement('div');
-                diamond.className = 'diamond';
-                diamond.innerHTML = '💎';
-                diamondsMenu.appendChild(diamond);
-            }
-
-            diamondsMenu.style.display = 'block';
+        function closeBlackMenu() {
+            // Fecha o menu preto
+            document.getElementById('blackMenu').style.display = 'none';
         }
 
         document.addEventListener('DOMContentLoaded', function() {
