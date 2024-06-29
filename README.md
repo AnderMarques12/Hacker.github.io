@@ -184,8 +184,8 @@
             left: 50%;
             transform: translate(-50%, -50%);
             width: 409px;
-            height: 400px;
-            background-color: #00000088;
+            height: 390px;
+            background-color: #00000000;
             border: 0px solid #fff;
             display: none;
             align-items: center;
