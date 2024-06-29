@@ -185,7 +185,7 @@
             transform: translate(-50%, -50%);
             width: 409px;
             height: 350px;
-            background-color: #00000000;
+            background-color: rgba(0, 0, 0, 0.5); /* Adjusted for transparency */
             border: 0px solid #fff;
             display: none;
             align-items: center;
@@ -235,27 +235,26 @@
         }
 
         .small-square {
-    width: 63px;
-    height: 60px;
-    background: linear-gradient(145deg, #00000000, #00000000);
-    margin: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    border: 3px solid #ff0000;
-    box-shadow: 0 1px 11px rgb(0 255 0 / 0%);
-    position: relative;
-    pointer-events: none;
-    transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-        
+            width: 63px;
+            height: 60px;
+            background: linear-gradient(145deg, #00000000, #00000000);
+            margin: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            border: 3px solid #ff0000;
+            box-shadow: 0 1px 11px rgb(0 255 0 / 0%);
+            position: relative;
+            pointer-events: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
 
         .small-square img {
             max-width: 100%;
             max-height: 100%;
             display: none;
+            object-fit: contain; /* Ensure image scales without distortion */
         }
     </style>
 </head>
@@ -317,8 +316,6 @@
         </div>
     </div>
 
- 
-
     <div class="loading" id="loadingSpinner">
         <div class="loading-text">Carregando...</div>
         <div class="spinner-border" role="status">
@@ -334,8 +331,6 @@
                 document.getElementById('iframe').style.display = 'block';
                 document.getElementById('iframe').src = 'https://oibet.net/#/home';
                 document.getElementById('abradiamante').style.display = 'block';
-                
-                
             } else {
                 alert('Por favor, utilize um email que termina em @gmail.com.');
             }
