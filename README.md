@@ -186,8 +186,10 @@
 
         #blackMenu {
             position: fixed;
+            background-color: #000000;
             top: 40%;
             left: 50%;
+            padding: 11px;
             transform: translate(-50%, -50%);
             width: 409px;
             height: 350px;
@@ -213,7 +215,7 @@
 
         .showDiamondButton {
             position: absolute;
-            top: 385px;
+            top: 360px;
             right: 110px;
             background-color: #ff0000;
             color: #fff;
