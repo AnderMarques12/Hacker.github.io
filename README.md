@@ -283,43 +283,44 @@
     </div>
 
     <div id="blackMenu">
+        
+        <div class="column">
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+        </div>
+        <div class="column">
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+        </div>
+        <div class="column">
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+        </div>
+        <div class="column">
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+        </div>
+        <div class="column">
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+        </div>
         <button class="menu-close" onclick="closeBlackMenu()">x</button>
         <button class="showDiamondButton" onclick="showDiamonds()">Mostrar Diamante</button>
-        <div class="column">
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-        </div>
-        <div class="column">
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-        </div>
-        <div class="column">
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-        </div>
-        <div class="column">
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-        </div>
-        <div class="column">
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-        </div>
     </div>
 
     <div class="loading" id="loadingSpinner">
