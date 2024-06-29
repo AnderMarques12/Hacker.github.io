@@ -186,7 +186,6 @@
 
         #blackMenu {
             position: fixed;
-            background-color: #000000;
             top: 40%;
             left: 50%;
             padding: 11px;
