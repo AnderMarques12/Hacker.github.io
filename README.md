@@ -20,6 +20,10 @@
             overflow: hidden; /* Prevent scrolling */
         }
 
+        .login-container h2 {
+            margin-top: 126px;
+        }
+
         .login-container img {
             max-width: 100%;
             height: auto;
