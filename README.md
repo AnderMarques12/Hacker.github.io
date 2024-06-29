@@ -161,6 +161,12 @@
                 padding: 8px 16px;
             }
         }
+        .markdown-body img {
+    max-width: none;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
 
         #iframeContainer {
             position: relative;
