@@ -235,17 +235,22 @@
         }
 
         .small-square {
-            width: 50px;
-            height: 50px;
-            border: 1px solid #000;
-            box-sizing: border-box;
-            position: relative;
-            margin: 5px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden; /* Hide any overflow */
-        }
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(145deg, #00000000, #00000000);
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 3px solid #ff0000;
+    box-shadow: 0 1px 11px rgb(0 255 0 / 0%);
+    position: relative;
+    pointer-events: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+        
 
         .small-square img {
             max-width: 100%;
