@@ -1,6 +1,8 @@
- <html lang="en">
+<html lang="en">
 <head>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker Mines</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css">
     <style>
@@ -22,7 +24,7 @@
             height: auto;
             max-height: 500px;
             width: 500px;
-            margin-bottom: 150px;
+            margin-bottom: 10px;
         }
 
         .context-options {
@@ -218,7 +220,7 @@
         .abradiamante {
             position: absolute;
             top: 20px;
-            right: 20px;
+            right: 750px;
             background-color: #ff0000;
             color: #fff;
             border: none;
