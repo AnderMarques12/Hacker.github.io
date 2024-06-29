@@ -184,7 +184,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             width: 409px;
-            height: 390px;
+            height: 350px;
             background-color: #00000000;
             border: 0px solid #fff;
             display: none;
