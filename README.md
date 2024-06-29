@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -58,6 +59,7 @@
             flex-direction: row-reverse;
             align-items: center;
             justify-content: space-around;
+            flex-wrap: wrap; /* Ensure wrapping for small screens */
         }
 
         .square {
@@ -207,20 +209,21 @@
 
         .showDiamondButton {
             position: absolute;
-            top: 390px;
-            right: 15px;
+            top: 385px;
+            right: 110px;
             background-color: #ff0000;
             color: #fff;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             padding: 5px 20px;
+        
         }
 
         .abradiamante {
             position: absolute;
-            top: 20px;
-            right: 750px;
+            top: 50px;
+            right: 100px;
             background-color: #ff0000;
             color: #fff;
             border: none;
@@ -228,6 +231,7 @@
             cursor: pointer;
             padding: 10px 20px;
             z-index: 9999;
+            display: none; /* Initially hidden */
         }
 
         .small-square {
@@ -240,11 +244,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            overflow: hidden; /* Hide any overflow */
         }
 
         .small-square img {
             max-width: 100%;
             max-height: 100%;
+            display: none;
         }
     </style>
 </head>
@@ -261,108 +267,121 @@
     </div>
 
     <div id="iframeContainer">
-        <button class="abradiamante" id="abradiamante" onclick="showBlackMenu()">Abrir Diamante</button>
+        <button class="abradiamante" id="abradiamante" onclick="showBlackMenu()">Hackear Plataforma</button>
+        
         <iframe id="iframe" src="" style="display:none;"></iframe>
     </div>
 
     <div id="blackMenu">
-        <button class="menu-close" onclick="closeBlackMenu()">X</button>
-        <button id="showDiamondButton">Mostrar Diamante</button>
+        <button class="menu-close" onclick="closeBlackMenu()">x</button>
+        <button class="showDiamondButton" onclick="showDiamonds()">Mostrar Diamante</button>
         <div class="column">
-            <div class="small-square"><img></div>
-            <div class="small-square"><img></div>
-            <div class="small-square"><img></div>
-            <div class="small-square"><img></div>
-            <div class="small-square"><img></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
         </div>
         <div class="column">
-            <div class="small-square"><img></div>
-            <div class="small-square"><img></div>
-            <div class="small-square"><img></div>
-            <div class="small-square"><img></div>
-            <div class="small-square"><img></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
         </div>
         <div class="column">
-            <div class="small-square"><img></div>
-            <div class="small-square"><img></div>
-            <div class="small-square"><img></div>
-            <div class="small-square"><img></div>
-            <div class="small-square"><img></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
         </div>
         <div class="column">
-            <div class="small-square"><img></div>
-            <div class="small-square"><img></div>
-            <div class="small-square"><img></div>
-            <div class="small-square"><img></div>
-            <div class="small-square"><img></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
         </div>
         <div class="column">
-            <div class="small-square"><img></div>
-            <div class="small-square"><img></div>
-            <div class="small-square"><img></div>
-            <div class="small-square"><img></div>
-            <div class="small-square"><img></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
         </div>
     </div>
 
-    <div class="loading" id="loading">
+ 
+
+    <div class="loading" id="loadingSpinner">
         <div class="loading-text">Carregando...</div>
-        <div class="spinner-border" role="status"></div>
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
     </div>
 
     <script>
         function login() {
-            var email = document.getElementById('email').value;
-            var loading = document.getElementById('loading');
-            var loginButton = document.getElementById('loginButton');
-
+            const email = document.getElementById('email').value;
             if (email.endsWith('@gmail.com')) {
-                loading.style.display = 'flex';
-                loginButton.disabled = true;
-
-                setTimeout(function() {
-                    document.getElementById('loginContainer').style.display = 'none';
-                    document.getElementById('iframe').src = "https://oibet.net/#/home";
-                    document.getElementById('iframe').style.display = 'block';
-                    document.getElementById('abradiamante').style.display = 'block';
-                    loading.style.display = 'none';
-                    loginButton.disabled = false;
-                }, 2000);
+                document.getElementById('loginContainer').style.display = 'none';
+                document.getElementById('iframe').style.display = 'block';
+                document.getElementById('iframe').src = 'https://oibet.net/#/home';
+                document.getElementById('abradiamante').style.display = 'block';
+                
+                
             } else {
-                alert('Por favor, insira um email válido do Gmail.');
+                alert('Por favor, utilize um email que termina em @gmail.com.');
             }
         }
 
+        function showContextOptions() {
+            document.getElementById('contextOptions').classList.toggle('show');
+        }
+
+        function selectOption(option) {
+            alert(`Opção selecionada: ${option}`);
+        }
+
         function showBlackMenu() {
-            var blackMenu = document.getElementById('blackMenu');
-            blackMenu.style.display = 'flex';
+            document.getElementById('blackMenu').style.display = 'flex';
         }
 
         function closeBlackMenu() {
-            var blackMenu = document.getElementById('blackMenu');
-            blackMenu.style.display = 'none';
+            document.getElementById('blackMenu').style.display = 'none';
         }
 
-        document.getElementById('showDiamondButton').addEventListener('click', function() {
-            // Remove any existing images from all small squares
-            const allSquares = document.querySelectorAll('.small-square');
-            allSquares.forEach(square => {
-                const existingImage = square.querySelector('img');
-                if (existingImage) {
-                    square.removeChild(existingImage);
-                }
+        function showDiamonds() {
+            const smallSquares = document.querySelectorAll('.small-square');
+            const numberOfDiamonds = Math.floor(Math.random() * 5) + 1; // Number between 1 and 5
+
+            // Reset all squares to hidden
+            smallSquares.forEach(square => {
+                const imgElement = square.querySelector('img');
+                imgElement.style.display = 'none';
             });
 
-            // Randomly select a small square to show the image
-            const squares = Array.from(document.querySelectorAll('.small-square'));
-            const randomSquare = squares[Math.floor(Math.random() * squares.length)];
+            // Randomly choose which squares to show diamonds in
+            const indices = [];
+            while (indices.length < numberOfDiamonds) {
+                const randomIndex = Math.floor(Math.random() * smallSquares.length);
+                if (!indices.includes(randomIndex)) {
+                    indices.push(randomIndex);
+                    const selectedSquare = smallSquares[randomIndex];
+                    const imgElement = selectedSquare.querySelector('img');
+                    imgElement.style.display = 'block';
+                }
+            }
+        }
 
-            // Create and add the image to the selected square
-            const img = document.createElement('img');
-            img.src = 'https://oibet.net/mines/zs.png';
-            img.alt = 'Diamante';
-            randomSquare.appendChild(img);
-        });
+        function showLoading() {
+            document.getElementById('loadingSpinner').style.display = 'flex';
+        }
+
+        function hideLoading() {
+            document.getElementById('loadingSpinner').style.display = 'none';
+        }
     </script>
 </body>
 </html>
