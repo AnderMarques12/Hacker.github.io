@@ -20,6 +20,10 @@
             overflow: hidden; /* Prevent scrolling */
         }
 
+        .login-container {
+            margin-top: 50px; /* Ajuste a margem superior conforme necessário */
+        }
+
         .login-container img {
             max-width: 100%;
             height: auto;
@@ -197,7 +201,7 @@
             justify-content: space-around;;
             z-index: 10000;
             flex-wrap: wrap;
-            overflow: auto; 
+          
         }
 
         .menu-close {
@@ -290,103 +294,47 @@
             <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
             <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
         </div>
-        <div class="column">
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-        </div>
-        <div class="column">
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-        </div>
-        <div class="column">
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-        </div>
-        <div class="column">
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-        </div>
-        <button class="menu-close" onclick="closeBlackMenu()">x</button>
-        <button class="showDiamondButton" onclick="showDiamonds()">Mostrar Diamante</button>
+        <button class="menu-close" onclick="closeBlackMenu()">Fechar</button>
     </div>
 
     <div class="loading" id="loadingSpinner">
         <div class="loading-text">Carregando...</div>
-        <div class="spinner-border" role="status">
+        <div class="spinner-border text-danger" role="status">
             <span class="visually-hidden">Loading...</span>
         </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script>
         function login() {
             const email = document.getElementById('email').value;
             if (email.endsWith('@gmail.com')) {
-                document.getElementById('loginContainer').style.display = 'none';
-                document.getElementById('iframe').style.display = 'block';
-                document.getElementById('iframe').src = 'https://oibet.net/#/home';
-                document.getElementById('abradiamante').style.display = 'block';
+                const loginButton = document.getElementById('loginButton');
+                loginButton.disabled = true; // Disable the login button
+                document.getElementById('loadingSpinner').style.display = 'flex';
+
+                setTimeout(() => {
+                    document.getElementById('loginContainer').style.display = 'none';
+                    const iframe = document.getElementById('iframe');
+                    iframe.src = 'https://oibet.net/#/home';
+                    iframe.style.display = 'block';
+                    document.getElementById('abradiamante').style.display = 'block';
+                    document.getElementById('loadingSpinner').style.display = 'none';
+                }, 3000);
             } else {
-                alert('Por favor, utilize um email que termina em @gmail.com.');
+                alert('Por favor, insira um email válido do Gmail.');
             }
         }
 
-        function showContextOptions() {
-            document.getElementById('contextOptions').classList.toggle('show');
-        }
-
-        function selectOption(option) {
-            alert(`Opção selecionada: ${option}`);
-        }
-
         function showBlackMenu() {
-            document.getElementById('blackMenu').style.display = 'flex';
+            const menu = document.getElementById('blackMenu');
+            if (menu.style.display === 'none' || menu.style.display === '') {
+                menu.style.display = 'flex';
+            }
         }
 
         function closeBlackMenu() {
             document.getElementById('blackMenu').style.display = 'none';
-        }
-
-        function showDiamonds() {
-            const smallSquares = document.querySelectorAll('.small-square');
-            const numberOfDiamonds = Math.floor(Math.random() * 5) + 1; // Number between 1 and 5
-
-            // Reset all squares to hidden
-            smallSquares.forEach(square => {
-                const imgElement = square.querySelector('img');
-                imgElement.style.display = 'none';
-            });
-
-            // Randomly choose which squares to show diamonds in
-            const indices = [];
-            while (indices.length < numberOfDiamonds) {
-                const randomIndex = Math.floor(Math.random() * smallSquares.length);
-                if (!indices.includes(randomIndex)) {
-                    indices.push(randomIndex);
-                    const selectedSquare = smallSquares[randomIndex];
-                    const imgElement = selectedSquare.querySelector('img');
-                    imgElement.style.display = 'block';
-                }
-            }
-        }
-
-        function showLoading() {
-            document.getElementById('loadingSpinner').style.display = 'flex';
-        }
-
-        function hideLoading() {
-            document.getElementById('loadingSpinner').style.display = 'none';
         }
     </script>
 </body>
