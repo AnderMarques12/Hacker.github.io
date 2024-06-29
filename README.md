@@ -11,7 +11,7 @@
             background-color: #000000;
             color: #ffffff;
             font-family: Arial, sans-serif;
-            margin: 0;
+            margin: 44;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -25,7 +25,7 @@
             height: auto;
             max-height: 500px;
             width: 500px;
-            margin-bottom: 10px;
+            margin-bottom: 100px;
         }
 
         .context-options {
