@@ -185,11 +185,11 @@
             transform: translate(-50%, -50%);
             width: 409px;
             height: 350px;
-            background-color: rgba(0, 0, 0, 0); 
-            border: 0px solid #ffffff00;
+            background-color: rgba(0, 0, 0, 0.5); /* Adjusted for transparency */
+            border: 0px solid #fff;
             display: none;
             align-items: center;
-            justify-content: space-around;;
+            justify-content: center;
             z-index: 10000;
             flex-wrap: wrap;
             overflow: auto; /* Allow scrolling if needed */
