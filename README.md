@@ -66,7 +66,7 @@
             width: 58.08px;
             height: 57.4px;
             background: linear-gradient(145deg, #34346600, #2a2a4e00);
-            margin: 8px;
+            margin: 5px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -238,7 +238,7 @@
     width: 60px;
     height: 60px;
     background: linear-gradient(145deg, #00000000, #00000000);
-    margin: 10px;
+    margin: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
