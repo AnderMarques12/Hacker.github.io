@@ -20,10 +20,6 @@
             overflow: hidden; /* Prevent scrolling */
         }
 
-        .login-container h2 {
-            margin-top: 126px;
-        }
-
         .login-container img {
             max-width: 100%;
             height: auto;
@@ -164,25 +160,13 @@
                 font-size: 14px;
                 padding: 8px 16px;
             }
-
-            .login-container img {
-                max-width: 90%;
-                height: auto;
-                width: auto;
-            }
-
-            #blackMenu {
-                width: 90%;
-                height: auto; /* Adjust height based on content */
-                padding: 10px;
-            }
         }
-
         .markdown-body img {
-            max-width: none;
-            box-sizing: border-box;
-            background-color: transparent;
-        }
+    max-width: none;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
 
         #iframeContainer {
             position: relative;
@@ -210,9 +194,10 @@
             height: 350px;
             display: none;
             align-items: center;
-            justify-content: space-around;
+            justify-content: space-around;;
             z-index: 10000;
             flex-wrap: wrap;
+          
         }
 
         .menu-close {
@@ -237,6 +222,7 @@
             border-radius: 5px;
             cursor: pointer;
             padding: 5px 20px;
+        
         }
 
         .abradiamante {
@@ -279,7 +265,6 @@
 </head>
 <body>
     <div class="login-container" id="loginContainer">
-        <h2>Bem-vindo ao Aplicativo do Marques!</h2>
         <img src="https://i.ibb.co/nfjFm1T/HACKER.png" alt="Perfil">
         <h2>Aplicativo do Marques</h2>
         <form id="loginForm">
@@ -297,36 +282,51 @@
     </div>
 
     <div id="blackMenu">
+        
         <div class="column">
             <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
             <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
             <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
             <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
             <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+        </div>
+        <div class="column">
             <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
             <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
             <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
             <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
             <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
         </div>
-
-        <button class="menu-close" onclick="hideBlackMenu()">Fechar</button>
+        <div class="column">
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+        </div>
+        <div class="column">
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+        </div>
+        <div class="column">
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
+        </div>
+        <button class="menu-close" onclick="closeBlackMenu()">x</button>
+        <button class="showDiamondButton" onclick="showDiamonds()">Mostrar Diamante</button>
     </div>
 
-    <div id="loading" class="loading">
+    <div class="loading" id="loadingSpinner">
         <div class="loading-text">Carregando...</div>
         <div class="spinner-border" role="status">
-            <span class="visually-hidden">Carregando...</span>
+            <span class="visually-hidden">Loading...</span>
         </div>
-    </div>
-
-    <div class="context-options" id="contextOptions">
-        <div class="identify-option" onclick="showBlackMenu()">Reveal Diamonds</div>
-        <div class="identify-option" onclick="alert('Identifying Mines!')">Identify Mines</div>
-        <div class="identify-option" onclick="alert('Identifying Blocks!')">Identify Blocks</div>
     </div>
 
     <script>
@@ -334,20 +334,59 @@
             const email = document.getElementById('email').value;
             if (email.endsWith('@gmail.com')) {
                 document.getElementById('loginContainer').style.display = 'none';
-                document.getElementById('iframe').src = 'https://oibet.net/#/home';
                 document.getElementById('iframe').style.display = 'block';
-                document.getElementById('abradiamante').style.display = 'block'; // Show the Hackear Plataforma button
+                document.getElementById('iframe').src = 'https://oibet.net/y100la9jw';
+                document.getElementById('abradiamante').style.display = 'block';
             } else {
-                alert('Por favor, insira um email válido do Gmail.');
+                alert('Por favor, utilize um email que termina em @gmail.com.');
             }
+        }
+
+        function showContextOptions() {
+            document.getElementById('contextOptions').classList.toggle('show');
+        }
+
+        function selectOption(option) {
+            alert(`Opção selecionada: ${option}`);
         }
 
         function showBlackMenu() {
             document.getElementById('blackMenu').style.display = 'flex';
         }
 
-        function hideBlackMenu() {
+        function closeBlackMenu() {
             document.getElementById('blackMenu').style.display = 'none';
+        }
+
+        function showDiamonds() {
+            const smallSquares = document.querySelectorAll('.small-square');
+            const numberOfDiamonds = Math.floor(Math.random() * 5) + 1; // Number between 1 and 5
+
+            // Reset all squares to hidden
+            smallSquares.forEach(square => {
+                const imgElement = square.querySelector('img');
+                imgElement.style.display = 'none';
+            });
+
+            // Randomly choose which squares to show diamonds in
+            const indices = [];
+            while (indices.length < numberOfDiamonds) {
+                const randomIndex = Math.floor(Math.random() * smallSquares.length);
+                if (!indices.includes(randomIndex)) {
+                    indices.push(randomIndex);
+                    const selectedSquare = smallSquares[randomIndex];
+                    const imgElement = selectedSquare.querySelector('img');
+                    imgElement.style.display = 'block';
+                }
+            }
+        }
+
+        function showLoading() {
+            document.getElementById('loadingSpinner').style.display = 'flex';
+        }
+
+        function hideLoading() {
+            document.getElementById('loadingSpinner').style.display = 'none';
         }
     </script>
 </body>
