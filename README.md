@@ -27,12 +27,10 @@ h1 {
         .login-container {
             z-index: 1000; /* Ensure login container is above everything else */
             text-align: center;
+            margin-bottom: -400px
         }
 
         .login-container img {
-            position: fixed;
-            top: 60%;
-            left: 46%;
             max-width: 100%;
             height: auto;
             max-height: 500px;
@@ -75,9 +73,7 @@ h1 {
         }
 
         .btn-primary {
-            position: fixed;
-            top: 95%;
-            left: 45%;
+           
           width: 195px;
             height: 65px;}
 
@@ -187,7 +183,7 @@ h1 {
 }
 
 
-        #iframeContainer {
+#iframeContainer {
             position: fixed;
             top: 0;
             left: 0;
@@ -204,7 +200,7 @@ h1 {
             width: 100%;
             height: 100%;
             border: none;
-            display: none; }
+        }
 
         #blackMenu {
             position: fixed;
