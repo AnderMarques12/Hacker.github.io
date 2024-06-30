@@ -206,7 +206,7 @@ h1 {
             position: fixed;
             top: 37%;
             left: 50%;
-            padding: 1px;
+            padding: -1px;
             transform: translate(-50%, -50%);
             width: 409px;
             height: 350px;
