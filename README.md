@@ -27,7 +27,6 @@ h1 {
         .login-container {
             z-index: 1000; /* Ensure login container is above everything else */
             text-align: center;
-            margin-bottom: -400px
         }
 
         .login-container img {
@@ -188,7 +187,7 @@ h1 {
 }
 
 
-#iframeContainer {
+        #iframeContainer {
             position: fixed;
             top: 0;
             left: 0;
@@ -205,7 +204,7 @@ h1 {
             width: 100%;
             height: 100%;
             border: none;
-        }
+            display: none; }
 
         #blackMenu {
             position: fixed;
