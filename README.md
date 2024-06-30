@@ -209,7 +209,7 @@ h1 {
             padding: -1px;
             transform: translate(-50%, -50%);
             width: 430px;
-            height: 350px;
+            height: 400px;
             display: none;
             align-items: center;
             justify-content: space-around;;
