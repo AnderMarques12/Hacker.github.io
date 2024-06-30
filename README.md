@@ -24,7 +24,7 @@
             height: auto;
             max-height: 500px;
             width: 500px;
-            margin-bottom: -350px;
+            margin-bottom: -750px;
         }
 
         .btn-primary{
