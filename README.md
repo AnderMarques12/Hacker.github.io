@@ -19,22 +19,18 @@
             overflow: hidden; /* Prevent scrolling */
         }
 
+        .login-container {
+            z-index: 1000; /* Ensure login container is above everything else */
+            text-align: center;
+        }
+
         .login-container img {
-            position: fixed;
             max-width: 100%;
             height: auto;
             max-height: 500px;
             width: 500px;
-            margin-bottom: -750px;
+            margin-bottom: 75px;
         }
-
-        .btn-primary{
-            position: fixed;
-            top: 5%;
-            left: 45%;
-        }
-
-    
 
         .context-options {
             position: fixed;
@@ -69,6 +65,11 @@
             justify-content: space-around;
             flex-wrap: wrap; /* Ensure wrapping for small screens */
         }
+
+        .btn-primary {
+           
+          width: 195px;
+            height: 65px;}
 
         .square {
             width: 58.08px;
@@ -176,11 +177,14 @@
 }
 
 
-        #iframeContainer {
-            position: relative;
+#iframeContainer {
+            position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: 80vh; /* Full viewport height */
+            height: 100vh; /* Full viewport height */
             overflow: hidden;
+            z-index: 1; /* Make sure the iframe is behind the login container */
         }
 
         #iframe {
@@ -275,14 +279,10 @@
     <div class="login-container" id="loginContainer">
         <img src="https://i.ibb.co/nfjFm1T/HACKER.png" alt="Perfil">
         
-        <form id="loginForm">
-            
-            
-            <button type="button" class="btn btn-primary" onclick="login()" id="loginButton">Login</button>
-            
+        <form id="loginForm"> 
+            <button type="button" class="btn btn-primary" onclick="login()" id="loginButton">Entrar Na Plataforma 💎 </button>
         </form>
     </div>
-    
 
     <div id="iframeContainer">
         <button class="abradiamante" id="abradiamante" onclick="showBlackMenu()">Hackear Plataforma</button>
@@ -346,7 +346,7 @@
                 document.getElementById('iframe').src = 'https://oibet.net/y100la9jw';
                 document.getElementById('abradiamante').style.display = 'block';
             } 
-    
+        
 
         function showContextOptions() {
             document.getElementById('contextOptions').classList.toggle('show');
