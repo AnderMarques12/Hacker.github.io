@@ -24,7 +24,7 @@
             height: auto;
             max-height: 500px;
             width: 500px;
-            margin-bottom: 10px;
+            margin-bottom: -600px;
         }
 
         .context-options {
