@@ -208,7 +208,7 @@ h1 {
             left: 50%;
             padding: -1px;
             transform: translate(-50%, -50%);
-            width: 409px;
+            width: 430px;
             height: 350px;
             display: none;
             align-items: center;
