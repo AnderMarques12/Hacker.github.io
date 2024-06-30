@@ -204,9 +204,9 @@ h1 {
 
         #blackMenu {
             position: fixed;
-            top: 40%;
+            top: 37%;
             left: 50%;
-            padding: 11px;
+            padding: 1px;
             transform: translate(-50%, -50%);
             width: 409px;
             height: 350px;
@@ -232,14 +232,14 @@ h1 {
 
         .showDiamondButton {
             position: absolute;
-            top: 360px;
+            top: 410px;
             right: 110px;
             background-color: #ff0000;
             color: #fff;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            padding: 5px 20px;
+            padding: 10px 40px;
         
         }
 
@@ -259,9 +259,9 @@ h1 {
 
         .small-square {
             width: 63px;
-            height: 60px;
+            height: 63px;
             background: linear-gradient(145deg, #00000000, #00000000);
-            margin: 5px;
+            margin: 9px;
             display: flex;
             align-items: center;
             justify-content: center;
