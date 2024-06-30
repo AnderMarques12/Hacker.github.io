@@ -24,7 +24,7 @@
             height: auto;
             max-height: 500px;
             width: 500px;
-            margin-bottom: -40px;
+            margin-bottom: 1px;
         }
 
         .mb-3 {
