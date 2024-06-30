@@ -77,8 +77,8 @@ h1 {
 
         .btn-primary {
             position: fixed;
-            top: 60%;
-            left: 46%;
+            top: 85%;
+            left: 45%;
           width: 195px;
             height: 65px;}
 
