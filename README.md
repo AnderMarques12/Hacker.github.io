@@ -345,9 +345,7 @@
             document.getElementById('contextOptions').classList.toggle('show');
         }
 
-        function selectOption(option) {
-            alert(Opção selecionada: ${option});
-        }
+    
 
         function showBlackMenu() {
             document.getElementById('blackMenu').style.display = 'flex';
