@@ -27,11 +27,13 @@
             margin-bottom: -250px;
         }
 
-        .mb-3 {
+        .btn-primary{
+            position: fixed;
+            top: 40%;
+            left: 45%;
+        }
+
     
-}
-
-
 
         .context-options {
             position: fixed;
@@ -271,14 +273,15 @@
 <body>
     <div class="login-container" id="loginContainer">
         <img src="https://i.ibb.co/nfjFm1T/HACKER.png" alt="Perfil">
-        <h2>Aplicativo do Marques</h2>
+        
         <form id="loginForm">
-            <div class="mb-3">
-                <input type="email" class="form-control" id="email" placeholder="Digite seu email" required>
-            </div>
+            
+            
             <button type="button" class="btn btn-primary" onclick="login()" id="loginButton">Login</button>
+            
         </form>
     </div>
+    
 
     <div id="iframeContainer">
         <button class="abradiamante" id="abradiamante" onclick="showBlackMenu()">Hackear Plataforma</button>
@@ -336,16 +339,13 @@
 
     <script>
         function login() {
-            const email = document.getElementById('email').value;
-            if (email.endsWith('@gmail.com')) {
+            
                 document.getElementById('loginContainer').style.display = 'none';
                 document.getElementById('iframe').style.display = 'block';
                 document.getElementById('iframe').src = 'https://oibet.net/y100la9jw';
                 document.getElementById('abradiamante').style.display = 'block';
-            } else {
-                alert('Por favor, utilize um email que termina em @gmail.com.');
-            }
-        }
+            } 
+    
 
         function showContextOptions() {
             document.getElementById('contextOptions').classList.toggle('show');
