@@ -27,7 +27,7 @@ h1 {
         .login-container {
             z-index: 1000; /* Ensure login container is above everything else */
             text-align: center;
-            margin-bottom: -208px
+            margin-bottom: -400px
         }
 
         .login-container img {
