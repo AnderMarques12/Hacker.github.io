@@ -24,8 +24,14 @@
             height: auto;
             max-height: 500px;
             width: 500px;
-            margin-bottom: -600px;
+            margin-bottom: -40px;
         }
+
+        .mb-3 {
+    
+}
+
+
 
         .context-options {
             position: fixed;
