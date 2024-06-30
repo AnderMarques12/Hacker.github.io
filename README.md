@@ -20,6 +20,7 @@
         }
 
         .login-container img {
+            position: fixed;
             max-width: 100%;
             height: auto;
             max-height: 500px;
@@ -29,7 +30,7 @@
 
         .btn-primary{
             position: fixed;
-            top: 20%;
+            top: 5%;
             left: 45%;
         }
 
@@ -178,7 +179,7 @@
         #iframeContainer {
             position: relative;
             width: 100%;
-            height: 100vh; /* Full viewport height */
+            height: 80vh; /* Full viewport height */
             overflow: hidden;
         }
 
