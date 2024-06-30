@@ -190,7 +190,7 @@
             padding: 11px;
             transform: translate(-50%, -50%);
             width: 409px;
-            height: 350px;
+            height: 386px;
             display: none;
             align-items: center;
             justify-content: space-around;;
@@ -213,7 +213,7 @@
 
         .showDiamondButton {
             position: absolute;
-            top: 360px;
+            top: 370px;
             right: 110px;
             background-color: #ff0000;
             color: #fff;
@@ -226,7 +226,7 @@
 
         .abradiamante {
             position: absolute;
-            top: 50px;
+            top: 60px;
             right: 100px;
             background-color: #ff0000;
             color: #fff;
@@ -247,7 +247,7 @@
             align-items: center;
             justify-content: center;
             border-radius: 10px;
-            border: 3px solid #ff0000;
+            border: 3px solid #00ff0d;
             box-shadow: 0 1px 11px rgb(0 255 0 / 0%);
             position: relative;
             pointer-events: none;
