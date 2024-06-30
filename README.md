@@ -31,6 +31,9 @@ h1 {
         }
 
         .login-container img {
+            position: fixed;
+            top: 60%;
+            left: 46%;
             max-width: 100%;
             height: auto;
             max-height: 500px;
