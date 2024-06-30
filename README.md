@@ -16,7 +16,7 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            overflow: hidden; /* Prevent scrolling */
+            overflow: hidden;
         }
 
         .login-container img {
@@ -24,7 +24,7 @@
             height: auto;
             max-height: 500px;
             width: 500px;
-            margin-bottom: 10px;
+            margin-bottom: 30px; /* Increased margin for more space */
         }
 
         .context-options {
@@ -58,7 +58,7 @@
             flex-direction: row-reverse;
             align-items: center;
             justify-content: space-around;
-            flex-wrap: wrap; /* Ensure wrapping for small screens */
+            flex-wrap: wrap;
         }
 
         .square {
@@ -161,16 +161,15 @@
             }
         }
         .markdown-body img {
-    max-width: none;
-    box-sizing: border-box;
-    background-color: transparent;
-}
-
+            max-width: none;
+            box-sizing: border-box;
+            background-color: transparent;
+        }
 
         #iframeContainer {
             position: relative;
             width: 100%;
-            height: 100vh; /* Full viewport height */
+            height: 105vh;
             overflow: hidden;
         }
 
@@ -193,10 +192,9 @@
             height: 386px;
             display: none;
             align-items: center;
-            justify-content: space-around;;
+            justify-content: space-around;
             z-index: 10000;
             flex-wrap: wrap;
-          
         }
 
         .menu-close {
@@ -221,7 +219,6 @@
             border-radius: 5px;
             cursor: pointer;
             padding: 5px 20px;
-        
         }
 
         .abradiamante {
@@ -235,7 +232,7 @@
             cursor: pointer;
             padding: 10px 20px;
             z-index: 9999;
-            display: none; /* Initially hidden */
+            display: none;
         }
 
         .small-square {
@@ -258,7 +255,7 @@
             max-width: 100%;
             max-height: 100%;
             display: none;
-            object-fit: contain; /* Ensure image scales without distortion */
+            object-fit: contain;
         }
     </style>
 </head>
@@ -276,12 +273,10 @@
 
     <div id="iframeContainer">
         <button class="abradiamante" id="abradiamante" onclick="showBlackMenu()">Hackear Plataforma</button>
-        
         <iframe id="iframe" src="" style="display:none;"></iframe>
     </div>
 
     <div id="blackMenu">
-        
         <div class="column">
             <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
             <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
@@ -310,20 +305,12 @@
             <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
             <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
         </div>
-        <div class="column">
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-        </div>
-        <button class="menu-close" onclick="closeBlackMenu()">x</button>
-        <button class="showDiamondButton" onclick="showDiamonds()">Mostrar Diamante</button>
+        <button class="menu-close" onclick="closeBlackMenu()">Fechar</button>
     </div>
 
     <div class="loading" id="loadingSpinner">
         <div class="loading-text">Carregando...</div>
-        <div class="spinner-border" role="status">
+        <div class="spinner-border text-danger" role="status">
             <span class="visually-hidden">Loading...</span>
         </div>
     </div>
@@ -331,22 +318,24 @@
     <script>
         function login() {
             const email = document.getElementById('email').value;
+            const loginButton = document.getElementById('loginButton');
+            const loadingSpinner = document.getElementById('loadingSpinner');
+
             if (email.endsWith('@gmail.com')) {
-                document.getElementById('loginContainer').style.display = 'none';
-                document.getElementById('iframe').style.display = 'block';
-                document.getElementById('iframe').src = 'https://oibet.net/y100la9jw';
-                document.getElementById('abradiamante').style.display = 'block';
+                loadingSpinner.style.display = 'flex';
+                loginButton.disabled = true;
+
+                setTimeout(() => {
+                    loadingSpinner.style.display = 'none';
+                    loginButton.disabled = false;
+                    document.getElementById('iframe').style.display = 'block';
+                    document.getElementById('iframe').src = 'https://oibet.net/#/home';
+                    document.getElementById('loginContainer').style.display = 'none';
+                    document.getElementById('abradiamante').style.display = 'block';
+                }, 2000);
             } else {
-                alert('Por favor, utilize um email que termina em @gmail.com.');
+                alert('Por favor, use um email @gmail.com.');
             }
-        }
-
-        function showContextOptions() {
-            document.getElementById('contextOptions').classList.toggle('show');
-        }
-
-        function selectOption(option) {
-            alert(`Opção selecionada: ${option}`);
         }
 
         function showBlackMenu() {
@@ -357,36 +346,21 @@
             document.getElementById('blackMenu').style.display = 'none';
         }
 
-        function showDiamonds() {
-            const smallSquares = document.querySelectorAll('.small-square');
-            const numberOfDiamonds = Math.floor(Math.random() * 5) + 1; // Number between 1 and 5
-
-            // Reset all squares to hidden
-            smallSquares.forEach(square => {
-                const imgElement = square.querySelector('img');
-                imgElement.style.display = 'none';
+        document.addEventListener('DOMContentLoaded', function() {
+            var squares = document.querySelectorAll('.square');
+            squares.forEach(function(square) {
+                setTimeout(function() {
+                    square.querySelector('img').style.display = 'block';
+                }, 2000);
             });
 
-            // Randomly choose which squares to show diamonds in
-            const indices = [];
-            while (indices.length < numberOfDiamonds) {
-                const randomIndex = Math.floor(Math.random() * smallSquares.length);
-                if (!indices.includes(randomIndex)) {
-                    indices.push(randomIndex);
-                    const selectedSquare = smallSquares[randomIndex];
-                    const imgElement = selectedSquare.querySelector('img');
-                    imgElement.style.display = 'block';
-                }
-            }
-        }
-
-        function showLoading() {
-            document.getElementById('loadingSpinner').style.display = 'flex';
-        }
-
-        function hideLoading() {
-            document.getElementById('loadingSpinner').style.display = 'none';
-        }
+            var smallSquares = document.querySelectorAll('.small-square');
+            smallSquares.forEach(function(smallSquare) {
+                setTimeout(function() {
+                    smallSquare.querySelector('img').style.display = 'block';
+                }, 2000);
+            });
+        });
     </script>
 </body>
 </html>
