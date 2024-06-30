@@ -29,7 +29,7 @@
 
         .btn-primary{
             position: fixed;
-            top: 40%;
+            top: 20%;
             left: 45%;
         }
 
