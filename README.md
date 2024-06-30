@@ -22,6 +22,7 @@
         .login-container {
             z-index: 1000; /* Ensure login container is above everything else */
             text-align: center;
+            margin-bottom: -208px
         }
 
         .login-container img {
