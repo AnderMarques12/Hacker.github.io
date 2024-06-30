@@ -170,7 +170,7 @@
         #iframeContainer {
             position: relative;
             width: 100%;
-            height: 105vh; /* Full viewport height */
+            height: 100vh; /* Full viewport height */
             overflow: hidden;
         }
 
@@ -190,7 +190,7 @@
             padding: 11px;
             transform: translate(-50%, -50%);
             width: 409px;
-            height: 386px;
+            height: 350px;
             display: none;
             align-items: center;
             justify-content: space-around;;
@@ -213,7 +213,7 @@
 
         .showDiamondButton {
             position: absolute;
-            top: 370px;
+            top: 360px;
             right: 110px;
             background-color: #ff0000;
             color: #fff;
@@ -226,7 +226,7 @@
 
         .abradiamante {
             position: absolute;
-            top: 60px;
+            top: 50px;
             right: 100px;
             background-color: #ff0000;
             color: #fff;
@@ -247,7 +247,7 @@
             align-items: center;
             justify-content: center;
             border-radius: 10px;
-            border: 3px solid #00ff0d;
+            border: 3px solid #ff0000;
             box-shadow: 0 1px 11px rgb(0 255 0 / 0%);
             position: relative;
             pointer-events: none;
