@@ -29,7 +29,7 @@
             height: auto;
             max-height: 500px;
             width: 500px;
-            margin-bottom: 75px;
+            margin-bottom: 0px;
         }
 
         .context-options {
