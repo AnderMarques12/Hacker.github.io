@@ -229,6 +229,7 @@ h1 {
             color: #fff;
             border: none;
             border-radius: 5px;
+            pointer-events: none;
             cursor: pointer;
             padding: 5px 20px;
         }
@@ -280,6 +281,7 @@ h1 {
         .small-square img {
             max-width: 100%;
             max-height: 100%;
+            pointer-events: none;
             display: none;
             object-fit: contain; /* Ensure image scales without distortion */
         }
