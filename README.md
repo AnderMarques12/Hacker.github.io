@@ -208,7 +208,7 @@ h1 {
             left: 50%;
             padding: 0px;
             transform: translate(-50%, -50%);
-            width: 745px;
+            width: 800px;
             height: 555px;
             display: none;
             align-items: center;
@@ -261,7 +261,7 @@ h1 {
             width: 130px;
             height: 73px;
             background: linear-gradient(145deg, #00000000, #00000000);
-            margin: 7px;
+            margin: 13px;
             display: flex;
             align-items: center;
             justify-content: center;
