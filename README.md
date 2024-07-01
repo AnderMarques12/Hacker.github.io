@@ -35,7 +35,7 @@ h1 {
             height: auto;
             max-height: 500px;
             width: 500px;
-            margin-bottom: 160px;
+            margin-bottom: 190px;
         }
 
         .context-options {
@@ -261,7 +261,7 @@ h1 {
             width: 130px;
             height: 67px;
             background: linear-gradient(145deg, #00000000, #00000000);
-            margin: 15px;
+            margin: 13px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -289,7 +289,7 @@ h1 {
             <div class="mb-3">
                 <input type="email" class="form-control" id="email" placeholder="Digite seu email" required>
             </div>
-            <button type="button" class="btn btn-primary" onclick="login()" id="loginButton">Entrar Na Plataforma 💎 </button>
+            <button type="button" class="btn btn-primary" onclick="login()" id="loginButton">Entra Na Plataforma💎 </button>
         </form>
     </div>
 
