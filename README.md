@@ -65,7 +65,9 @@ h1 {
             flex-wrap: wrap; /* Ensure wrapping for small screens */
         }
         .btn-primary {
-           
+            position: absolute;
+            top: 115%;
+            left: 40%;
           width: 195px;
             height: 65px;}
         .square {
@@ -168,7 +170,6 @@ h1 {
             left: 0;
             width: 100%;
             height: 100vh; /* Full viewport height */
-            height: 75vh; /* Full viewport height */
             overflow: hidden;
             z-index: 1; /* Make sure the iframe is behind the login container */
         }
@@ -182,12 +183,12 @@ h1 {
         }
         #blackMenu {
             position: fixed;
-            top: 37%;
+            top: 40%;
             left: 50%;
-            padding: 0px;
+            padding: -1px;
             transform: translate(-50%, -50%);
-            width: 655px;
-            height: 555px;
+            width: 430px;
+            height: 400px;
             display: none;
             align-items: center;
             justify-content: space-around;;
@@ -232,11 +233,11 @@ h1 {
             display: none; /* Initially hidden */
         }
         .small-square {
-            width: 130px;
-            height: 73px;
+            width: 63px;
+            height: 63px;
             background: linear-gradient(145deg, #00000000, #00000000);
-            margin: 7px;
-            display: flex;
+            margin: 9px;
+            display: auto;
             align-items: center;
             justify-content: center;
             border-radius: 10px;
