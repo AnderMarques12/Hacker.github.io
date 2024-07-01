@@ -221,7 +221,7 @@ h1 {
         .menu-close {
             position: absolute;
             top: -20px;
-            right: 10px;
+            right: 70px;
             background-color: #ff0000;
             color: #fff;
             border: none;
@@ -232,8 +232,8 @@ h1 {
 
         .showDiamondButton {
             position: absolute;
-            top: 470px;
-            right: 200px;
+            top: 493px;
+            right: 330px;
             background-color: #ff0000;
             color: #fff;
             border: none;
