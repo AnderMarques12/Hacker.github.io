@@ -221,7 +221,7 @@ h1 {
         .menu-close {
             position: absolute;
             top: -20px;
-            right: 10px;
+            right: 70px;
             background-color: #ff0000;
             color: #fff;
             border: none;
