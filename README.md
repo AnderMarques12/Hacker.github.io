@@ -229,7 +229,7 @@ h1 {
             color: #fff;
             border: none;
             border-radius: 5px;
-            pointer-events: none;
+           
             cursor: pointer;
             padding: 5px 20px;
         }
