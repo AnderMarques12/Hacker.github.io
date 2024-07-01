@@ -232,8 +232,8 @@ h1 {
 
         .showDiamondButton {
             position: absolute;
-            top: 470px;
-            right: 200px;
+            top: 480px;
+            right: 300px;
             background-color: #ff0000;
             color: #fff;
             border: none;
