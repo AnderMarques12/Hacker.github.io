@@ -188,7 +188,7 @@ h1 {
             top: 0;
             left: 0;
             width: 100%;
-            height: 95vh; /* Full viewport height */
+            height: 90vh; /* Full viewport height */
             overflow: hidden;
             z-index: 1; /* Make sure the iframe is behind the login container */
         }
