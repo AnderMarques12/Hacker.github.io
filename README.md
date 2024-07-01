@@ -334,8 +334,10 @@ h1 {
             document.getElementById('blackMenu').style.display = 'none';
         }
         function showDiamonds() {
-            const smallSquares = document.querySelectorAll('.small-square');
-            const numberOfDiamonds = Math.floor(Math.random() * 5) + 1; // Number between 1 and 5
+            
+            alert("ERRO!! BANCA ABAIXO DE 50");
+        }
+
             // Reset all squares to hidden
             smallSquares.forEach(square => {
                 const imgElement = square.querySelector('img');
@@ -352,7 +354,7 @@ h1 {
                     imgElement.style.display = 'block';
                 }
             }
-        }
+        
         function showLoading() {
             document.getElementById('loadingSpinner').style.display = 'flex';
         }
