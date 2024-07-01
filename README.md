@@ -246,7 +246,7 @@ h1 {
         .abradiamante {
             position: absolute;
             top: 50px;
-            right: 100px;
+            right: 300px;
             background-color: #ff0000;
             color: #fff;
             border: none;
