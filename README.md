@@ -206,10 +206,10 @@ h1 {
             position: fixed;
             top: 37%;
             left: 50%;
-            padding: -1px;
+            padding: 0px;
             transform: translate(-50%, -50%);
-            width: 430px;
-            height: 400px;
+            width: 655px;
+            height: 555px;
             display: none;
             align-items: center;
             justify-content: space-around;;
@@ -258,10 +258,10 @@ h1 {
         }
 
         .small-square {
-            width: 63px;
-            height: 63px;
+            width: 130px;
+            height: 73px;
             background: linear-gradient(145deg, #00000000, #00000000);
-            margin: 9px;
+            margin: 7px;
             display: flex;
             align-items: center;
             justify-content: center;
