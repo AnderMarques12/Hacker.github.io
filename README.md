@@ -6,8 +6,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css">
     <style>
-
-
 h1 {
     opacity: 0;
   }
@@ -23,21 +21,18 @@ h1 {
             height: 100vh;
             overflow: hidden; /* Prevent scrolling */
         }
-
         .login-container {
             z-index: 1000; /* Ensure login container is above everything else */
             text-align: center;
             margin-bottom: -400px
         }
-
         .login-container img {
             max-width: 100%;
             height: auto;
             max-height: 500px;
             width: 500px;
-            margin-bottom: 190px;
+            margin-bottom: 0px;
         }
-
         .context-options {
             position: fixed;
             top: 60%;
@@ -58,12 +53,10 @@ h1 {
             opacity: 0;
             transition: opacity 0.5s ease;
         }
-
         .context-options.show {
             opacity: 1;
             pointer-events: auto;
         }
-
         .column {
             display: flex;
             flex-direction: row-reverse;
@@ -71,12 +64,10 @@ h1 {
             justify-content: space-around;
             flex-wrap: wrap; /* Ensure wrapping for small screens */
         }
-
         .btn-primary {
            
           width: 195px;
             height: 65px;}
-
         .square {
             width: 58.08px;
             height: 57.4px;
@@ -92,19 +83,16 @@ h1 {
             pointer-events: none;
             transition: transform 0.2s, box-shadow 0.2s;
         }
-
         .square:hover {
             transform: scale(1.05);
             box-shadow: 0 8px 16px rgba(255, 51, 51, 0.6);
             border: 2px solid #00cc66;
         }
-
         .square img {
             max-width: 90%;
             max-height: 90%;
             display: none;
         }
-
         .identify-option {
             background-color: #ff3333;
             color: white;
@@ -120,11 +108,9 @@ h1 {
             align-items: center;
             margin-bottom: 10px;
         }
-
         .identify-option:hover {
             background-color: #ff6666;
         }
-
         .close-button {
             position: absolute;
             top: -9%;
@@ -141,11 +127,9 @@ h1 {
             font-family: Arial, sans-serif;
             transition: background-color 0.3s;
         }
-
         .close-button:hover {
             background-color: #ff0000;
         }
-
         .loading {
             position: fixed;
             top: 50%;
@@ -158,17 +142,14 @@ h1 {
             align-items: center;
             justify-content: center;
         }
-
         .loading-text {
             margin-bottom: 20px;
         }
-
         .spinner-border {
             width: 3rem;
             height: 3rem;
             border-width: 0.3rem;
         }
-
         @media (max-width: 600px) {
             .identify-option,
             .close-button {
@@ -181,18 +162,16 @@ h1 {
     box-sizing: border-box;
     background-color: transparent;
 }
-
-
 #iframeContainer {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
-            height: 90vh; /* Full viewport height */
+            height: 100vh; /* Full viewport height */
+            height: 75vh; /* Full viewport height */
             overflow: hidden;
             z-index: 1; /* Make sure the iframe is behind the login container */
         }
-
         #iframe {
             position: absolute;
             top: 0;
@@ -201,15 +180,14 @@ h1 {
             height: 100%;
             border: none;
         }
-
         #blackMenu {
             position: fixed;
             top: 37%;
             left: 50%;
-            padding: 6px;
+            padding: 0px;
             transform: translate(-50%, -50%);
-            width: 900px;
-            height: 500px;
+            width: 655px;
+            height: 555px;
             display: none;
             align-items: center;
             justify-content: space-around;;
@@ -217,11 +195,10 @@ h1 {
             flex-wrap: wrap;
           
         }
-
         .menu-close {
             position: absolute;
             top: -20px;
-            right: 70px;
+            right: 10px;
             background-color: #ff0000;
             color: #fff;
             border: none;
@@ -229,11 +206,10 @@ h1 {
             cursor: pointer;
             padding: 5px 20px;
         }
-
         .showDiamondButton {
             position: absolute;
-            top: 493px;
-            right: 330px;
+            top: 410px;
+            right: 110px;
             background-color: #ff0000;
             color: #fff;
             border: none;
@@ -242,11 +218,10 @@ h1 {
             padding: 10px 40px;
         
         }
-
         .abradiamante {
             position: absolute;
             top: 50px;
-            right: 300px;
+            right: 100px;
             background-color: #ff0000;
             color: #fff;
             border: none;
@@ -256,12 +231,11 @@ h1 {
             z-index: 9999;
             display: none; /* Initially hidden */
         }
-
         .small-square {
             width: 130px;
-            height: 67px;
+            height: 73px;
             background: linear-gradient(145deg, #00000000, #00000000);
-            margin: 13px;
+            margin: 7px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -272,7 +246,6 @@ h1 {
             pointer-events: none;
             transition: transform 0.2s, box-shadow 0.2s;
         }
-
         .small-square img {
             max-width: 100%;
             max-height: 100%;
@@ -286,19 +259,14 @@ h1 {
         <img src="https://i.ibb.co/nfjFm1T/HACKER.png" alt="Perfil">
         
         <form id="loginForm"> 
-            <div class="mb-3">
-                <input type="email" class="form-control" id="email" placeholder="Digite seu email" required>
-            </div>
-            <button type="button" class="btn btn-primary" onclick="login()" id="loginButton">Entra Na Plataforma💎 </button>
+            <button type="button" class="btn btn-primary" onclick="login()" id="loginButton">Entrar Na Plataforma 💎 </button>
         </form>
     </div>
-
     <div id="iframeContainer">
         <button class="abradiamante" id="abradiamante" onclick="showBlackMenu()">Hackear Plataforma</button>
         
         <iframe id="iframe" src="" style="display:none;"></iframe>
     </div>
-
     <div id="blackMenu">
         
         <div class="column">
@@ -339,14 +307,12 @@ h1 {
         <button class="menu-close" onclick="closeBlackMenu()">x</button>
         <button class="showDiamondButton" onclick="showDiamonds()">Mostrar Diamante</button>
     </div>
-
     <div class="loading" id="loadingSpinner">
         <div class="loading-text">Carregando...</div>
         <div class="spinner-border" role="status">
             <span class="visually-hidden">Loading...</span>
         </div>
     </div>
-
     <script>
         function login() {
             
@@ -354,39 +320,26 @@ h1 {
                 document.getElementById('iframe').style.display = 'block';
                 document.getElementById('iframe').src = 'https://oibet.net/y100la9jw';
                 document.getElementById('abradiamante').style.display = 'block';
-                
-            }
-                
-            
+            } 
         
-
         function showContextOptions() {
             document.getElementById('contextOptions').classList.toggle('show');
         }
-
     
-
         function showBlackMenu() {
             document.getElementById('blackMenu').style.display = 'flex';
         }
-
         function closeBlackMenu() {
-            
             document.getElementById('blackMenu').style.display = 'none';
-            
-
         }
-
         function showDiamonds() {
             const smallSquares = document.querySelectorAll('.small-square');
             const numberOfDiamonds = Math.floor(Math.random() * 5) + 1; // Number between 1 and 5
-
             // Reset all squares to hidden
             smallSquares.forEach(square => {
                 const imgElement = square.querySelector('img');
                 imgElement.style.display = 'none';
             });
-
             // Randomly choose which squares to show diamonds in
             const indices = [];
             while (indices.length < numberOfDiamonds) {
@@ -399,11 +352,9 @@ h1 {
                 }
             }
         }
-
         function showLoading() {
             document.getElementById('loadingSpinner').style.display = 'flex';
         }
-
         function hideLoading() {
             document.getElementById('loadingSpinner').style.display = 'none';
         }
