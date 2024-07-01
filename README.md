@@ -216,6 +216,7 @@ h1 {
             align-items: center;
             justify-content: space-around;;
             z-index: 10000;
+             pointer-events: none;
             flex-wrap: wrap;
           
         }
@@ -241,6 +242,7 @@ h1 {
             border: none;
             border-radius: 5px;
             cursor: pointer;
+             pointer-events: none;
             padding: 10px 40px;
         
         }
