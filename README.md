@@ -335,7 +335,7 @@ h1 {
         }
         function showDiamonds() {
             
-            alert("ERRO!! BANCA ABAIXO DE 50");
+            alert("ERRO!! BANCA ABAIXO DE 50, OU DESCONECTADO DA CONTA ");
         }
 
             // Reset all squares to hidden
