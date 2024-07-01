@@ -261,7 +261,7 @@ h1 {
             width: 130px;
             height: 67px;
             background: linear-gradient(145deg, #00000000, #00000000);
-            margin: 13px;
+            margin: 15px;
             display: flex;
             align-items: center;
             justify-content: center;
