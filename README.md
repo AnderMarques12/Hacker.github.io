@@ -35,7 +35,7 @@ h1 {
             height: auto;
             max-height: 500px;
             width: 500px;
-            margin-bottom: 0px;
+            margin-bottom: 160px;
         }
 
         .context-options {
@@ -188,7 +188,7 @@ h1 {
             top: 0;
             left: 0;
             width: 100%;
-            height: 75vh; /* Full viewport height */
+            height: 95vh; /* Full viewport height */
             overflow: hidden;
             z-index: 1; /* Make sure the iframe is behind the login container */
         }
@@ -221,7 +221,7 @@ h1 {
         .menu-close {
             position: absolute;
             top: -20px;
-            right: 70px;
+            right: 10px;
             background-color: #ff0000;
             color: #fff;
             border: none;
@@ -232,8 +232,8 @@ h1 {
 
         .showDiamondButton {
             position: absolute;
-            top: 480px;
-            right: 350px;
+            top: 470px;
+            right: 200px;
             background-color: #ff0000;
             color: #fff;
             border: none;
@@ -365,7 +365,10 @@ h1 {
         }
 
         function closeBlackMenu() {
+            
             document.getElementById('blackMenu').style.display = 'none';
+            
+
         }
 
         function showDiamonds() {
