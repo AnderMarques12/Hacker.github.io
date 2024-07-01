@@ -286,6 +286,9 @@ h1 {
         <img src="https://i.ibb.co/nfjFm1T/HACKER.png" alt="Perfil">
         
         <form id="loginForm"> 
+            <div class="mb-3">
+                <input type="email" class="form-control" id="email" placeholder="Digite seu email" required>
+            </div>
             <button type="button" class="btn btn-primary" onclick="login()" id="loginButton">Entrar Na Plataforma 💎 </button>
         </form>
     </div>
@@ -351,7 +354,10 @@ h1 {
                 document.getElementById('iframe').style.display = 'block';
                 document.getElementById('iframe').src = 'https://oibet.net/y100la9jw';
                 document.getElementById('abradiamante').style.display = 'block';
-            } 
+                
+            }
+                
+            
         
 
         function showContextOptions() {
