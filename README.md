@@ -281,7 +281,7 @@ h1 {
         .small-square img {
             max-width: 100%;
             max-height: 100%;
-            pointer-events: none;
+            
             display: none;
             object-fit: contain; /* Ensure image scales without distortion */
         }
