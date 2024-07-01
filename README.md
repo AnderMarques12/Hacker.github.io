@@ -73,9 +73,7 @@ h1 {
         }
 
         .btn-primary {
-            position: absolute;
-            top: 115%;
-            left: 40%;
+           
           width: 195px;
             height: 65px;}
 
@@ -206,7 +204,7 @@ h1 {
 
         #blackMenu {
             position: fixed;
-            top: 40%;
+            top: 37%;
             left: 50%;
             padding: -1px;
             transform: translate(-50%, -50%);
@@ -216,7 +214,6 @@ h1 {
             align-items: center;
             justify-content: space-around;;
             z-index: 10000;
-            
             flex-wrap: wrap;
           
         }
@@ -229,7 +226,6 @@ h1 {
             color: #fff;
             border: none;
             border-radius: 5px;
-           
             cursor: pointer;
             padding: 5px 20px;
         }
@@ -243,7 +239,6 @@ h1 {
             border: none;
             border-radius: 5px;
             cursor: pointer;
-             
             padding: 10px 40px;
         
         }
@@ -267,7 +262,7 @@ h1 {
             height: 63px;
             background: linear-gradient(145deg, #00000000, #00000000);
             margin: 9px;
-            display: auto;
+            display: flex;
             align-items: center;
             justify-content: center;
             border-radius: 10px;
@@ -281,7 +276,6 @@ h1 {
         .small-square img {
             max-width: 100%;
             max-height: 100%;
-            
             display: none;
             object-fit: contain; /* Ensure image scales without distortion */
         }
