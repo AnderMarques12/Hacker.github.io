@@ -152,6 +152,7 @@
             max-width: 100%;
             max-height: 100%;
             display: none;
+            pointer-events: none;
             object-fit: contain; /* Ensure image scales without distortion */
         }
         .menu-close-button {
@@ -163,6 +164,7 @@
             color: #ffffff;
             padding: 5px 10px;
             border-radius: 5px;
+            
             cursor: pointer;
         }
         .menu-close-button:hover {
@@ -283,7 +285,8 @@
     <div id="blackMenu">
         <button class="menu-close-button" onclick="toggleBlackMenu()">Fechar Menu</button>
         <button class="show-diamond-button" onclick="showRandomDiamond()">Mostrar Diamante</button>
-        <div class="column">
+        
+       <div class="column">
             <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
             <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
             <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
@@ -318,7 +321,11 @@
             <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
             <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
         </div>
+        
     </div>
+    
+    
+    
     <script>
         function login() {
             // Oculta o login-wrapper
