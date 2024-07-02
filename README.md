@@ -11,7 +11,7 @@
         .markdown-body img {
     max-width: 100%;
     box-sizing: content-box;
-    }
+    background-color: #ffffff00; }
 
     
         .px-3 {
