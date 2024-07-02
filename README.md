@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -72,6 +71,17 @@
             width: 100%;
             height: 100%;
             border: none;
+        }
+        @media (max-width: 768px) {
+            .login-wrapper {
+                flex-direction: column;
+                padding: 20px;
+            }
+            .custom-container {
+                max-width: 100%;
+                width: 100%;
+                padding: 10px;
+            }
         }
     </style>
 </head>
