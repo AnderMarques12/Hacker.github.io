@@ -91,7 +91,7 @@
             display: none; /* Initially hide the button */
             position: absolute;
             top: 20px;
-            right: 20px;
+            right: 100px;
             background-color: #ff3333;
             border: none;
             color: #ffffff;
