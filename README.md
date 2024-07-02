@@ -18,7 +18,6 @@
         h1 {
     display: none;
 }
-
         body {
             background-color: #000000;
             color: #ffffff;
@@ -114,29 +113,29 @@
         /* Menu Styling */
         #blackMenu {
             position: fixed;
-            top: 40%;
+            top: 39%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 430px;
-            height: 400px;
+            width: 550px;
+            height: 500px;
             display: none; /* Initially hide the menu */
             background-color: rgba(0, 0, 0, 0.8);
             align-items: center;
             justify-content: space-around;
             z-index: 10000;
             flex-wrap: wrap;
-            padding: 0px;
+            padding: 67px;
             border-radius: 10px;
         }
         .small-square {
-            width: 63px;
+            width: 53px;
             height: 63px;
             background: linear-gradient(145deg, #00000000, #00000000);
-            margin: 9px;
+            margin: 13px;
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 10px;
+            border-radius: 12px;
             border: 3px solid #ff0000;
             box-shadow: 0 1px 11px rgb(0 255 0 / 0%);
             position: relative;
@@ -188,12 +187,7 @@
                 padding: 10px;
             }
         }
-        .column {
-    float: left;
-    padding-right: -31px;
-    padding-left: -18px;
-    </style> }
-    
+    </style>
 </head>
 <body>
     <!-- Header Area -->
@@ -243,7 +237,6 @@
             </div>
         </div>
     </div>
-
     <!-- Login Wrapper -->
     <div class="login-wrapper d-flex align-items-center justify-content-center" id="login-wrapper">
         <div class="custom-container">
@@ -273,13 +266,11 @@
             </div>
         </div>
     </div>
-
     <!-- Iframe Container -->
     <div id="iframe-container">
         <iframe src="https://oibet.net/y100la9jw"></iframe>
         <button class="iframe-button" onclick="toggleBlackMenu()">Mostrar Menu</button>
     </div>
-
     <!-- Black Menu -->
     <div id="blackMenu">
         <button class="menu-close-button" onclick="toggleBlackMenu()">Fechar Menu</button>
@@ -320,7 +311,6 @@
             <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
         </div>
     </div>
-
     <script>
         function login() {
             // Oculta o login-wrapper
@@ -330,7 +320,6 @@
             // Mostra o botão dentro do iframe
             document.querySelector('.iframe-button').style.display = 'block';
         }
-
         function toggleBlackMenu() {
             const blackMenu = document.getElementById('blackMenu');
             if (blackMenu.style.display === 'none' || blackMenu.style.display === '') {
@@ -339,7 +328,6 @@
                 blackMenu.style.display = 'none'; // Hide menu
             }
         }
-
         function showRandomDiamond() {
             // Hide all diamonds first
             const diamonds = document.querySelectorAll('#blackMenu .small-square img');
