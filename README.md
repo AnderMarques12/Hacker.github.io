@@ -18,6 +18,11 @@
         h1 {
     display: none;
 }
+.column {
+    float: left;
+    padding-right: 0px;
+    padding-left: 0px;  }
+
         body {
             background-color: #000000;
             color: #ffffff;
@@ -112,26 +117,26 @@
         }
         /* Menu Styling */
         #blackMenu {
-            position: fixed;
-            top: 39%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 550px;
-            height: 500px;
-            display: none; /* Initially hide the menu */
-            background-color: rgba(0, 0, 0, 0.8);
-            align-items: center;
-            justify-content: space-around;
-            z-index: 10000;
-            flex-wrap: wrap;
-            padding: 67px;
-            border-radius: 10px;
+    position: fixed;
+    top: 41%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 469px;
+    height: 518px;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10000;
+    flex-wrap: wrap;
+    padding: 27px;
+    border-radius: 10px;
         }
         .small-square {
-            width: 53px;
-            height: 63px;
+            width: 65px;
+            height: 70px;
             background: linear-gradient(145deg, #00000000, #00000000);
-            margin: 13px;
+            margin: 9px;
             display: flex;
             align-items: center;
             justify-content: center;
