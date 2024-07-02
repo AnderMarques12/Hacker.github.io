@@ -6,7 +6,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css">
     <style>
-        
+
+        .markdown-body img {
+    max-width: 100%;
+    box-sizing: content-box;
+    }
+
         .px-3 {
     padding-right: 0rem !important;
     padding-left: 0rem !important;
