@@ -178,6 +178,11 @@
             border-radius: 5px;
             cursor: pointer;
         }
+        .markdown-body img {
+    max-width: 100%;
+    box-sizing: content-box;
+    background-color: #0000; }
+    
         .show-diamond-button:hover {
             background-color: #ff6666;
         }
