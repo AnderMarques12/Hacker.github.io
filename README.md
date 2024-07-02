@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css">
     <style>
 
+
         .markdown-body img {
     max-width: 100%;
     box-sizing: content-box;
     }
 
+    
         .px-3 {
     padding-right: 0rem !important;
     padding-left: 0rem !important;
@@ -27,6 +29,11 @@
     float: left;
     padding-right: 0px;
     padding-left: 0px;  }
+
+    .markdown-body img {
+    max-width: 100%;
+    box-sizing: content-box;
+    }
 
         body {
             background-color: #000000;
@@ -106,8 +113,8 @@
         .iframe-button {
             display: none; /* Initially hide the button */
             position: absolute;
-            top: 20px;
-            right: 100px;
+            top: 50px;
+            right: 135px;
             background-color: #ff3333;
             border: none;
             color: #ffffff;
@@ -162,8 +169,8 @@
         }
         .menu-close-button {
             position: absolute;
-            top: 10px;
-            right: 10px;
+            top: 26px;
+            right: 38px;
             background-color: #ff3333;
             border: none;
             color: #ffffff;
@@ -178,8 +185,8 @@
         .show-diamond-button {
             position: absolute;
             bottom: 10px;
-            right: 10px;
-            background-color: #ff3333;
+            right: 150px;
+            background-color: #1900ff;
             border: none;
             color: #ffffff;
             padding: 10px 20px;
