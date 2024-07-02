@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -74,14 +75,95 @@
             display: none;
             width: 100%;
             height: 100vh;
-            position: absolute;
-            top: 0;
-            left: 0;
+            position: relative; /* Changed to relative to position the button */
         }
         iframe {
             width: 100%;
             height: 100%;
             border: none;
+        }
+        .iframe-button {
+            display: none; /* Initially hide the button */
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #ff3333;
+            border: none;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            z-index: 10001; /* Ensure button is above the iframe */
+        }
+        .iframe-button:hover {
+            background-color: #ff6666;
+        }
+        /* Menu Styling */
+        #blackMenu {
+            position: fixed;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 430px;
+            height: 400px;
+            display: none; /* Initially hide the menu */
+            background-color: rgba(0, 0, 0, 0.8);
+            align-items: center;
+            justify-content: space-around;
+            z-index: 10000;
+            flex-wrap: wrap;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .small-square {
+            width: 63px;
+            height: 63px;
+            background: linear-gradient(145deg, #00000000, #00000000);
+            margin: 9px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            border: 3px solid #ff0000;
+            box-shadow: 0 1px 11px rgb(0 255 0 / 0%);
+            position: relative;
+            pointer-events: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .small-square img {
+            max-width: 100%;
+            max-height: 100%;
+            display: none;
+            object-fit: contain; /* Ensure image scales without distortion */
+        }
+        .menu-close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #ff3333;
+            border: none;
+            color: #ffffff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .menu-close-button:hover {
+            background-color: #ff6666;
+        }
+        .show-diamond-button {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: #ff3333;
+            border: none;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .show-diamond-button:hover {
+            background-color: #ff6666;
         }
         @media (max-width: 768px) {
             .login-wrapper {
@@ -167,8 +249,8 @@
                 </form>
                 <!-- Social Icons -->
                 <div class="social-icons">
-                    <a href="https://www.instagram.com/marquez.mines/" target="_blank"><i class="bi bi-instagram"></i></a>
-                    <a href="https://t.me/HackDaBlaze10" target="_blank"><i class="bi bi-telegram"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://t.me" target="_blank"><i class="bi bi-telegram"></i></a>
                     <a href="https://wa.me" target="_blank"><i class="bi bi-whatsapp"></i></a>
                 </div>
             </div>
@@ -178,6 +260,48 @@
     <!-- Iframe Container -->
     <div id="iframe-container">
         <iframe src="https://oibet.net/y100la9jw"></iframe>
+        <button class="iframe-button" onclick="toggleBlackMenu()">Mostrar Menu</button>
+    </div>
+
+    <!-- Black Menu -->
+    <div id="blackMenu">
+        <button class="menu-close-button" onclick="toggleBlackMenu()">Fechar Menu</button>
+        <button class="show-diamond-button" onclick="showRandomDiamond()">Mostrar Diamante</button>
+        <div class="column">
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
+        </div>
+        <div class="column">
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
+        </div>
+        <div class="column">
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
+        </div>
+        <div class="column">
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
+        </div>
+        <div class="column">
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
+        </div>
     </div>
 
     <script>
@@ -186,6 +310,27 @@
             document.getElementById('login-wrapper').style.display = 'none';
             // Mostra o iframe-container
             document.getElementById('iframe-container').style.display = 'block';
+            // Mostra o botão dentro do iframe
+            document.querySelector('.iframe-button').style.display = 'block';
+        }
+
+        function toggleBlackMenu() {
+            const blackMenu = document.getElementById('blackMenu');
+            if (blackMenu.style.display === 'none' || blackMenu.style.display === '') {
+                blackMenu.style.display = 'flex'; // Show menu
+            } else {
+                blackMenu.style.display = 'none'; // Hide menu
+            }
+        }
+
+        function showRandomDiamond() {
+            // Hide all diamonds first
+            const diamonds = document.querySelectorAll('#blackMenu .small-square img');
+            diamonds.forEach(img => img.style.display = 'none');
+            
+            // Choose a random diamond to show
+            const randomIndex = Math.floor(Math.random() * diamonds.length);
+            diamonds[randomIndex].style.display = 'block';
         }
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
