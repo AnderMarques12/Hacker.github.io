@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css">
     <style>
         
+        .px-3 {
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+}
         .my-5 {
     margin-top: -1rem !important;
     margin-bottom: 4rem !important;
