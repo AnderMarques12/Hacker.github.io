@@ -59,6 +59,17 @@
         .btn-primary:hover {
             background-color: #ff6666;
         }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            color: #ffffff;
+            font-size: 1.5rem;
+            margin: 0 10px;
+        }
+        .social-icons a:hover {
+            color: #ff6666;
+        }
         #iframe-container {
             display: none;
             width: 100%;
@@ -154,8 +165,13 @@
                     </div>
                     <button class="btn btn-primary w-100" type="button" onclick="login()">ENTRAR <i class="fa fa-arrow-right"></i></button>
                 </form>
+                <!-- Social Icons -->
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/marquez.mines/" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://t.me/HackDaBlaze10" target="_blank"><i class="bi bi-telegram"></i></a>
+                    <a href="https://wa.me" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                </div>
             </div>
-            <!-- Login Meta -->
         </div>
     </div>
 
