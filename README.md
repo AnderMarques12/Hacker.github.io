@@ -130,7 +130,7 @@
     flex-wrap: wrap;
     padding: 27px;
     border-radius: 10px;
-    pointer-events: none;
+    
         }
         .small-square {
             width: 65px;
@@ -182,7 +182,7 @@
     max-width: 100%;
     box-sizing: content-box;
     background-color: #0000; }
-    
+
         .show-diamond-button:hover {
             background-color: #ff6666;
         }
