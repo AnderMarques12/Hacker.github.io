@@ -124,13 +124,13 @@
     width: 469px;
     height: 518px;
     display: none;
-    background-color: rgba(0, 0, 0, 0.8);
     align-items: center;
     justify-content: space-around;
     z-index: 10000;
     flex-wrap: wrap;
     padding: 27px;
     border-radius: 10px;
+    pointer-events: none;
         }
         .small-square {
             width: 65px;
@@ -142,7 +142,7 @@
             justify-content: center;
             border-radius: 12px;
             border: 3px solid #ff0000;
-            box-shadow: 0 1px 11px rgb(0 255 0 / 0%);
+            box-shadow: 0 1px 11px rgba(0, 0, 0, 0);
             position: relative;
             pointer-events: none;
             transition: transform 0.2s, box-shadow 0.2s;
