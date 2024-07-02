@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -126,7 +125,7 @@
             justify-content: space-around;
             z-index: 10000;
             flex-wrap: wrap;
-            padding: 20px;
+            padding: 0px;
             border-radius: 10px;
         }
         .small-square {
@@ -189,7 +188,12 @@
                 padding: 10px;
             }
         }
-    </style>
+        .column {
+    float: left;
+    padding-right: -31px;
+    padding-left: -18px;
+    </style> }
+    
 </head>
 <body>
     <!-- Header Area -->
