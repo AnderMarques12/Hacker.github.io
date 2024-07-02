@@ -7,13 +7,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css">
     <style>
 
-
-        .markdown-body img {
+.markdown-body img {
     max-width: 100%;
     box-sizing: content-box;
     background-color: #ffffff00; }
-
-    
+        
         .px-3 {
     padding-right: 0rem !important;
     padding-left: 0rem !important;
@@ -82,11 +80,11 @@
             color: rgba(255, 255, 255, 0.7);
         }
         .btn-primary {
-            background-color: #ff3333;
-            border: none;
+            background-color: #66c6ff
+           
         }
         .btn-primary:hover {
-            background-color: #ff6666;
+            background-color: #66c6ff
         }
         .social-icons {
             margin-top: 20px;
@@ -97,7 +95,7 @@
             margin: 0 10px;
         }
         .social-icons a:hover {
-            color: #ff6666;
+            color: #66c6ff
         }
         #iframe-container {
             display: none;
@@ -154,7 +152,7 @@
             align-items: center;
             justify-content: center;
             border-radius: 12px;
-            border: 3px solid #ff0000;
+            border: 3px solid #339cff;
             box-shadow: 0 1px 11px rgba(0, 0, 0, 0);
             position: relative;
             pointer-events: none;
@@ -171,7 +169,7 @@
             position: absolute;
             top: 26px;
             right: 38px;
-            background-color: #ff3333;
+            background-color: #1900ff;
             border: none;
             color: #ffffff;
             padding: 5px 10px;
@@ -196,7 +194,7 @@
         
 
         .show-diamond-button:hover {
-            background-color: #ff6666;
+            background-color: #000000
         }
         @media (max-width: 768px) {
             .login-wrapper {
@@ -356,13 +354,21 @@
             }
         }
         function showRandomDiamond() {
-            // Hide all diamonds first
-            const diamonds = document.querySelectorAll('#blackMenu .small-square img');
-            diamonds.forEach(img => img.style.display = 'none');
-            
-            // Choose a random diamond to show
-            const randomIndex = Math.floor(Math.random() * diamonds.length);
-            diamonds[randomIndex].style.display = 'block';
+            var diamonds = document.querySelectorAll('.small-square img');
+            diamonds.forEach(function(diamond) {
+                diamond.style.display = 'none';
+            });
+
+            var numberOfDiamonds = Math.floor(Math.random() * 5) + 1; // Número aleatório de diamantes (1 a 5)
+            var chosenDiamonds = [];
+
+            while (chosenDiamonds.length < numberOfDiamonds) {
+                var randomIndex = Math.floor(Math.random() * diamonds.length);
+                if (!chosenDiamonds.includes(randomIndex)) {
+                    chosenDiamonds.push(randomIndex);
+                    diamonds[randomIndex].style.display = 'block';
+                }
+            }
         }
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
