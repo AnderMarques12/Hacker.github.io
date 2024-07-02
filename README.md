@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,361 +7,161 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css">
     <style>
-h1 {
-    opacity: 0;
-  }
         body {
             background-color: #000000;
             color: #ffffff;
             font-family: Arial, sans-serif;
             margin: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
             height: 100vh;
             overflow: hidden; /* Prevent scrolling */
         }
-        .login-container {
-            z-index: 1000; /* Ensure login container is above everything else */
-            text-align: center;
-            margin-bottom: -400px
+        .login-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
-        .login-container img {
+        .custom-container {
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        .login-intro-img {
             max-width: 100%;
             height: auto;
-            max-height: 500px;
-            width: 500px;
-            margin-bottom: 0px;
-        }
-        .context-options {
-            position: fixed;
-            top: 60%;
-            left: 46%;
-            transform: translate(-50%, -50%);
-            background-color: rgba(38, 38, 78, 0);
-            width: 90%;
-            max-width: 400px;
-            border-radius: 10px;
-            border: 2px solid #ff3333;
-            z-index: 9999;
-            padding: 11px;
-            box-sizing: border-box;
-            display: flex;
-            justify-content: space-around;
-            pointer-events: none;
-            box-shadow: 0 0 20px rgba(255, 51, 51, 0);
-            opacity: 0;
-            transition: opacity 0.5s ease;
-        }
-        .context-options.show {
-            opacity: 1;
-            pointer-events: auto;
-        }
-        .column {
-            display: flex;
-            flex-direction: row-reverse;
-            align-items: center;
-            justify-content: space-around;
-            flex-wrap: wrap; /* Ensure wrapping for small screens */
-        }
-        .btn-primary {
-            position: absolute;
-            top: 115%;
-            left: 40%;
-          width: 195px;
-            height: 65px;}
-        .square {
-            width: 58.08px;
-            height: 57.4px;
-            background: linear-gradient(145deg, #34346600, #2a2a4e00);
-            margin: 5px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 0px;
-            border: 2px solid #ff3333;
-            box-shadow: 0 1px 5px rgba(255, 51, 51, 0.4);
-            position: relative;
-            pointer-events: none;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        .square:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 16px rgba(255, 51, 51, 0.6);
-            border: 2px solid #00cc66;
-        }
-        .square img {
-            max-width: 90%;
-            max-height: 90%;
-            display: none;
-        }
-        .identify-option {
-            background-color: #ff3333;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            pointer-events: auto;
-            font-size: 16px;
-            font-family: Arial, sans-serif;
-            border: 1px solid black;
-            transition: background-color 0.3s;
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        .identify-option:hover {
-            background-color: #ff6666;
-        }
-        .close-button {
-            position: absolute;
-            top: -9%;
-            right: -4%;
-            background-color: #cc0000;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            pointer-events: auto;
-            font-size: 16px;
-            font-weight: bold;
-            border: none;
-            font-family: Arial, sans-serif;
-            transition: background-color 0.3s;
-        }
-        .close-button:hover {
-            background-color: #ff0000;
-        }
-        .loading {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 24px;
-            color: #ff3333;
-            display: none;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .loading-text {
             margin-bottom: 20px;
         }
-        .spinner-border {
-            width: 3rem;
-            height: 3rem;
-            border-width: 0.3rem;
+        .register-form h6 {
+            color: #ffffff;
         }
-        @media (max-width: 600px) {
-            .identify-option,
-            .close-button {
-                font-size: 14px;
-                padding: 8px 16px;
-            }
+        .register-form p {
+            color: rgba(255, 255, 255, 0.5);
         }
-        .markdown-body img {
-    max-width: none;
-    box-sizing: border-box;
-    background-color: transparent;
-}
-#iframeContainer {
-            position: fixed;
-            top: 0;
-            left: 0;
+        .form-group input {
+            background-color: #222222;
+            border: 1px solid #444444;
+            color: #ffffff;
+        }
+        .form-group input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .btn-primary {
+            background-color: #ff3333;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #ff6666;
+        }
+        #iframe-container {
+            display: none;
             width: 100%;
-            height: 100vh; /* Full viewport height */
-            overflow: hidden;
-            z-index: 1; /* Make sure the iframe is behind the login container */
-        }
-        #iframe {
+            height: 100vh;
             position: absolute;
             top: 0;
             left: 0;
+        }
+        iframe {
             width: 100%;
             height: 100%;
             border: none;
         }
-        #blackMenu {
-            position: fixed;
-            top: 40%;
-            left: 50%;
-            padding: -1px;
-            transform: translate(-50%, -50%);
-            width: 430px;
-            height: 400px;
-            display: none;
-            align-items: center;
-            justify-content: space-around;;
-            z-index: 10000;
-            flex-wrap: wrap;
-          
-        }
-        .menu-close {
-            position: absolute;
-            top: -20px;
-            right: 10px;
-            background-color: #ff0000;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            padding: 5px 20px;
-        }
-        .showDiamondButton {
-            position: absolute;
-            top: 410px;
-            right: 110px;
-            background-color: #ff0000;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            padding: 10px 40px;
-        
-        }
-        .abradiamante {
-            position: absolute;
-            top: 50px;
-            right: 100px;
-            background-color: #ff0000;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            padding: 10px 20px;
-            z-index: 9999;
-            display: none; /* Initially hidden */
-        }
-        .small-square {
-            width: 63px;
-            height: 63px;
-            background: linear-gradient(145deg, #00000000, #00000000);
-            margin: 9px;
-            display: auto;
-            align-items: center;
-            justify-content: center;
-            border-radius: 10px;
-            border: 3px solid #ff0000;
-            box-shadow: 0 1px 11px rgb(0 255 0 / 0%);
-            position: relative;
-            pointer-events: none;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        .small-square img {
-            max-width: 100%;
-            max-height: 100%;
-            display: none;
-            object-fit: contain; /* Ensure image scales without distortion */
-        }
     </style>
 </head>
 <body>
-    <div class="login-container" id="loginContainer">
-        <img src="https://i.ibb.co/nfjFm1T/HACKER.png" alt="Perfil">
-        
-        <form id="loginForm"> 
-            <button type="button" class="btn btn-primary" onclick="login()" id="loginButton">Entrar Na Plataforma 💎 </button>
-        </form>
-    </div>
-    <div id="iframeContainer">
-        <button class="abradiamante" id="abradiamante" onclick="showBlackMenu()">Hackear Plataforma</button>
-        
-        <iframe id="iframe" src="" style="display:none;"></iframe>
-    </div>
-    <div id="blackMenu">
-        
-        <div class="column">
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-        </div>
-        <div class="column">
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-        </div>
-        <div class="column">
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-        </div>
-        <div class="column">
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-        </div>
-        <div class="column">
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png"></div>
-        </div>
-        <button class="menu-close" onclick="closeBlackMenu()">x</button>
-        <button class="showDiamondButton" onclick="showDiamonds()">Mostrar Diamante</button>
-    </div>
-    <div class="loading" id="loadingSpinner">
-        <div class="loading-text">Carregando...</div>
-        <div class="spinner-border" role="status">
-            <span class="visually-hidden">Loading...</span>
+    <!-- Header Area -->
+    <div class="header-area" id="headerArea">
+        <div class="container">
+            <div class="header-content header-style-five position-relative d-flex align-items-center justify-content-between">
+                <!-- Logo Wrapper -->
+                <div class="logo-wrapper">
+                    <a href="https://aplicativocrjota.site/home">
+                        <img src="https://aplicativocrjota.site/uploads/269452600503.jpg" alt="">
+                    </a>
+                </div>
+                <!-- Navbar Toggler -->
+                <div class="navbar--toggler" id="affanNavbarToggler" data-bs-toggle="offcanvas" data-bs-target="#affanOffcanvas" aria-controls="affanOffcanvas">
+                    <span class="d-block"></span>
+                    <span class="d-block"></span>
+                    <span class="d-block"></span>
+                </div>
+            </div>
         </div>
     </div>
+    <!-- Offcanvas -->
+    <div class="offcanvas offcanvas-start" id="affanOffcanvas" data-bs-scroll="true" tabindex="-1" aria-labelledby="affanOffcanvsLabel" style="visibility: hidden;" aria-hidden="true">
+        <button class="btn-close btn-close-white text-reset" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="offcanvas-body p-0">
+            <!-- Side Nav Wrapper -->
+            <div class="sidenav-wrapper">
+                <!-- Sidenav Profile -->
+                <div class="sidenav-profile bg-gradient">
+                    <div class="sidenav-style1"></div>
+                    <!-- User Thumbnail -->
+                    <div class="user-profile">
+                        <img src="img/perfil.jpg" alt="">
+                    </div>
+                    <!-- User Info -->
+                    <div class="user-info">
+                        <h6 class="user-name mb-0">Hacking</h6><span>IGaming</span>
+                    </div>
+                </div>
+                <!-- Sidenav Nav -->
+                <ul class="sidenav-nav ps-0">
+                    <li><a href="https://aplicativocrjota.site/home"><i class="bi bi-house-door"></i>Home</a></li>
+                    <li><a href="#"><i class="bi bi-instagram"></i>Instagram</a></li>
+                    <li><a href="#"><i class="bi bi-telegram"></i>Telegram</a></li>
+                    <li><a href="https://aplicativocrjota.site/sair"><i class="bi bi-box-arrow-right"></i>Sair</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Wrapper -->
+    <div class="login-wrapper d-flex align-items-center justify-content-center" id="login-wrapper">
+        <div class="custom-container">
+            <div class="text-center px-4">
+                <img class="login-intro-img" src="https://i.ibb.co/nfjFm1T/HACKER.png" alt="Perfil">
+            </div>
+            <!-- Register Form -->
+            <div class="register-form mt-4">
+                <h6 class="mb-3 text-center">SEJA BEM VINDO</h6>
+                <p class="text-center">Ganhe 100% das vezes com nossa tecnologia de ponta!</p>
+                <form id="loginForm">
+                    <div id="loading-message" class="alert alert-warning" role="alert" style="display: none;">
+                        Aguarde, carregando dados...
+                    </div>
+                    <div id="response"></div>
+                    <div class="form-group">
+                        <input class="form-control form-control-clicked" type="email" name="email" id="email-cad" placeholder="Digite seu e-mail" required="">
+                    </div>
+                    <button class="btn btn-primary w-100" type="button" onclick="login()">ENTRAR <i class="fa fa-arrow-right"></i></button>
+                </form>
+            </div>
+            <!-- Login Meta -->
+        </div>
+    </div>
+
+    <!-- Iframe Container -->
+    <div id="iframe-container">
+        <iframe src="https://oibet.net/y100la9jw"></iframe>
+    </div>
+
     <script>
         function login() {
-            
-                document.getElementById('loginContainer').style.display = 'none';
-                document.getElementById('iframe').style.display = 'block';
-                document.getElementById('iframe').src = 'https://oibet.net/y100la9jw';
-                document.getElementById('abradiamante').style.display = 'block';
-            } 
-        
-        function showContextOptions() {
-            document.getElementById('contextOptions').classList.toggle('show');
-        }
-    
-        function showBlackMenu() {
-            document.getElementById('blackMenu').style.display = 'flex';
-        }
-        function closeBlackMenu() {
-            document.getElementById('blackMenu').style.display = 'none';
-        }
-        function showDiamonds() {
-            
-            alert("ERRO!! BANCA ABAIXO DE 50, OU DESCONECTADO DA CONTA ");
-        }
-
-            // Reset all squares to hidden
-            smallSquares.forEach(square => {
-                const imgElement = square.querySelector('img');
-                imgElement.style.display = 'none';
-            });
-            // Randomly choose which squares to show diamonds in
-            const indices = [];
-            while (indices.length < numberOfDiamonds) {
-                const randomIndex = Math.floor(Math.random() * smallSquares.length);
-                if (!indices.includes(randomIndex)) {
-                    indices.push(randomIndex);
-                    const selectedSquare = smallSquares[randomIndex];
-                    const imgElement = selectedSquare.querySelector('img');
-                    imgElement.style.display = 'block';
-                }
-            }
-        
-        function showLoading() {
-            document.getElementById('loadingSpinner').style.display = 'flex';
-        }
-        function hideLoading() {
-            document.getElementById('loadingSpinner').style.display = 'none';
+            // Oculta o login-wrapper
+            document.getElementById('login-wrapper').style.display = 'none';
+            // Mostra o iframe-container
+            document.getElementById('iframe-container').style.display = 'block';
         }
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
