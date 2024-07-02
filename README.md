@@ -130,6 +130,7 @@
     flex-wrap: wrap;
     padding: 27px;
     border-radius: 10px;
+    pointer-events: none;
     
         }
         .small-square {
