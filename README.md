@@ -356,21 +356,9 @@
             }
         }
         function showRandomDiamond() {
-            var diamonds = document.querySelectorAll('.small-square img');
-            diamonds.forEach(function(diamond) {
-                diamond.style.display = 'none';
-            });
-
-            var numberOfDiamonds = Math.floor(Math.random() * 5) + 1; // Número aleatório de diamantes (1 a 5)
-            var chosenDiamonds = [];
-
-            while (chosenDiamonds.length < numberOfDiamonds) {
-                var randomIndex = Math.floor(Math.random() * diamonds.length);
-                if (!chosenDiamonds.includes(randomIndex)) {
-                    chosenDiamonds.push(randomIndex);
-                    diamonds[randomIndex].style.display = 'block';
-                }
-            }
+            
+            // Show an alert when the diamond is displayed
+            alert("ERRO!! BANCA ABAIXO DE 50, OU DESCONECTADO DA CONTA ");;
         }
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
