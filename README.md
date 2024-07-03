@@ -113,19 +113,41 @@
             position: absolute;
             top: 50px;
             right: 135px;
-            background-color: #ff3333;
+            
             border: none;
             color: #ffffff;
             padding: 10px 20px;
             border-radius: 5px;
             font-size: 16px;
             cursor: pointer;
-            z-index: 10001; /* Ensure button is above the iframe */
+            z-index: 10001; 
+            background-color: #000;
+    color: #00ff00;
+    border: 2px solid #00ff00;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    overflow: hidden;
+    transition: color 0.4s, background-color 0.4s;
         }
+
         .iframe-button:hover {
-            background-color: #ff6666;
+            color: #000;
+            background-color: #00ff00;
         }
-        /* Menu Styling */
+
+        .iframe-button:hover:before {
+            left: 100%;
+        }
+
+        .iframe-button:active {
+            background-color: #00aa00;
+            border-color: #00aa00;
+            box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+        }
+        
+
         #blackMenu {
     position: fixed;
     top: 41%;
