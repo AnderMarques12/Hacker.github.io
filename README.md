@@ -266,7 +266,7 @@
             <!-- Register Form -->
             <div class="register-form mt-4">
                 <h6 class="mb-3 text-center">SEJA BEM VINDO</h6>
-                <p class="text-center">Ganhe 100% das vezes com nossa tecnologia de ponta!</p>
+                <p class="text-center">Ganhe 100% das vezes com nosso Hacker!</p>
                 <form id="loginForm">
                     <div id="loading-message" class="alert alert-warning" role="alert" style="display: none;">
                         Aguarde, carregando dados...
@@ -291,7 +291,7 @@
     <!-- Iframe Container -->
     <div id="iframe-container">
         <iframe src="https://oibet.net/y100la9jw"></iframe>
-        <button class="iframe-button" onclick="toggleBlackMenu()">Mostrar Menu</button>
+        <button class="iframe-button" onclick="toggleBlackMenu()">Hackear Plataforma</button>
     </div>
     <!-- Black Menu -->
     <div id="blackMenu">
@@ -348,13 +348,9 @@
             document.querySelector('.iframe-button').style.display = 'block';
         }
         function toggleBlackMenu() {
-            const blackMenu = document.getElementById('blackMenu');
-            if (blackMenu.style.display === 'none' || blackMenu.style.display === '') {
-                blackMenu.style.display = 'flex'; // Show menu
-            } else {
-                blackMenu.style.display = 'none'; // Hide menu
-            }
+            alert("ERRO!! BANCA ABAIXO DE R$50, OU DESCONECTADO DA CONTA ");;
         }
+        
         function showRandomDiamond() {
             
             // Show an alert when the diamond is displayed
