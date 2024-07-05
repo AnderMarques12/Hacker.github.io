@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css">
     <style>
+
+        .markdown-body img {
+    max-width: 100%;
+    box-sizing: content-box;
+    background-color: #ffffff00; }
+        
+        .px-3 {
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+}
+        .my-5 {
+    margin-top: -1rem !important;
+    margin-bottom: 4rem !important;
+}
+        h1 {
+    display: none;
+}
         body {
             background-color: #000000;
             color: #ffffff;
