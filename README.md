@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css">
     <style>
 
-        .markdown-body img {
+        
+.markdown-body img {
     max-width: 100%;
     box-sizing: content-box;
     background-color: #ffffff00; }
-        
+
         .px-3 {
     padding-right: 0rem !important;
     padding-left: 0rem !important;
@@ -235,6 +236,27 @@
             background-color: #00ff00;
             animation: progress 5s linear forwards;
         }
+        .btn-primary:hover {
+            background-color: #66c6ff }
+
+        .context-options.show {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .social-icons {
+            margin-top: 20px; }
+
+        .column {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .social-icons a {
+            color: #00c3ff;
+            font-size: 1.5rem;
+            margin: 0 10px; }
 
         @keyframes progress {
             to {
@@ -255,6 +277,15 @@
             <button type="button" class="btn btn-primary" id="loginButton" onclick="login()">Login</button>
         </form>
     </div>
+     <!-- Social Icons -->
+     <div class="social-icons">
+        <a href="https://www.instagram.com/marquez.mines/?hl=pt-br" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://t.me/HackDaBlaze10" target="_blank"><i class="bi bi-telegram"></i></a>
+        <a href="
+        https://wa.me/+55554299130884?text=Me%20ajuda%20no%20Hacker%20
+        " target="_blank"><i class="bi bi-whatsapp"></i></a>
+    </div>
+</div>
 
     <iframe id="iframe" style="display:none;"></iframe>
 
