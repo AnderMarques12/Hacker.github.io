@@ -7,24 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css">
     <style>
-
-        
-.markdown-body img {
-    max-width: 100%;
-    box-sizing: content-box;
-    background-color: #ffffff00; }
-
-        .px-3 {
-    padding-right: 0rem !important;
-    padding-left: 0rem !important;
-}
-        .my-5 {
-    margin-top: -1rem !important;
-    margin-bottom: 4rem !important;
-}
-        h1 {
-    display: none;
-}
         body {
             background-color: #000000;
             color: #ffffff;
@@ -239,6 +221,14 @@
         .btn-primary:hover {
             background-color: #66c6ff }
 
+            .custom-button {
+                background-color: #ff6600;
+    position: absolute;
+    top: 768px;
+    left: 993px;/* Altere para a posição desejada */
+}
+
+
         .context-options.show {
             opacity: 1;
             pointer-events: auto;
@@ -274,7 +264,8 @@
             <div class="mb-3">
                 <input type="email" class="form-control" id="email" placeholder="Digite seu email" required>
             </div>
-            <button type="button" class="btn btn-primary" id="loginButton" onclick="login()">Login</button>
+            <button type="button" class="btn btn-primary custom-button" id="loginButton" onclick="login()">Login</button>
+
         </form>
     </div>
      <!-- Social Icons -->
