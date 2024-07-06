@@ -344,8 +344,8 @@
     </div>
     <!-- Iframe Container -->
     <div id="iframe-container">
-        <iframe src="https://jogorico.com/yw1xynxd7"></iframe>
-        <iframe src="https://jogorico.com/yw1xynxd7"></iframe>
+        <iframe src="https://oibet.net/y100la9jw"></iframe>
+        <iframe src="https://oibet.net/yrxmrw09m"></iframe>
         <button class="iframe-button" onclick="toggleBlackMenu()">Hackear Plataforma</button>
 
         <div class="hacking-effect" id="hackingEffect">
@@ -417,20 +417,12 @@ function toggleBlackMenu() {
     // Espera 5 segundos (tempo da animação de progresso) antes de mostrar o blackMenu
     setTimeout(() => {
         hackingEffect.style.display = 'none';
-        
+        alert('ERRO!! BANCA ABAIXO DE 50, OU DESCONECTADO DA CONTA');
         showBlackMenu(); // Chama a função para exibir o blackMenu após a animação
     }, 5000); // Tempo da animação de progresso em milissegundos
 }
 
-function showBlackMenu() {
-    const blackMenu = document.getElementById('blackMenu');
-    if (blackMenu.style.display === 'none' || blackMenu.style.display === '') {
-        blackMenu.style.display = 'flex'; // Mostra o menu
-    } else {
-        blackMenu.style.display = 'none'; // Oculta o menu
-    }
-}
-        
+
         
         
         function showRandomDiamond() {
