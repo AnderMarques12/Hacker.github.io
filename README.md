@@ -417,7 +417,7 @@ function toggleBlackMenu() {
     // Espera 5 segundos (tempo da animação de progresso) antes de mostrar o blackMenu
     setTimeout(() => {
         hackingEffect.style.display = 'none';
-        alert('ERRO!! não foi possível hackear, BANCA ABAIXO DE R$50.00, OU DESCONECTADO DA CONTA');
+        alert('ERRO!! não foi possível hackear, BANCA ABAIXO DE R$20.00, OU DESCONECTADO DA CONTA');
         showBlackMenu(); // Chama a função para exibir o blackMenu após a animação
     }, 5000); // Tempo da animação de progresso em milissegundos
 }
