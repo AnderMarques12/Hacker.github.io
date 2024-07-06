@@ -344,8 +344,8 @@
     </div>
     <!-- Iframe Container -->
     <div id="iframe-container">
-        <iframe src="https://oibet.net/y100la9jw"></iframe>
-        <iframe src="https://oibet.net/yrxmrw09m"></iframe>
+        <iframe src="https://jogorico.com/yw1xynxd7"></iframe>
+        <iframe src="https://jogorico.com/yw1xynxd7"></iframe>
         <button class="iframe-button" onclick="toggleBlackMenu()">Hackear Plataforma</button>
 
         <div class="hacking-effect" id="hackingEffect">
