@@ -451,14 +451,7 @@
         
         }
 
-        function showBlackMenu() {
-            const blackMenu = document.getElementById('blackMenu');
-            if (blackMenu.style.display === 'none' || blackMenu.style.display === '') {
-                blackMenu.style.display = 'flex'; // Mostra o menu
-            } else {
-                blackMenu.style.display = 'none'; // Oculta o menu
-            }
-        }
+       
 
 function toggleBlackMenu() {
     const hackingEffect = document.getElementById('hackingEffect');
