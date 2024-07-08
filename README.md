@@ -353,8 +353,7 @@
             </div>
         </div>
     </div>
-    <button class="menu-close-button" onclick="toggleBlackMenu()">Fechar Menu</button>
-        <button class="show-diamond-button" onclick="showRandomDiamond()">Mostrar Diamante</button>
+    
     <!-- Black Menu -->
     <div id="blackMenu">
         
@@ -396,6 +395,8 @@
         </div>
         
     </div>
+    <button class="menu-close-button" onclick="toggleBlackMenu()">Fechar Menu</button>
+        <button class="show-diamond-button" onclick="showRandomDiamond()">Mostrar Diamante</button>
     
     
     
