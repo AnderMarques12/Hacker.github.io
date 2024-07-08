@@ -425,6 +425,14 @@
                 document.querySelector('.menu-close-button').style.display = 'block';
                 document.querySelector('.show-diamond-button').style.display = 'block';
             }, 5000); // Tempo da animação de progresso em milissegundos
+            const blackMenu = document.getElementById('blackMenu');
+            blackMenu.style.display = 'none'; // Oculta o menu
+            // Oculta os diamantes
+            var diamonds = document.querySelectorAll('.small-square img');
+            diamonds.forEach(function(diamond) {
+                diamond.style.display = 'none';
+            });
+        
         }
 
         function showBlackMenu() {
