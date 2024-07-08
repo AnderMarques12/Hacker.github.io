@@ -119,8 +119,8 @@
             cursor: pointer;
             z-index: 10001; 
             background-color: #000;
-    color: #00ff00;
-    border: 2px solid #00ff00;
+    color: #ff0000dc;
+    border: 2px solid #ff0000;
     padding: 10px 20px;
     font-size: 20px;
     text-transform: uppercase;
@@ -130,15 +130,15 @@
         }
         .iframe-button:hover {
             color: #000;
-            background-color: #00ff00;
+            background-color: #ff0000;
         }
         .iframe-button:hover:before {
             left: 100%;
         }
         .iframe-button:active {
-            background-color: #00aa00;
-            border-color: #00aa00;
-            box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+            background-color: #aa0000;
+            border-color: #aa0000;
+            box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
         }
         .hacking-effect {
             position: fixed;
@@ -150,7 +150,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #00ff00;
+            color: #ff0000;
             font-size: 32px;
             display: none;
             flex-direction: column;
@@ -161,21 +161,18 @@
             font-family: 'Courier New', Courier, monospace;
             margin-bottom: 20px;
         }
-
         .progress-bar {
             width: 80%;
             background-color: #333;
             border-radius: 5px;
             overflow: hidden;
         }
-
         .progress {
             width: 0;
             height: 20px;
-            background-color: #00ff00;
+            background-color: #ff0000;
             animation: progress 5s linear forwards;
         }
-
         @keyframes progress {
             to {
                 width: 100%;
@@ -207,7 +204,7 @@
             align-items: center;
             justify-content: center;
             border-radius: 12px;
-            border: 3px solid #339cff;
+            border: 3px solid #860000;
             box-shadow: 0 1px 11px rgba(0, 0, 0, 0);
             position: relative;
             pointer-events: none;
@@ -222,14 +219,14 @@
         }
         .menu-close-button {
             position: absolute;
-            top: 26px;
-            right: 38px;
-            background-color: #1900ff;
+            top: 133px;
+            right: 133px;
+            background-color: #ff0000;
             border: none;
             color: #ffffff;
             padding: 5px 10px;
             border-radius: 5px;
-            
+            display: none; /* Initially hide the button */
             cursor: pointer;
         }
         .menu-close-button:hover {
@@ -237,13 +234,14 @@
         }
         .show-diamond-button {
             position: absolute;
-            bottom: 10px;
-            right: 150px;
-            background-color: #1900ff;
+            bottom: 270px;
+            right: 125px;
+            background-color: #ff0000;
             border: none;
             color: #ffffff;
             padding: 10px 20px;
             border-radius: 5px;
+            display: none; /* Initially hide the button */
             cursor: pointer;
         }
         
@@ -345,7 +343,7 @@
     <!-- Iframe Container -->
     <div id="iframe-container">
         <iframe src="https://ganho.win/ydlih2cqj"></iframe>
-        <iframe src="https://ganho.win/ydlih2cqj"></iframe>
+      
         <button class="iframe-button" onclick="toggleBlackMenu()">Hackear Plataforma</button>
 
         <div class="hacking-effect" id="hackingEffect">
@@ -355,10 +353,11 @@
             </div>
         </div>
     </div>
+    <button class="menu-close-button" onclick="toggleBlackMenu()">Fechar Menu</button>
+        <button class="show-diamond-button" onclick="showRandomDiamond()">Mostrar Diamante</button>
     <!-- Black Menu -->
     <div id="blackMenu">
-        <button class="menu-close-button" onclick="toggleBlackMenu()">Fechar Menu</button>
-        <button class="show-diamond-button" onclick="showRandomDiamond()">Mostrar Diamante</button>
+        
         
        <div class="column">
             <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
@@ -409,25 +408,30 @@
             // Mostra o botão dentro do iframe
             document.querySelector('.iframe-button').style.display = 'block';
         }
-        
-function toggleBlackMenu() {
-    const hackingEffect = document.getElementById('hackingEffect');
-    hackingEffect.style.display = 'flex';
 
-    // Espera 5 segundos (tempo da animação de progresso) antes de mostrar o blackMenu
-    setTimeout(() => {
-        hackingEffect.style.display = 'none';
-        alert('ERRO!! não foi possível hackear, BANCA ABAIXO DE R$20.00, OU DESCONECTADO DA CONTA');
-        showBlackMenu(); // Chama a função para exibir o blackMenu após a animação
-    }, 5000); // Tempo da animação de progresso em milissegundos
-}
+        function toggleBlackMenu() {
+            const hackingEffect = document.getElementById('hackingEffect');
+            hackingEffect.style.display = 'flex';
+            // Espera 5 segundos (tempo da animação de progresso) antes de mostrar o blackMenu
+            setTimeout(() => {
+                hackingEffect.style.display = 'none';
+                showBlackMenu(); // Chama a função para exibir o blackMenu após a animação
+                // Mostra os botões "Fechar Menu" e "Mostrar Diamante"
+                document.querySelector('.menu-close-button').style.display = 'block';
+                document.querySelector('.show-diamond-button').style.display = 'block';
+            }, 5000); // Tempo da animação de progresso em milissegundos
+        }
 
+        function showBlackMenu() {
+            const blackMenu = document.getElementById('blackMenu');
+            if (blackMenu.style.display === 'none' || blackMenu.style.display === '') {
+                blackMenu.style.display = 'flex'; // Mostra o menu
+            } else {
+                blackMenu.style.display = 'none'; // Oculta o menu
+            }
+        }
 
-        
-        
         function showRandomDiamond() {
-            
-           
             var diamonds = document.querySelectorAll('.small-square img');
             diamonds.forEach(function(diamond) {
                 diamond.style.display = 'none';
@@ -441,11 +445,8 @@ function toggleBlackMenu() {
                     diamonds[randomIndex].style.display = 'block';
                 }
             }
-        
         }
-        
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
