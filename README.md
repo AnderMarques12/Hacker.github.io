@@ -219,8 +219,8 @@
         }
         .menu-close-button {
             position: absolute;
-            top: 90px;
-            right: 140px;
+            top: 60px;
+            right: 145px;
             background-color: #ff0000;
             border: none;
             color: #ffffff;
@@ -234,7 +234,7 @@
         }
         .show-diamond-button {
             position: absolute;
-            bottom: 200px;
+            bottom: 175px;
             right: 125px;
             background-color: #ff0000;
             border: none;
