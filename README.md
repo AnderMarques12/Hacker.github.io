@@ -228,7 +228,9 @@
             border-radius: 5px;
             display: none; /* Initially hide the button */
             cursor: pointer;
+            z-index: 10001;
         }
+
         .menu-close-button:hover {
             background-color: #ff6666;
         }
@@ -243,6 +245,7 @@
             border-radius: 5px;
             display: none; /* Initially hide the button */
             cursor: pointer;
+            z-index: 10001;
         }
         
         .show-diamond-button:hover {
@@ -353,6 +356,8 @@
             </div>
         </div>
     </div>
+    <button class="menu-close-button" onclick="toggleBlackMenu()">Fechar Menu</button>
+        <button class="show-diamond-button" onclick="showRandomDiamond()">Mostrar Diamante</button>
     
     <!-- Black Menu -->
     <div id="blackMenu">
@@ -395,8 +400,7 @@
         </div>
         
     </div>
-    <button class="menu-close-button" onclick="toggleBlackMenu()">Fechar Menu</button>
-        <button class="show-diamond-button" onclick="showRandomDiamond()">Mostrar Diamante</button>
+    
     
     
     
