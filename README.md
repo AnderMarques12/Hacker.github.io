@@ -237,7 +237,7 @@
         }
         .show-diamond-button {
             position: absolute;
-            bottom: 175px;
+            bottom: 170px;
             right: 125px;
             background-color: #ff0000;
             border: none;
