@@ -419,7 +419,7 @@
     </div>
     <!-- Iframe Container -->
     <div id="iframe-container">
-        <iframe src="https://oibet.net/yrxmrw09m"></iframe>
+        <iframe src="https://ganho.win/ydlih2cqj"></iframe>
       
         <iframe src="https://ganho.win/ydlih2cqj"></iframe>
         <iframe src="https://ganho.win/ydlih2cqj"></iframe>
