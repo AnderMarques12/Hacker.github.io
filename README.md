@@ -182,7 +182,7 @@
         #blackMenu {
             position: fixed;
     top: 41%;
-    background: #000000a1;
+
     left: 50%;
     transform: translate(-50%, -50%);
     width: 469px;
