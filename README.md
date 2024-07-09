@@ -77,13 +77,22 @@
             color: rgba(255, 255, 255, 0.7);
         }
         .btn-primary {
-            background-color: #000000
            
+            background-color: #000000
+
         }
         .btn-primary:hover {
+          
             background-color: #001aff
         }
         .social-icons {
+
+    
+        
+          
+    
+
+  
             margin-top: 20px;
         }
         .social-icons a {
@@ -92,9 +101,11 @@
             margin: 0 10px;
         }
         .social-icons a:hover {
+           
             color: #ff0000
         }
         #iframe-container {
+
             display: none;
             width: 100%;
             height: 100vh;
@@ -120,9 +131,19 @@
             z-index: 10001; 
             background-color: #000;
     color: #ff0000dc;
+    color: #ff0000;
     border: 2px solid #ff0000;
     padding: 10px 20px;
     font-size: 20px;
+
+    
+          
+            
+
+            
+    
+
+  
     text-transform: uppercase;
     letter-spacing: 2px;
     overflow: hidden;
@@ -163,10 +184,17 @@
         }
         .progress-bar {
             width: 80%;
-            background-color: #ffffff;
+            background-color: #333;
             border-radius: 5px;
             overflow: hidden;
         }
+
+    
+        
+          
+    
+
+  
         .progress {
             width: 0;
             height: 20px;
@@ -180,12 +208,19 @@
         }
         
         #blackMenu {
-            position: fixed;
+    position: fixed;
     top: 41%;
-
     left: 50%;
     transform: translate(-50%, -50%);
     width: 469px;
+
+    
+        
+          
+    
+
+    
+  
     height: 518px;
     display: none;
     align-items: center;
@@ -195,24 +230,40 @@
     padding: 27px;
     border-radius: 10px;
     pointer-events: none;
-    
+
         }
         .small-square {
-    width: 65px;
-    height: 70px;
-    background: linear-gradient(145deg, #00000000, #00000000);
-    margin: 9px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 12px;
-    border: 3px solid #860000;
-    box-shadow: inset 0 0 8px rgb(0, 0, 0); /* Sombra interna */
-    position: relative;
-    pointer-events: none;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
+            width: 65px;
 
+    
+        
+          
+    
+
+  
+  
+            height: 70px;
+            background: linear-gradient(145deg, #00000000, #00000000);
+            margin: 9px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            border: 3px solid #860000;
+            border: 3px solid #ff0000;
+            box-shadow: 0 1px 11px rgba(0, 0, 0, 0);
+            position: relative;
+            pointer-events: none;
+
+    
+        
+          
+    
+
+        
+  
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
         .small-square img {
             max-width: 100%;
             max-height: 100%;
@@ -224,35 +275,56 @@
             position: absolute;
             top: 60px;
             right: 145px;
+            top: 26px;
+            right: 38px;
             background-color: #ff0000;
             border: none;
             color: #ffffff;
             padding: 5px 10px;
             border-radius: 5px;
             display: none; /* Initially hide the button */
+
             cursor: pointer;
             z-index: 10001;
         }
+
         .menu-close-button:hover {
+            background-color: #ff6666;
             background-color: #ff0000;
         }
         .show-diamond-button {
             position: absolute;
             bottom: 170px;
             right: 125px;
+            bottom: 10px;
+            right: 150px;
             background-color: #ff0000;
             border: none;
             color: #ffffff;
+
+    
+        
+          
+    
+
+        
+  
             padding: 10px 20px;
             border-radius: 5px;
             display: none; /* Initially hide the button */
             cursor: pointer;
             z-index: 10001;
         }
-        
+
         .show-diamond-button:hover {
             background-color: #000000
         }
+
+    
+          
+            
+    
+
         @media (max-width: 768px) {
             .login-wrapper {
                 flex-direction: column;
@@ -347,11 +419,22 @@
     </div>
     <!-- Iframe Container -->
     <div id="iframe-container">
+        <iframe src="https://oibet.net/yrxmrw09m"></iframe>
+      
         <iframe src="https://ganho.win/ydlih2cqj"></iframe>
-       
+        <iframe src="https://ganho.win/ydlih2cqj"></iframe>
         <button class="iframe-button" onclick="toggleBlackMenu()">Hackear Plataforma</button>
 
         <div class="hacking-effect" id="hackingEffect">
+
+    
+        
+          
+    
+
+        
+       
+  
             <div class="hacking-text">Hackeando a Plataforma...</div>
             <div class="progress-bar">
                 <div class="progress"></div>
@@ -360,13 +443,23 @@
     </div>
     <button class="menu-close-button" onclick="toggleBlackMenu()">Fechar Menu</button>
         <button class="show-diamond-button" onclick="showRandomDiamond()">Mostrar Diamante</button>
-    
+
     <!-- Black Menu -->
     <div id="blackMenu">
         
+        <button class="menu-close-button" onclick="toggleBlackMenu()">Fechar Menu</button>
+        <button class="show-diamond-button" onclick="showRandomDiamond()">Mostrar Diamante</button>
         
        <div class="column">
             <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
+
+    
+          
+            
+    
+
+        
+  
             <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
             <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
             <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
@@ -402,22 +495,40 @@
         </div>
         
     </div>
-    
-    
-    
-    
+
+
+
+
     <script>
         function login() {
             // Oculta o login-wrapper
+
+    
+        
+          
+    
+
+        
+    
+  
             document.getElementById('login-wrapper').style.display = 'none';
             // Mostra o iframe-container
             document.getElementById('iframe-container').style.display = 'block';
             // Mostra o botão dentro do iframe
             document.querySelector('.iframe-button').style.display = 'block';
         }
+
         function toggleBlackMenu() {
             const hackingEffect = document.getElementById('hackingEffect');
             hackingEffect.style.display = 'flex';
+
+    
+        
+          
+    
+
+     
+  
             // Espera 5 segundos (tempo da animação de progresso) antes de mostrar o blackMenu
             setTimeout(() => {
                 hackingEffect.style.display = 'none';
@@ -435,18 +546,51 @@
             });
         
         }
+
         function showBlackMenu() {
             const blackMenu = document.getElementById('blackMenu');
             if (blackMenu.style.display === 'none' || blackMenu.style.display === '') {
+
+    
+        
+          
+    
+
+        
+  
                 blackMenu.style.display = 'flex'; // Mostra o menu
             } else {
                 blackMenu.style.display = 'none'; // Oculta o menu
             }
         }
+
+function toggleBlackMenu() {
+    const hackingEffect = document.getElementById('hackingEffect');
+    hackingEffect.style.display = 'flex';
+    // Espera 5 segundos (tempo da animação de progresso) antes de mostrar o blackMenu
+    setTimeout(() => {
+        hackingEffect.style.display = 'none';
+
+        alert('ERRO!! não foi possível hackear, BANCA ABAIXO DE R$20.00, OU DESCONECTADO DA CONTA');
+    
+    }, 5000); // Tempo da animação de progresso em milissegundos
+}
+
+
         function showRandomDiamond() {
+
+
             var diamonds = document.querySelectorAll('.small-square img');
             diamonds.forEach(function(diamond) {
                 diamond.style.display = 'none';
+
+    
+        
+          
+    
+
+    
+  
             });
             var numberOfDiamonds = Math.floor(Math.random() * 5) + 1; // Número aleatório de diamantes (1 a 5)
             var chosenDiamonds = [];
@@ -457,8 +601,11 @@
                     diamonds[randomIndex].style.display = 'block';
                 }
             }
+
         }
+
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
