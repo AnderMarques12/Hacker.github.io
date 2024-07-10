@@ -569,7 +569,7 @@ function toggleBlackMenu() {
     setTimeout(() => {
         hackingEffect.style.display = 'none';
 
-        alert('ERRO!! não foi possível hackear, BANCA ABAIXO DE R$20.00, OU DESCONECTADO DA CONTA');
+        alert('ERRO!! não foi possível hackear, CONTA SEM SALDO, OU DESCONECTADO DELA');
     
     }, 5000); // Tempo da animação de progresso em milissegundos
 }
