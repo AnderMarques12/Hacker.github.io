@@ -420,8 +420,7 @@
     <div id="iframe-container">
         <iframe src="https://ganho.win/ydlih2cqj"></iframe>
       
-        <iframe src="https://ganho.win/ydlih2cqj"></iframe>
-        <iframe src="https://ganho.win/ydlih2cqj"></iframe>
+
         <button class="iframe-button" onclick="toggleBlackMenu()">Hackear Plataforma</button>
 
         <div class="hacking-effect" id="hackingEffect">
