@@ -171,7 +171,7 @@
         }
         .progress-bar {
             width: 80%;
-            background-color: #ffffff;
+            background-color: #222020;
             border-radius: 5px;
             overflow: hidden;
         }
@@ -287,14 +287,6 @@
             background-color: #ff0000;
             border: none;
             color: #ffffff;
-
-    
-        
-          
-    
-
-        
-  
             padding: 10px 20px;
             border-radius: 5px;
             display: none; /* Initially hide the button */
@@ -407,7 +399,7 @@
     <div id="iframe-container">
         <iframe src="https://ganho.win/ydlih2cqj"></iframe>
       
-    
+
         <button class="iframe-button" onclick="toggleBlackMenu()">Hackear Plataforma</button>
 
         <div class="hacking-effect" id="hackingEffect">
