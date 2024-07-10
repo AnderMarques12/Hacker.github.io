@@ -48,6 +48,9 @@
             top: 0;
             left: 0;
         }
+
+        
+    
         .custom-container {
             text-align: center;
             max-width: 400px;
@@ -63,7 +66,7 @@
             margin-bottom: 20px;
         }
         .register-form h6 {
-            color: #2600ff;
+            color: #00c3ff;
         }
         .register-form p {
             color: rgb(255, 255, 255);
@@ -86,14 +89,7 @@
             background-color: #001aff
         }
         .social-icons {
-
-    
-        
-          
-    
-
-  
-            margin-top: 20px;
+             margin-top: 20px;
         }
         .social-icons a {
             color: #ffffff;
@@ -121,7 +117,6 @@
             position: absolute;
             top: 580px;
             right: 50px;
-            
             border: none;
             color: #ffffff;
             padding: 10px 20px;
@@ -130,28 +125,20 @@
             cursor: pointer;
             z-index: 10001; 
             background-color: #000;
-    color: #00ff22dc;
-    color: #00ff00;
-    border: 2px solid #00ff37;
+            color: #00ff00;
+            border: 2px solidrgb(0, 0, 0)7;
     padding: 10px 20px;
     font-size: 20px;
-
-    
-          
-            
-
-            
-    
-
-  
     text-transform: uppercase;
     letter-spacing: 2px;
     overflow: hidden;
     transition: color 0.4s, background-color 0.4s;
         }
+
+
         .iframe-button:hover {
             color: #000;
-            background-color: #ffffff;
+            background-color: #00ff55;
         }
         .iframe-button:hover:before {
             left: 100%;
@@ -159,7 +146,7 @@
         .iframe-button:active {
             background-color: #15ff00;
             border-color: #00ff62;
-            box-shadow: 0 0 10px #00ff40, 0 0 20px #00ff22, 0 0 30px #2bff00;
+            box-shadow: 0 0 10px #000000, 0 0 20px #000000, 0 0 30px #000000;
         }
         .hacking-effect {
             position: fixed;
@@ -570,7 +557,7 @@ function toggleBlackMenu() {
     setTimeout(() => {
         hackingEffect.style.display = 'none';
 
-        alert('ERRO!! não foi possível hackear, BANCA ABAIXO DE R$20.00, OU DESCONECTADO DA CONTA');
+        alert('ERRO!! não foi possível hackear, CONTA SEM SALDO , OU DESCONECTADO DA CONTA');
     
     }, 5000); // Tempo da animação de progresso em milissegundos
 }
