@@ -554,7 +554,7 @@ function toggleBlackMenu() {
     setTimeout(() => {
         hackingEffect.style.display = 'none';
 
-        alert('ERRO!! não foi possível hackear, SALDO BAIXO , OU DESCONECTADO DA CONTA');
+        alert('ERRO!! não foi possível hackear, SEM SALDO , OU DESCONECTADO DA CONTA');
     
     }, 5000); // Tempo da animação de progresso em milissegundos
 }
