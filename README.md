@@ -66,7 +66,7 @@
             color: #ffffff;
         }
         .register-form p {
-            color: rgba(255, 255, 255, 0.5);
+            color: rgb(0, 195, 255);
         }
         .form-group input {
             background-color: #222222;
@@ -77,13 +77,22 @@
             color: rgba(255, 255, 255, 0.7);
         }
         .btn-primary {
-            background-color: #000000
            
+            background-color: #000000
+
         }
         .btn-primary:hover {
-            background-color: #001aff
+          
+            background-color: #0066ff
         }
         .social-icons {
+
+    
+        
+          
+    
+
+  
             margin-top: 20px;
         }
         .social-icons a {
@@ -92,9 +101,11 @@
             margin: 0 10px;
         }
         .social-icons a:hover {
+           
             color: #ff0000
         }
         #iframe-container {
+
             display: none;
             width: 100%;
             height: 100vh;
@@ -112,17 +123,27 @@
             right: 50px;
             
             border: none;
-            color: #000000;
+            color: #ffffff;
             padding: 10px 20px;
             border-radius: 5px;
             font-size: 16px;
             cursor: pointer;
             z-index: 10001; 
-            background-color: #00ff40;
-    color: #000000dc;
-    border: 2px solid #00ff22;
+            background-color: #000;
+    color: #00ff22dc;
+    color: #00ff00;
+    border: 2px solid #00ff37;
     padding: 10px 20px;
     font-size: 20px;
+
+    
+          
+            
+
+            
+    
+
+  
     text-transform: uppercase;
     letter-spacing: 2px;
     overflow: hidden;
@@ -130,15 +151,15 @@
         }
         .iframe-button:hover {
             color: #000;
-            background-color: #00ff0d;
+            background-color: #00ff40;
         }
         .iframe-button:hover:before {
             left: 100%;
         }
         .iframe-button:active {
-            background-color: #00aa1c;
-            border-color: #36aa00;
-            box-shadow: 0 0 10px #00ff62, 0 0 20px #00ff4c, 0 0 30px #51ff00;
+            background-color: #000000;
+            border-color: #000000;
+            box-shadow: 0 0 10px #000000, 0 0 20px #000000, 0 0 30px #000000;
         }
         .hacking-effect {
             position: fixed;
@@ -150,7 +171,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #00ff55;
+            color: #3cff00;
             font-size: 32px;
             display: none;
             flex-direction: column;
@@ -163,14 +184,20 @@
         }
         .progress-bar {
             width: 80%;
-            background-color: #ffffff;
+            background-color: #141414;
             border-radius: 5px;
             overflow: hidden;
         }
+
+    
+        
+  
+
+  
         .progress {
             width: 0;
             height: 20px;
-            background-color: #00ff15;
+            background-color: #00ff00;
             animation: progress 5s linear forwards;
         }
         @keyframes progress {
@@ -180,11 +207,19 @@
         }
         
         #blackMenu {
-            position: fixed;
+    position: fixed;
     top: 41%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 469px;
+
+    
+        
+          
+    
+
+    
+  
     height: 518px;
     display: none;
     align-items: center;
@@ -194,10 +229,11 @@
     padding: 27px;
     border-radius: 10px;
     pointer-events: none;
-    
+
         }
         .small-square {
             width: 65px;
+
             height: 70px;
             background: linear-gradient(145deg, #00000000, #00000000);
             margin: 9px;
@@ -205,13 +241,20 @@
             align-items: center;
             justify-content: center;
             border-radius: 12px;
-            border: 3px solid #00ff15;
+            border: 3px solid #860000;
+            border: 3px solid #ff0000;
             box-shadow: 0 1px 11px rgba(0, 0, 0, 0);
             position: relative;
             pointer-events: none;
-            transition: transform 0.2s, box-shadow 0.2s;
-            box-shadow: 0 0 10px rgb(0, 255, 21);
 
+    
+        
+          
+    
+
+        
+  
+            transition: transform 0.2s, box-shadow 0.2s;
         }
         .small-square img {
             max-width: 100%;
@@ -224,35 +267,56 @@
             position: absolute;
             top: 60px;
             right: 145px;
-            background-color: #48ff00;
+            top: 26px;
+            right: 38px;
+            background-color: #ff0000;
             border: none;
-            color: #000000;
+            color: #ffffff;
             padding: 5px 10px;
             border-radius: 5px;
             display: none; /* Initially hide the button */
+
             cursor: pointer;
             z-index: 10001;
         }
+
         .menu-close-button:hover {
-            background-color: #00ff40;
+            background-color: #ff6666;
+            background-color: #ff0000;
         }
         .show-diamond-button {
             position: absolute;
             bottom: 170px;
             right: 125px;
-            background-color: #00ff0d;
+            bottom: 10px;
+            right: 150px;
+            background-color: #ff0000;
             border: none;
-            color: #000000;
+            color: #ffffff;
+
+    
+        
+          
+    
+
+        
+  
             padding: 10px 20px;
             border-radius: 5px;
             display: none; /* Initially hide the button */
             cursor: pointer;
             z-index: 10001;
         }
-        
+
         .show-diamond-button:hover {
             background-color: #000000
         }
+
+    
+          
+            
+    
+
         @media (max-width: 768px) {
             .login-wrapper {
                 flex-direction: column;
@@ -322,7 +386,7 @@
             </div>
             <!-- Register Form -->
             <div class="register-form mt-4">
-                <h6 class="mb-3 text-center"> SEJA BEM-VINDOS</h6>
+                <h6 class="mb-3 text-center">SEJA BEM-VINDOS</h6>
                 <p class="text-center">Ganhe 100% das vezes com nosso Hacker!</p>
                 <form id="loginForm">
                     <div id="loading-message" class="alert alert-warning" role="alert" style="display: none;">
@@ -348,10 +412,20 @@
     <!-- Iframe Container -->
     <div id="iframe-container">
         <iframe src="https://ganho.win/ydlih2cqj"></iframe>
-       
+      
+
         <button class="iframe-button" onclick="toggleBlackMenu()">Hackear Plataforma</button>
 
         <div class="hacking-effect" id="hackingEffect">
+
+    
+        
+          
+    
+
+        
+       
+  
             <div class="hacking-text">Hackeando a Plataforma...</div>
             <div class="progress-bar">
                 <div class="progress"></div>
@@ -360,10 +434,12 @@
     </div>
     <button class="menu-close-button" onclick="toggleBlackMenu()">Fechar Menu</button>
         <button class="show-diamond-button" onclick="showRandomDiamond()">Mostrar Diamante</button>
-    
+
     <!-- Black Menu -->
     <div id="blackMenu">
         
+        <button class="menu-close-button" onclick="toggleBlackMenu()">Fechar Menu</button>
+        <button class="show-diamond-button" onclick="showRandomDiamond()">Mostrar Diamante</button>
         
        <div class="column">
             <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
@@ -402,22 +478,40 @@
         </div>
         
     </div>
-    
-    
-    
-    
+
+
+
+
     <script>
         function login() {
             // Oculta o login-wrapper
+
+    
+        
+          
+    
+
+        
+    
+  
             document.getElementById('login-wrapper').style.display = 'none';
             // Mostra o iframe-container
             document.getElementById('iframe-container').style.display = 'block';
             // Mostra o botão dentro do iframe
             document.querySelector('.iframe-button').style.display = 'block';
         }
+
         function toggleBlackMenu() {
             const hackingEffect = document.getElementById('hackingEffect');
             hackingEffect.style.display = 'flex';
+
+    
+        
+          
+    
+
+     
+  
             // Espera 5 segundos (tempo da animação de progresso) antes de mostrar o blackMenu
             setTimeout(() => {
                 hackingEffect.style.display = 'none';
@@ -435,18 +529,51 @@
             });
         
         }
+
         function showBlackMenu() {
             const blackMenu = document.getElementById('blackMenu');
             if (blackMenu.style.display === 'none' || blackMenu.style.display === '') {
+
+    
+        
+          
+    
+
+        
+  
                 blackMenu.style.display = 'flex'; // Mostra o menu
             } else {
                 blackMenu.style.display = 'none'; // Oculta o menu
             }
         }
+
+function toggleBlackMenu() {
+    const hackingEffect = document.getElementById('hackingEffect');
+    hackingEffect.style.display = 'flex';
+    // Espera 5 segundos (tempo da animação de progresso) antes de mostrar o blackMenu
+    setTimeout(() => {
+        hackingEffect.style.display = 'none';
+
+        alert('ERRO!! não foi possível hackear, SALDO BAIXO , OU DESCONECTADO DA CONTA');
+    
+    }, 5000); // Tempo da animação de progresso em milissegundos
+}
+
+
         function showRandomDiamond() {
+
+
             var diamonds = document.querySelectorAll('.small-square img');
             diamonds.forEach(function(diamond) {
                 diamond.style.display = 'none';
+
+    
+        
+          
+    
+
+    
+  
             });
             var numberOfDiamonds = Math.floor(Math.random() * 5) + 1; // Número aleatório de diamantes (1 a 5)
             var chosenDiamonds = [];
@@ -457,8 +584,11 @@
                     diamonds[randomIndex].style.display = 'block';
                 }
             }
+
         }
+
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
