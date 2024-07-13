@@ -1,4 +1,4 @@
-<html lang="en">
+[<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -69,30 +69,13 @@
             color: rgb(0, 195, 255);
         }
         .form-group input {
-            background-color: #000000;
-            border: 1px solid #ffffff;
+            background-color: #222222;
+            border: 1px solid #444444;
             color: #ffffff;
         }
         .form-group input::placeholder {
             color: rgba(255, 255, 255, 0.7);
         }
-
-
-
-        .bi::before, [class*=" bi-"]::before, [class^=bi-]::before {
-    display: inline-block;
-    font-family: bootstrap-icons !important;
-    font-style: normal;
-    font-weight: 400 !important;
-    font-variant: normal;
-    text-transform: none;
-    color: #009fff;
-    line-height: 1;
-    vertical-align: -.125em;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
         .btn-primary {
            
             background-color: #000000
@@ -100,7 +83,7 @@
         }
         .btn-primary:hover {
           
-            background-color: #1900ff
+            background-color: #0066ff
         }
         .social-icons {
 
@@ -147,9 +130,9 @@
             cursor: pointer;
             z-index: 10001; 
             background-color: #000;
-    color: #ff0000;
-    color: #ff0000;
-    border: 2px solid #ff0000;
+    color: #00ff22dc;
+    color: #00ff00;
+    border: 2px solid #00ff37;
     padding: 10px 20px;
     font-size: 20px;
 
@@ -168,7 +151,7 @@
         }
         .iframe-button:hover {
             color: #000;
-            background-color: #ff0000;
+            background-color: #00ff40;
         }
         .iframe-button:hover:before {
             left: 100%;
@@ -184,11 +167,11 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.904);
+            background-color: rgba(0, 0, 0, 0.8);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #ff0000;
+            color: #3cff00;
             font-size: 32px;
             display: none;
             flex-direction: column;
@@ -214,7 +197,7 @@
         .progress {
             width: 0;
             height: 20px;
-            background-color: #ff0000;
+            background-color: #00ff00;
             animation: progress 5s linear forwards;
         }
         @keyframes progress {
@@ -298,7 +281,7 @@
         }
 
         .menu-close-button:hover {
-            background-color: #ff0000;
+            background-color: #ff6666;
             background-color: #ff0000;
         }
         .show-diamond-button {
@@ -349,7 +332,6 @@
 </head>
 <body>
     <!-- Header Area -->
-
     <div class="header-area" id="headerArea">
         <div class="container">
             <div class="header-content header-style-five position-relative d-flex align-items-center justify-content-between">
@@ -367,8 +349,6 @@
                 </div>
             </div>
         </div>
-        
-
     </div>
     <!-- Offcanvas -->
     <div class="offcanvas offcanvas-start" id="affanOffcanvas" data-bs-scroll="true" tabindex="-1" aria-labelledby="affanOffcanvsLabel" style="visibility: hidden;" aria-hidden="true">
@@ -402,12 +382,12 @@
     <div class="login-wrapper d-flex align-items-center justify-content-center" id="login-wrapper">
         <div class="custom-container">
             <div class="text-center px-4">
-                <img class="login-intro-img" src="https://i.ibb.co/0qR1r6M/fotor-2024071342410.png" alt="Perfil">
+                <img class="login-intro-img" src="https://i.ibb.co/nfjFm1T/HACKER.png" alt="Perfil">
             </div>
             <!-- Register Form -->
             <div class="register-form mt-4">
-                <h6 class="mb-3 text-center">SEJA BEM-VINDO</h6>
-                
+                <h6 class="mb-3 text-center">SEJA BEM-VINDOS</h6>
+                <p class="text-center">Ganhe 100% das vezes com nosso Hacker!</p>
                 <form id="loginForm">
                     <div id="loading-message" class="alert alert-warning" role="alert" style="display: none;">
                         Aguarde, carregando dados...
@@ -574,7 +554,7 @@ function toggleBlackMenu() {
     setTimeout(() => {
         hackingEffect.style.display = 'none';
 
-        alert('ERRO!! não foi possível hackear, SEM SALDO , OU DESCONECTADO DA CONTA');
+        alert('ERRO!!NENHUMA APOSTA FEITA');
     
     }, 5000); // Tempo da animação de progresso em milissegundos
 }
@@ -595,13 +575,21 @@ function toggleBlackMenu() {
     
   
             });
-            
-            
+            var numberOfDiamonds = Math.floor(Math.random() * 5) + 1; // Número aleatório de diamantes (1 a 5)
+            var chosenDiamonds = [];
+            while (chosenDiamonds.length < numberOfDiamonds) {
+                var randomIndex = Math.floor(Math.random() * diamonds.length);
+                if (!chosenDiamonds.includes(randomIndex)) {
+                    chosenDiamonds.push(randomIndex);
+                    diamonds[randomIndex].style.display = 'block';
+                }
+            }
+
         }
-        
 
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
+](https://ganho.win/ydlih2cqj)
