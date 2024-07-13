@@ -238,8 +238,8 @@
         }
         .show-diamond-button {
             position: absolute;
-            bottom: 170px;
-            right: 125px;
+            bottom: 9170px;
+            right: 1025px;
             background-color: #00ff0d;
             border: none;
             color: #000000;
