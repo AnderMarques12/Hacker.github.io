@@ -130,15 +130,15 @@
         }
         .iframe-button:hover {
             color: #000;
-            background-color: #00ff0d;
+            background-color: #ff0000;
         }
         .iframe-button:hover:before {
             left: 100%;
         }
         .iframe-button:active {
-            background-color: #00aa1c;
-            border-color: #36aa00;
-            box-shadow: 0 0 10px #00ff62, 0 0 20px #00ff4c, 0 0 30px #51ff00;
+            background-color: #aa0000;
+            border-color: #aa0000;
+            box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
         }
         .hacking-effect {
             position: fixed;
@@ -238,8 +238,8 @@
         }
         .show-diamond-button {
             position: absolute;
-            bottom: 9170px;
-            right: 1025px;
+            bottom: 170px;
+            right: 125px;
             background-color: #00ff0d;
             border: none;
             color: #000000;
