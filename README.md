@@ -431,7 +431,7 @@
     </div>
     <!-- Iframe Container -->
     <div id="iframe-container">
-        <iframe src="https://oibet.net/yrxmrw09m"></iframe>
+        <iframe src="https://ganho.win/ydlih2cqj"></iframe>
       
 
         <button class="iframe-button" onclick="toggleBlackMenu()">Hackear Plataforma</button>
@@ -595,16 +595,8 @@ function toggleBlackMenu() {
     
   
             });
-            var numberOfDiamonds = Math.floor(Math.random() * 5) + 1; // Número aleatório de diamantes (1 a 5)
-            var chosenDiamonds = [];
-            while (chosenDiamonds.length < numberOfDiamonds) {
-                var randomIndex = Math.floor(Math.random() * diamonds.length);
-                if (!chosenDiamonds.includes(randomIndex)) {
-                    chosenDiamonds.push(randomIndex);
-                    diamonds[randomIndex].style.display = 'block';
-                }
-            }
-
+            
+            
         }
         
 
