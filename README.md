@@ -69,13 +69,30 @@
             color: rgb(0, 195, 255);
         }
         .form-group input {
-            background-color: #222222;
-            border: 1px solid #444444;
+            background-color: #000000;
+            border: 1px solid #ffffff;
             color: #ffffff;
         }
         .form-group input::placeholder {
             color: rgba(255, 255, 255, 0.7);
         }
+
+
+
+        .bi::before, [class*=" bi-"]::before, [class^=bi-]::before {
+    display: inline-block;
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    font-variant: normal;
+    text-transform: none;
+    color: #009fff;
+    line-height: 1;
+    vertical-align: -.125em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
         .btn-primary {
            
             background-color: #000000
@@ -332,6 +349,7 @@
 </head>
 <body>
     <!-- Header Area -->
+
     <div class="header-area" id="headerArea">
         <div class="container">
             <div class="header-content header-style-five position-relative d-flex align-items-center justify-content-between">
@@ -349,6 +367,8 @@
                 </div>
             </div>
         </div>
+        
+
     </div>
     <!-- Offcanvas -->
     <div class="offcanvas offcanvas-start" id="affanOffcanvas" data-bs-scroll="true" tabindex="-1" aria-labelledby="affanOffcanvsLabel" style="visibility: hidden;" aria-hidden="true">
@@ -382,12 +402,12 @@
     <div class="login-wrapper d-flex align-items-center justify-content-center" id="login-wrapper">
         <div class="custom-container">
             <div class="text-center px-4">
-                <img class="login-intro-img" src="https://i.ibb.co/nfjFm1T/HACKER.png" alt="Perfil">
+                <img class="login-intro-img" src="https://i.ibb.co/0qR1r6M/fotor-2024071342410.png" alt="Perfil">
             </div>
             <!-- Register Form -->
             <div class="register-form mt-4">
-                <h6 class="mb-3 text-center">SEJA BEM-VINDOS</h6>
-                <p class="text-center">Ganhe 100% das vezes com nosso Hacker!</p>
+                <h6 class="mb-3 text-center">SEJA BEM-VINDO</h6>
+                
                 <form id="loginForm">
                     <div id="loading-message" class="alert alert-warning" role="alert" style="display: none;">
                         Aguarde, carregando dados...
@@ -586,6 +606,7 @@ function toggleBlackMenu() {
             }
 
         }
+        
 
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
