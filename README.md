@@ -118,9 +118,9 @@
             font-size: 16px;
             cursor: pointer;
             z-index: 10001; 
-            background-color: #00ff40;
+            background-color: #ff0000;
     color: #000000dc;
-    border: 2px solid #00ff22;
+    border: 2px solid #ff0000;
     padding: 10px 20px;
     font-size: 20px;
     text-transform: uppercase;
@@ -238,7 +238,7 @@
         }
         .show-diamond-button {
             position: absolute;
-            bottom: 170px;
+            bottom: 9170px;
             right: 125px;
             background-color: #00ff0d;
             border: none;
