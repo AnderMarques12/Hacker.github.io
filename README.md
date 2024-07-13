@@ -150,7 +150,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #00ff55;
+            color: #ff0000;
             font-size: 32px;
             display: none;
             flex-direction: column;
@@ -170,7 +170,7 @@
         .progress {
             width: 0;
             height: 20px;
-            background-color: #00ff15;
+            background-color: #ff0000;
             animation: progress 5s linear forwards;
         }
         @keyframes progress {
@@ -432,19 +432,7 @@
             var diamonds = document.querySelectorAll('.small-square img');
             diamonds.forEach(function(diamond) {
                 diamond.style.display = 'none';
-            });
-        
-        }
-        function showBlackMenu() {
-            const blackMenu = document.getElementById('blackMenu');
-            if (blackMenu.style.display === 'none' || blackMenu.style.display === '') {
-                blackMenu.style.display = 'flex'; // Mostra o menu
-            } else {
-                blackMenu.style.display = 'none'; // Oculta o menu
-            }
-        }
-        function showRandomDiamond() {
-            var diamonds = document.querySelectorAll('.small-square img');
+                var diamonds = document.querySelectorAll('.small-square img');
             diamonds.forEach(function(diamond) {
                 diamond.style.display = 'none';
             });
@@ -457,7 +445,19 @@
                     diamonds[randomIndex].style.display = 'block';
                 }
             }
+            });
+        
         }
+        function showBlackMenu() {
+            const blackMenu = document.getElementById('blackMenu');
+            if (blackMenu.style.display === 'none' || blackMenu.style.display === '') {
+                blackMenu.style.display = 'flex'; // Mostra o menu
+            } else {
+                blackMenu.style.display = 'none'; // Oculta o menu
+            }
+        }
+        
+    
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
