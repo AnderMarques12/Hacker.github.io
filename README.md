@@ -70,14 +70,6 @@
         }
         .form-group input {
             background-color: #222222;
-
-    
-        
-          
-    
-
-      
-  
             border: 1px solid #444444;
             color: #ffffff;
         }
@@ -86,7 +78,7 @@
         }
         .btn-primary {
             background-color: #000000
-
+           
         }
         .btn-primary:hover {
             background-color: #001aff
@@ -95,13 +87,6 @@
             margin-top: 20px;
         }
         .social-icons a {
-
-    
-        
-          
-    
-
-  
             color: #ffffff;
             font-size: 1.5rem;
             margin: 0 10px;
@@ -113,13 +98,6 @@
             display: none;
             width: 100%;
             height: 100vh;
-
-    
-        
-          
-    
-
-  
             position: relative; /* Changed to relative to position the button */
         }
         iframe {
@@ -140,18 +118,16 @@
             font-size: 16px;
             cursor: pointer;
             z-index: 10001; 
+            background-color: #00ff40;
             background-color: #ff0000;
     color: #000000dc;
+    border: 2px solid #00ff22;
     border: 2px solid #ff0000;
     padding: 10px 20px;
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
     overflow: hidden;
-
-    
-        
-    
     transition: color 0.4s, background-color 0.4s;
         }
         .iframe-button:hover {
@@ -176,11 +152,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-
-    
-        
-   
-  
             color: #ff0000;
             font-size: 32px;
             display: none;
@@ -201,13 +172,6 @@
         .progress {
             width: 0;
             height: 20px;
-
-    
-        
-          
-    
-
-  
             background-color: #ff0000;
             animation: progress 5s linear forwards;
         }
@@ -249,17 +213,9 @@
             pointer-events: none;
             transition: transform 0.2s, box-shadow 0.2s;
             box-shadow: 0 0 10px hsla(194, 100%, 50%, 0);
-
         }
         .small-square img {
             max-width: 100%;
-
-    
-        
-          
-    
-
-  
             max-height: 100%;
             display: none;
             pointer-events: none;
@@ -283,6 +239,7 @@
         }
         .show-diamond-button {
             position: absolute;
+            bottom: 170px;
             bottom: 9170px;
             right: 125px;
             background-color: #00ff0d;
@@ -301,16 +258,6 @@
         @media (max-width: 768px) {
             .login-wrapper {
                 flex-direction: column;
-
-    
-          
-            
-  
-            
-    
-
-       
-  
                 padding: 20px;
             }
             .custom-container {
@@ -381,13 +328,6 @@
                 <p class="text-center">Ganhe 100% das vezes com nosso Hacker!</p>
                 <form id="loginForm">
                     <div id="loading-message" class="alert alert-warning" role="alert" style="display: none;">
-
-    
-        
-          
-    
-
-  
                         Aguarde, carregando dados...
                     </div>
                     <div id="response"></div>
@@ -409,20 +349,13 @@
     </div>
     <!-- Iframe Container -->
     <div id="iframe-container">
-        
-        <iframe src="https://ganho.win/ydlih2cqj"></iframe>
+        <iframe src="https://oibet.net/yrxmrw09m"></iframe>
        
         <button class="iframe-button" onclick="toggleBlackMenu()">Hackear Plataforma</button>
-
         <div class="hacking-effect" id="hackingEffect">
             <div class="hacking-text">Hackeando a Plataforma...</div>
             <div class="progress-bar">
                 <div class="progress"></div>
-
-    
-        
-          
-   
             </div>
         </div>
     </div>
@@ -435,12 +368,6 @@
         
        <div class="column">
             <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
-
-    
-          
-            
-    
-  
             <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
             <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
             <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
@@ -483,33 +410,15 @@
     <script>
         function login() {
             // Oculta o login-wrapper
-
-    
-        
-          
-    
-
-        
-    
-  
             document.getElementById('login-wrapper').style.display = 'none';
             // Mostra o iframe-container
             document.getElementById('iframe-container').style.display = 'block';
             // Mostra o botão dentro do iframe
             document.querySelector('.iframe-button').style.display = 'block';
         }
-
         function toggleBlackMenu() {
             const hackingEffect = document.getElementById('hackingEffect');
             hackingEffect.style.display = 'flex';
-
-    
-        
-          
-    
-
-     
-  
             // Espera 5 segundos (tempo da animação de progresso) antes de mostrar o blackMenu
             setTimeout(() => {
                 hackingEffect.style.display = 'none';
@@ -524,49 +433,9 @@
             var diamonds = document.querySelectorAll('.small-square img');
             diamonds.forEach(function(diamond) {
                 diamond.style.display = 'none';
-            });
-        
-        }
-
-        function showBlackMenu() {
-            const blackMenu = document.getElementById('blackMenu');
-            if (blackMenu.style.display === 'none' || blackMenu.style.display === '') {
-
-    
-  
-                blackMenu.style.display = 'flex'; // Mostra o menu
-            } else {
-                blackMenu.style.display = 'none'; // Oculta o menu
-            }
-        }
-
-function toggleBlackMenu() {
-    const hackingEffect = document.getElementById('hackingEffect');
-    hackingEffect.style.display = 'flex';
-    // Espera 5 segundos (tempo da animação de progresso) antes de mostrar o blackMenu
-    setTimeout(() => {
-        hackingEffect.style.display = 'none';
-
-        alert('ERRO!! NENHUMA APOSTA FOI FEITA');
-    
-    }, 5000); // Tempo da animação de progresso em milissegundos
-}
-
-
-        function showRandomDiamond() {
-
-
-            var diamonds = document.querySelectorAll('.small-square img');
+                var diamonds = document.querySelectorAll('.small-square img');
             diamonds.forEach(function(diamond) {
                 diamond.style.display = 'none';
-
-    
-        
-          
-    
-
-    
-  
             });
             var numberOfDiamonds = Math.floor(Math.random() * 5) + 1; // Número aleatório de diamantes (1 a 5)
             var chosenDiamonds = [];
@@ -577,10 +446,19 @@ function toggleBlackMenu() {
                     diamonds[randomIndex].style.display = 'block';
                 }
             }
-
+            });
+        
+        }
+        function showBlackMenu() {
+            const blackMenu = document.getElementById('blackMenu');
+            if (blackMenu.style.display === 'none' || blackMenu.style.display === '') {
+                blackMenu.style.display = 'flex'; // Mostra o menu
+            } else {
+                blackMenu.style.display = 'none'; // Oculta o menu
+            }
         }
         
-
+    
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
