@@ -141,7 +141,7 @@
             cursor: pointer;
             z-index: 10001; 
             background-color: #ff0000;
-    color: #000000dc;
+    color: #000000ea;
     border: 2px solid #ff0000;
     padding: 10px 20px;
     font-size: 20px;
