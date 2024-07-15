@@ -167,7 +167,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.938);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -184,7 +184,7 @@
         }
         .progress-bar {
             width: 80%;
-            background-color: #141414;
+            background-color: #080808;
             border-radius: 5px;
             overflow: hidden;
         }
