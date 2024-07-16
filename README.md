@@ -207,11 +207,11 @@
         }
         
         #blackMenu {
-            position: fixed;
-    top: 41%;
+    position: fixed;
+    top: 29%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 469px;
+    width: 961px;
     height: 518px;
     display: none;
     align-items: center;
@@ -224,20 +224,20 @@
     
         }
         .small-square {
-            width: 65px;
-            height: 70px;
-            background: linear-gradient(145deg, #00000000, #00000000);
-            margin: 9px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 12px;
-            border: 3px solid hsl(0, 0%, 0%);
-            box-shadow: 0 1px 11px rgb(0, 0, 0);
+            width: 161px;
+    height: 91px;
+    background: linear-gradient(145deg, #00000000, #00000000);
+    margin: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    border: 3px solid hsl(0, 0%, 100%);
+            box-shadow: 0 1px 11px rgb(255, 255, 255);
             position: relative;
             pointer-events: none;
             transition: transform 0.2s, box-shadow 0.2s;
-            box-shadow: 0 0 10px hsl(0, 0%, 0%);
+            box-shadow: 0 0 10px hsl(0, 0%, 100%);
         }
         .small-square img {
             max-width: 100%;
