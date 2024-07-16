@@ -232,12 +232,12 @@
             align-items: center;
             justify-content: center;
             border-radius: 12px;
-            border: 3px solid hsl(0, 100%, 50%);
-            box-shadow: 0 1px 11px rgb(255, 0, 0);
+            border: 3px solid hsl(0, 0%, 100%);
+            box-shadow: 0 1px 11px rgb(255, 255, 255);
             position: relative;
             pointer-events: none;
             transition: transform 0.2s, box-shadow 0.2s;
-            box-shadow: 0 0 10px hsl(0, 100%, 50%);
+            box-shadow: 0 0 10px hsl(0, 0%, 100%);
         }
         .small-square img {
             max-width: 100%;
