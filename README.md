@@ -211,7 +211,7 @@
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 850px;
+    width: 875px;
     height: 518px;
     display: none;
     align-items: center;
