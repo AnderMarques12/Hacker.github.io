@@ -79,19 +79,16 @@
         .btn-primary {
            
             background-color: #000000
-
         }
         .btn-primary:hover {
           
             background-color: #0066ff
         }
         .social-icons {
-
     
         
           
     
-
   
             margin-top: 20px;
         }
@@ -105,7 +102,6 @@
             color: #ff0000
         }
         #iframe-container {
-
             display: none;
             width: 100%;
             height: 100vh;
@@ -135,14 +131,11 @@
     border: 2px solid #00ff37;
     padding: 10px 20px;
     font-size: 20px;
-
     
           
             
-
             
     
-
   
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -167,6 +160,7 @@
             left: 0;
             width: 100%;
             height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
             background-color: rgba(0, 0, 0, 0.938);
             display: flex;
             align-items: center;
@@ -184,15 +178,14 @@
         }
         .progress-bar {
             width: 80%;
+            background-color: #141414;
             background-color: #080808;
             border-radius: 5px;
             overflow: hidden;
         }
-
     
         
   
-
   
         .progress {
             width: 0;
@@ -207,11 +200,17 @@
         }
         
         #blackMenu {
-            position: fixed;
+    position: fixed;
     top: 41%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 469px;
+    
+        
+          
+    
+    
+  
     height: 518px;
     display: none;
     align-items: center;
@@ -219,9 +218,8 @@
     z-index: 10000;
     flex-wrap: wrap;
     padding: 27px;
-    border-radius: 10px solid hsl(0, 100%, 50%);
+    border-radius: 10px;
     pointer-events: none;
-    
         }
         .small-square {
             width: 65px;
@@ -232,20 +230,21 @@
             align-items: center;
             justify-content: center;
             border-radius: 12px;
-            border: 3px solid hsl(0, 0%, 0%);
-            box-shadow: 0 1px 11px rgb(0, 0, 0);
+            border: 3px solid #860000;
+            border: 3px solid #ff0000;
+            box-shadow: 0 1px 11px rgba(0, 0, 0, 0);
             position: relative;
             pointer-events: none;
-            transition: transform 0.2s, box-shadow 0.2s;
-            box-shadow: 0 0 10px hsl(0, 0%, 0%);
-        }
-        .small-square img {
-            max-width: 100%;
     
         
           
     
+        
   
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .small-square img {
+            max-width: 100%;
             max-height: 100%;
             display: none;
             pointer-events: none;
@@ -254,8 +253,8 @@
         .menu-close-button {
             position: absolute;
             top: 60px;
-            right: 8145px;
-            top: 926px;
+            right: 145px;
+            top: 26px;
             right: 38px;
             background-color: #ff0000;
             border: none;
@@ -263,30 +262,26 @@
             padding: 5px 10px;
             border-radius: 5px;
             display: none; /* Initially hide the button */
-
             cursor: pointer;
             z-index: 10001;
         }
-
         .menu-close-button:hover {
             background-color: #ff6666;
             background-color: #ff0000;
         }
         .show-diamond-button {
             position: absolute;
-            bottom: 9170px;
-            right: 9125px;
+            bottom: 170px;
+            right: 125px;
             bottom: 10px;
             right: 150px;
             background-color: #ff0000;
             border: none;
             color: #ffffff;
-
     
         
           
     
-
         
   
             padding: 10px 20px;
@@ -295,16 +290,13 @@
             cursor: pointer;
             z-index: 10001;
         }
-
         .show-diamond-button:hover {
             background-color: #000000
         }
-
     
           
             
     
-
         @media (max-width: 768px) {
             .login-wrapper {
                 flex-direction: column;
@@ -374,15 +366,10 @@
             </div>
             <!-- Register Form -->
             <div class="register-form mt-4">
-                <h6 class="mb-3 text-center"> SEJA BEM VINDO</h6>
-                <p class="text-center">Ganhe 100% das vezes com o nosso Hacker!</p>
+                <h6 class="mb-3 text-center"> HACKER 100%</h6>
+                <p class="text-center">Teste por 24hrs antes de Realizar a Compra!!</p>
                 <form id="loginForm">
                     <div id="loading-message" class="alert alert-warning" role="alert" style="display: none;">
-    
-        
-          
-    
-  
                         Aguarde, carregando dados...
                     </div>
                     <div id="response"></div>
@@ -405,43 +392,32 @@
     <!-- Iframe Container -->
     <div id="iframe-container">
         <iframe src="https://ganho.win/ydlih2cqj"></iframe>
-       
+      
         <button class="iframe-button" onclick="toggleBlackMenu()">Hackear Plataforma</button>
-
-
-    
-          
-            
-    
-
-    
-    
-  
         <div class="hacking-effect" id="hackingEffect">
-            <div class="hacking-text">Hackeando a Plataforma...</div>
-            <div class="progress-bar">
-                <div class="progress"></div>
     
         
           
-   
+    
+        
+       
+  
+            <div class="hacking-text">Hackeando a Plataforma...</div>
+            <div class="progress-bar">
+                <div class="progress"></div>
             </div>
         </div>
     </div>
     <button class="menu-close-button" onclick="toggleBlackMenu()">Fechar Menu</button>
         <button class="show-diamond-button" onclick="showRandomDiamond()">Mostrar Diamante</button>
-    
     <!-- Black Menu -->
     <div id="blackMenu">
         
+        <button class="menu-close-button" onclick="toggleBlackMenu()">Fechar Menu</button>
+        <button class="show-diamond-button" onclick="showRandomDiamond()">Mostrar Diamante</button>
         
        <div class="column">
             <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
-    
-          
-            
-    
-  
             <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
             <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
             <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
@@ -477,13 +453,16 @@
         </div>
         
     </div>
-    
-    
-    
-    
     <script>
         function login() {
             // Oculta o login-wrapper
+    
+        
+          
+    
+        
+    
+  
             document.getElementById('login-wrapper').style.display = 'none';
             // Mostra o iframe-container
             document.getElementById('iframe-container').style.display = 'block';
@@ -493,6 +472,12 @@
         function toggleBlackMenu() {
             const hackingEffect = document.getElementById('hackingEffect');
             hackingEffect.style.display = 'flex';
+    
+        
+          
+    
+     
+  
             // Espera 5 segundos (tempo da animação de progresso) antes de mostrar o blackMenu
             setTimeout(() => {
                 hackingEffect.style.display = 'none';
@@ -507,9 +492,43 @@
             var diamonds = document.querySelectorAll('.small-square img');
             diamonds.forEach(function(diamond) {
                 diamond.style.display = 'none';
-                var diamonds = document.querySelectorAll('.small-square img');
+            });
+        
+        }
+        function showBlackMenu() {
+            const blackMenu = document.getElementById('blackMenu');
+            if (blackMenu.style.display === 'none' || blackMenu.style.display === '') {
+    
+        
+          
+    
+        
+  
+                blackMenu.style.display = 'flex'; // Mostra o menu
+            } else {
+                blackMenu.style.display = 'none'; // Oculta o menu
+            }
+        }
+function toggleBlackMenu() {
+    const hackingEffect = document.getElementById('hackingEffect');
+    hackingEffect.style.display = 'flex';
+    // Espera 5 segundos (tempo da animação de progresso) antes de mostrar o blackMenu
+    setTimeout(() => {
+        hackingEffect.style.display = 'none';
+        alert('ERRO!! não foi possível hackear, nenhuma aposta feita');
+    
+    }, 5000); // Tempo da animação de progresso em milissegundos
+}
+        function showRandomDiamond() {
+            var diamonds = document.querySelectorAll('.small-square img');
             diamonds.forEach(function(diamond) {
                 diamond.style.display = 'none';
+    
+        
+          
+    
+    
+  
             });
             var numberOfDiamonds = Math.floor(Math.random() * 5) + 1; // Número aleatório de diamantes (1 a 5)
             var chosenDiamonds = [];
@@ -520,18 +539,7 @@
                     diamonds[randomIndex].style.display = 'block';
                 }
             }
-            });
-        
         }
-        function showBlackMenu() {
-            const blackMenu = document.getElementById('blackMenu');
-            if (blackMenu.style.display === 'none' || blackMenu.style.display === '') {
-                blackMenu.style.display = 'flex'; // Mostra o menu
-            } else {
-                blackMenu.style.display = 'none'; // Oculta o menu
-            }
-        }
-        
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
