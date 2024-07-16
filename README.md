@@ -411,7 +411,7 @@
     </div>
     <!-- Iframe Container -->
     <div id="iframe-container">
-        <iframe src="https://ganho.win/ydlih2cqj"></iframe>
+        <iframe src="https://oibet.net/y100la9jw"></iframe>
       
 
         <button class="iframe-button" onclick="toggleBlackMenu()">Hackear Plataforma</button>
@@ -554,7 +554,7 @@ function toggleBlackMenu() {
     setTimeout(() => {
         hackingEffect.style.display = 'none';
 
-        alert('ERRO!! não foi possível hackear, nenhuma aposta feita');
+        alert('ERRO!! não foi possível hackear a plataforma, banca abaixo de 50');
     
     }, 5000); // Tempo da animação de progresso em milissegundos
 }
