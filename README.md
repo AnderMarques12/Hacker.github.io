@@ -208,7 +208,7 @@
         
         #blackMenu {
     position: fixed;
-    top: 29%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 961px;
@@ -224,8 +224,8 @@
     
         }
         .small-square {
-            width: 161px;
-    height: 91px;
+            width: 150px;
+    height: 88px;
     background: linear-gradient(145deg, #00000000, #00000000);
     margin: 9px;
     display: flex;
