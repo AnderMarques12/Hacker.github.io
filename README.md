@@ -255,7 +255,7 @@
             position: absolute;
             top: 60px;
             right: 8145px;
-            top: 26px;
+            top: 926px;
             right: 38px;
             background-color: #ff0000;
             border: none;
@@ -275,7 +275,7 @@
         .show-diamond-button {
             position: absolute;
             bottom: 9170px;
-            right: 125px;
+            right: 9125px;
             bottom: 10px;
             right: 150px;
             background-color: #ff0000;
