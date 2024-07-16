@@ -218,7 +218,7 @@
     justify-content: space-around;
     z-index: 10000;
     flex-wrap: wrap;
-    padding: 27px;
+    padding: 37px;
     border-radius: 10px solid hsl(0, 100%, 50%);
     pointer-events: none;
     
