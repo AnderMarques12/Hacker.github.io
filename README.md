@@ -27,7 +27,7 @@
     padding-right: 0px;
     padding-left: 0px;  }
     .markdown-body img {
-    max-width: 100%;
+    max-width: 100%;     
     box-sizing: content-box;
     }
         body {
@@ -123,7 +123,7 @@
         .iframe-button {
             display: none; /* Initially hide the button */
             position: absolute;
-            top: 580px;
+            top: 650px;
             right: 50px;
             
             border: none;
@@ -253,7 +253,7 @@
         }
         .menu-close-button {
             position: absolute;
-            top: 960px;
+            top: 9960px;
             right: 145px;
             background-color: #48ff00;
             border: none;
