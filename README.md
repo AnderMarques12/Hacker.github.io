@@ -224,8 +224,8 @@
     
         }
         .small-square {
-            width: 150px;
-    height: 88px;
+            width: 148px;
+    height: 86px;
     background: linear-gradient(145deg, #00000000, #00000000);
     margin: 9px;
     display: flex;
