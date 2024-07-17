@@ -207,12 +207,12 @@
         }
         
         #blackMenu {
-    position: fixed;
-    top: 35%;
+            position: fixed;
+    top: 33%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 975px;
-    height: 518px;
+    width: 959px;
+    height: 531px;
     display: none;
     align-items: center;
     justify-content: space-around;
@@ -224,10 +224,10 @@
     
         }
         .small-square {
-            width: 148px;
-    height: 86px;
+            width: 138px;
+    height: 83px;
     background: linear-gradient(145deg, #00000000, #00000000);
-    margin: 9px;
+    margin: 13px;
     display: flex;
     align-items: center;
     justify-content: center;
