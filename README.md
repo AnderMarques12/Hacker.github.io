@@ -211,7 +211,7 @@
     top: 33%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 959px;
+    width: 939px;
     height: 531px;
     display: none;
     align-items: center;
@@ -224,8 +224,8 @@
     
         }
         .small-square {
-            width: 138px;
-    height: 83px;
+            width: 130px;
+    height: 85px;
     background: linear-gradient(145deg, #00000000, #00000000);
     margin: 13px;
     display: flex;
