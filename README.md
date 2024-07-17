@@ -211,14 +211,14 @@
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 925px;
+    width: 975px;
     height: 518px;
     display: none;
     align-items: center;
     justify-content: space-around;
     z-index: 10000;
     flex-wrap: wrap;
-    padding: 37px;
+    padding: 66px;
     border-radius: 10px solid hsl(0, 100%, 50%);
     pointer-events: none;
     
