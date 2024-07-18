@@ -31,20 +31,6 @@
     box-sizing: content-box;
     }
         body {
-
-    
-          
-            
-    
-
-          
-          
-          
-            
-    
-
-     
-  
             background-color: #000000;
             color: #ffffff;
             font-family: Arial, sans-serif;
@@ -84,12 +70,12 @@
         }
         .form-group input {
             background-color: #222222;
-
-
-
-
-
-
+    
+        
+          
+    
+      
+  
             border: 1px solid #444444;
             color: #ffffff;
         }
@@ -106,11 +92,11 @@
             margin-top: 20px;
         }
         .social-icons a {
-
+    
         
           
-
-
+    
+  
             color: #ffffff;
             font-size: 1.5rem;
             margin: 0 10px;
@@ -122,22 +108,14 @@
             display: none;
             width: 100%;
             height: 100vh;
-
+    
         
           
-
-
+    
+  
             position: relative; /* Changed to relative to position the button */
         }
         iframe {
-
-    
-        
-          
-    
-
-        
-  
             width: 100%;
             height: 100%;
             border: none;
@@ -163,9 +141,9 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     overflow: hidden;
-
+    
         
-
+    
     transition: color 0.4s, background-color 0.4s;
         }
         .iframe-button:hover {
@@ -176,9 +154,9 @@
             left: 100%;
         }
         .iframe-button:active {
-            background-color: #aa0000;
-            border-color: #aa0000;
-            box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
+            background-color: #ffffff;
+            border-color: #ffffff;
+            box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff;
         }
         .hacking-effect {
             position: fixed;
@@ -186,27 +164,18 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.911);
             display: flex;
             align-items: center;
             justify-content: center;
-
+    
         
-
-
+   
+  
             color: #ff0000;
             font-size: 32px;
             display: none;
             flex-direction: column;
-
-    
-        
-          
-    
-
-        
-     
-  
             z-index: 10000;
         }
         
@@ -223,23 +192,15 @@
         .progress {
             width: 0;
             height: 20px;
-
+    
         
           
-
-
+    
+  
             background-color: #ff0000;
             animation: progress 5s linear forwards;
         }
         @keyframes progress {
-
-    
-        
-          
-    
-
-  
-  
             to {
                 width: 100%;
             }
@@ -280,11 +241,11 @@
         }
         .small-square img {
             max-width: 100%;
-
+    
         
           
-
-
+    
+  
             max-height: 100%;
             display: none;
             pointer-events: none;
@@ -326,30 +287,17 @@
         @media (max-width: 768px) {
             .login-wrapper {
                 flex-direction: column;
-
+    
           
             
-
+  
             
-
+    
        
-
+  
                 padding: 20px;
             }
             .custom-container {
-
-    
-          
-            
-    
-
-          
-        
-            
-    
-
-        
-  
                 max-width: 100%;
                 width: 100%;
                 padding: 10px;
@@ -417,24 +365,14 @@
                 <p class="text-center">Ganhe 100% das vezes com nosso Hacker!</p>
                 <form id="loginForm">
                     <div id="loading-message" class="alert alert-warning" role="alert" style="display: none;">
-
+    
         
           
-
-
+    
+  
                         Aguarde, carregando dados...
                     </div>
                     <div id="response"></div>
-
-    
-        
-          
-    
-
-        
-      
-        
-  
                     <div class="form-group">
                         <input class="form-control form-control-clicked" type="email" name="email" id="email-cad" placeholder="Digite seu e-mail" required="">
                     </div>
@@ -458,24 +396,24 @@
         <button class="iframe-button" onclick="toggleBlackMenu()">Hackear Plataforma</button>
 
 
-
+    
           
             
-
+    
 
           
           Expand Down
-
-
-
+    
+    
+  
         <div class="hacking-effect" id="hackingEffect">
             <div class="hacking-text">Hackeando a Plataforma...</div>
             <div class="progress-bar">
                 <div class="progress"></div>
-
+    
         
           
-
+   
             </div>
         </div>
     </div>
@@ -488,31 +426,14 @@
         
        <div class="column">
             <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
-
-          
-            
-
-
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
-            <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
-
     
           
             
     
-
-          
-          Expand Down
-          
-            
-    
-
-          
-          Expand Up
-    
-    @@ -466,22 +478,40 @@
   
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
+            <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
             <div class="small-square"><img src="https://oibet.net/mines/zs.png" alt="Diamante"></div>
         </div>
         <div class="column">
@@ -564,15 +485,6 @@
             // Espera 5 segundos (tempo da animação de progresso) antes de mostrar o blackMenu
             setTimeout(() => {
                 hackingEffect.style.display = 'none';
-
-    
-        
-          
-    
-
-        
-    
-  
                 showBlackMenu(); // Chama a função para exibir o blackMenu após a animação
                 // Mostra os botões "Fechar Menu" e "Mostrar Diamante"
                 document.querySelector('.menu-close-button').style.display = 'block';
